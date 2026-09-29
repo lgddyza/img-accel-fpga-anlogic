@@ -1,0 +1,22 @@
+Location         : E:\FPGA\workspace\demo\fpga_prj_Runs\phy_1
+Running with     : Tang Dynasty Release_2026.1_SP2
+                   Copyright (c) 2012-2026 Anlogic Inc.
+Top Model        : system_top
+Device           : PH1A90SEG324
+Speed            : 2
+
+Timing Mode      : manhattan
+Setup            : WNS  1401ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS 2147483647ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+---------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+---------------------------------------------------------------------------------------------------
+      place      |    1     |  3m50s(97%)  |   555(99%)    |       2810        |       2810        
+  import_device  |    1     |    4s(1%)    |     3(0%)     |       1112        |       1112        
+    import_db    |    3     |    1s(0%)    |     0(0%)     |       2312        |       2312        
+      pack       |    1     |    0s(0%)    |     0(0%)     |       2357        |       2357        
+---------------------------------------------------------------------------------------------------
+      total      |    6     |    3m55s     |      558      |       2810        |       2810        
+---------------------------------------------------------------------------------------------------

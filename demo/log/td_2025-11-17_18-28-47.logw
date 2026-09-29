@@ -1,0 +1,516 @@
+============================================================
+   Tang Dynasty, V6.2.175876
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = E:/Anlogic/TD_6.2.1_Release_6.2.175.876/bin/td.exe
+   Built at =   14:07:58 Sep  4 2025
+   Run by =     Administrator
+   Run Date =   Mon Nov 17 18:28:48 2025
+
+   Run on =     BF-202403070915
+============================================================
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+GUI-8501 ERROR: Code verification failed. The bit file does not match with chipwatcher design.
+GUI-8501 ERROR: Code verification failed. The bit file does not match with chipwatcher design.
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+KIT-8409 ERROR: RdbkData: unexpected end position(65535).
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)
+GUI-8501 ERROR: Code verification failed. The bit file does not match with chipwatcher design.
+GUI-8501 ERROR: Code verification failed. The bit file does not match with chipwatcher design.
+GUI-8501 ERROR: Code verification failed. The bit file does not match with chipwatcher design.
+USR-6001 WARNING: No clocks matched 'get_clocks u_ddr_phy/dfi_clk'
+USR-6122 CRITICAL-WARNING: Clock definition problem. Clock sys_clk override clock sys_clk, as two clocks are defined on the same target pin. 
+Please use '-add' option if two clocks are both to be kept. 
+In some cases, the issue happens on hard macro clock pin for which the timing solution is upgraded: tool auto generates clock on this pin, 
+please consider using 'rename_clock' to appoint the specified clock name.
+USR-8170 CRITICAL-WARNING: Duplicated clock definitions with name sys_clk.
+USR-6001 WARNING: No clocks matched 'get_clocks u_ddr_phy/dfi_clk'
+USR-6001 WARNING: No clocks matched 'get_clocks u_ddr_phy/dfi_clk'
+USR-6001 WARNING: No clocks matched 'get_clocks u_ddr_phy/dfi_clk'
+USR-6001 WARNING: No clocks matched 'get_clocks u_ddr_phy/dfi_clk'
+USR-6001 WARNING: No clocks matched 'get_clocks u_ddr_phy/dfi_clk'
+USR-6001 WARNING: No clocks matched 'get_clocks u_ddr_phy/dfi_clk'
+HDL-5370 WARNING: parameter 'T10MS' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(43)
+HDL-5370 WARNING: parameter 'KEY_S0' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(44)
+HDL-5370 WARNING: parameter 'KEY_S1' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(45)
+HDL-5370 WARNING: parameter 'KEY_S2' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(46)
+HDL-5370 WARNING: parameter 'KEY_S3' becomes localparam in 'key' with formal parameter declaration list in uisrc/03_ip/ae_set/key.v(47)
+HDL-5333 WARNING: data object 'wfifo_rst_done' is already declared in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: second declaration of 'wfifo_rst_done' is ignored in uisrc/03_ip/uifdmadbuf/uidbuf.v(242)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/brightness_adj/Brightness_adjustment.v(83)
+HDL-5007 WARNING: block identifier is required on this block in uisrc/03_ip/isp/contrast_adj/contrast_adj.v(95)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(89)
+HDL-5007 WARNING: /* is inside a comment in uisrc/03_ip/isp/demosaic_4x_2_0/top_demosaic.v(100)
+HDL-5370 WARNING: parameter 'C0' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(136)
+HDL-5370 WARNING: parameter 'C1' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(137)
+HDL-5370 WARNING: parameter 'C2' becomes localparam in 'Saturation_adj' with formal parameter declaration list in uisrc/03_ip/isp/saturation_adj/Saturation_adj.v(138)

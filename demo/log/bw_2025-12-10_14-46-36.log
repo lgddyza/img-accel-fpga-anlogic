@@ -1,0 +1,26 @@
+============================================================
+   BitWriter, V1.3.154147
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = E:/Anlogic/TD_6.2.1_Release_6.2.175.876/bin/bw.exe
+   Built at =   14:02:29 Nov  5 2025
+   Run by =     Administrator
+   Run Date =   Wed Dec 10 14:46:36 2025
+
+   Run on =     BF-202403070915
+============================================================
+RUN-1002 : start command "connect_cable -allink"
+RUN-1002 : start command "connect_cable -allink"
+RUN-1002 : start command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0"
+PRG-2014 : Chip validation success: PH1A90
+RUN-1003 : finish command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0" in  8.098166s wall, 0.265625s user + 0.218750s system = 0.484375s CPU (6.0%)
+
+RUN-1004 : used memory is 130 MB, reserved memory is 99 MB, peak memory is 269 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0"
+PRG-2014 : Chip validation success: PH1A90
+RUN-1003 : finish command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0" in  8.164468s wall, 0.437500s user + 0.265625s system = 0.703125s CPU (8.6%)
+
+RUN-1004 : used memory is 130 MB, reserved memory is 99 MB, peak memory is 269 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "connect_cable -allink"
+RUN-1002 : start command "connect_cable -allink"

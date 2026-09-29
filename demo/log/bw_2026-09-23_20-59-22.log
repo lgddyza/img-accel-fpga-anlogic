@@ -1,0 +1,31 @@
+============================================================
+   BW Release_2026.1_SP2
+   Copyright (c) 2012-2026 Anlogic Inc.
+   Executable = F:/FPGA/AnLu/bin/bw.exe
+   Build number = 6.2.2.200067
+   Built at =   16:25:23 Apr 23 2026
+   Run by =     21093
+   Run Date =   Wed Sep 23 20:59:22 2026
+
+   Run on =     PEACEINLIFE
+============================================================
+RUN-1002 : start command "connect_cable -host_name 127.0.0.1: -usr_args {-r -s  -f 12 -v -w  -i } -open"
+PRG-8000 ERROR: host cast error: bad lexical cast: source type value could not be interpreted as target, using default: 5555
+RUN-1003 : finish command "connect_cable -host_name 127.0.0.1: -usr_args {-r -s  -f 12 -v -w  -i } -open" in  0.003959s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 60 MB, reserved memory is 36 MB, peak memory is 60 MB
+PRG-8000 ERROR: Connect server failed.
+PRG-8000 ERROR: Connect server failed.
+PRG-8000 ERROR: Connect server failed.
+PRG-8000 ERROR: Connect server failed.
+PRG-8000 ERROR: Connect server failed.
+PRG-8000 ERROR: Connect server failed.
+PRG-8000 ERROR: Connect server failed.
+RUN-1002 : start command "connect_cable -close"
+RUN-1003 : finish command "connect_cable -close" in  0.000079s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 130 MB, reserved memory is 87 MB, peak memory is 130 MB
+RUN-1002 : start command "connect_cable -close"
+RUN-1003 : finish command "connect_cable -close" in  0.000002s wall, 0.000000s user + 0.000000s system = 0.000000s CPU (n/a%)
+
+RUN-1004 : used memory is 130 MB, reserved memory is 87 MB, peak memory is 130 MB

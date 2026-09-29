@@ -1,0 +1,69 @@
+set_pin_assignment	{ I_sysclk_25m }	{ LOCATION = T16; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_ddr_clk }		{ LOCATION = T13; IOSTANDARD = LVDS18; PULLTYPE = NONE; }
+		
+set_pin_assignment	{ O_cam_scl }		{ LOCATION = B14; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ IO_cam_sda }		{ LOCATION = A14; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment	{ O_clk_rst }		{ LOCATION = B18; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment	{ S_clk_25m }		{ LOCATION = A18; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+
+set_pin_assignment	{ I_clk_hs_p }		{ LOCATION = E13; IOSTANDARD = LVDS18; PULLTYPE = NONE; }
+set_pin_assignment	{ I_data_hs_p[0] }	{ LOCATION = C14; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment	{ I_data_hs_p[1] }	{ LOCATION = D14; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment	{ I_data_hs_p[2] }	{ LOCATION = A15; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment	{ I_data_hs_p[3] }	{ LOCATION = G17; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+
+set_pin_assignment	{ I_data_lp_p[0] }	{ LOCATION = B16; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_n[0] }	{ LOCATION = C16; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_p[1] }	{ LOCATION = C15; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_n[1] }	{ LOCATION = D15; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_p[2] }	{ LOCATION = C17; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_n[2] }	{ LOCATION = B17; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_p[3] }	{ LOCATION = F15; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment	{ I_data_lp_n[3] }	{ LOCATION = F14; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+
+
+set_pin_assignment	{ O_clk_hs_p }	{ LOCATION = E16; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; }
+set_pin_assignment	{ O_clk_lp_n }	{ LOCATION = B13; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; SLEWRATE = FAST; }
+set_pin_assignment	{ O_clk_lp_p }	{ LOCATION = A13; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; SLEWRATE = FAST; }
+
+set_pin_assignment	{ O_data_hs_p[0] }	{ LOCATION = F18; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; }
+set_pin_assignment	{ O_data_hs_p[1] }	{ LOCATION = K16; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; }
+set_pin_assignment	{ O_data_hs_p[2] }	{ LOCATION = D17; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; }
+set_pin_assignment	{ O_data_hs_p[3] }	{ LOCATION = J17; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; }
+
+set_pin_assignment	{ O_data_lp_p[0] }	{ LOCATION = G14; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_n[0] }	{ LOCATION = G13; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_p[1] }	{ LOCATION = H14; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_n[1] }	{ LOCATION = J14; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_p[2] }	{ LOCATION = D18; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_n[2] }	{ LOCATION = E18; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_p[3] }	{ LOCATION = J15; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_n[3] }	{ LOCATION = K15; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+
+
+
+
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

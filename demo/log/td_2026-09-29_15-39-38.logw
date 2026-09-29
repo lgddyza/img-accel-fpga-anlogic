@@ -1,0 +1,1 @@
+HDL-8007 ERROR: cannot find port 'O_iic_error' on this module in uisrc/01_rtl/system_top.v(371)

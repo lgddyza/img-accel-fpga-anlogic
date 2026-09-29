@@ -1,0 +1,37 @@
+============================================================
+   BitWriter, V1.3.154147
+   Copyright (c) 2012-2025 Anlogic Inc.
+   Executable = E:/Anlogic/TD_6.2.1_Release_6.2.175.876/bin/bw.exe
+   Built at =   14:02:29 Nov  5 2025
+   Run by =     Administrator
+   Run Date =   Mon Nov 17 19:22:31 2025
+
+   Run on =     BF-202403070915
+============================================================
+RUN-1002 : start command "connect_cable -allink"
+RUN-1002 : start command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0"
+PRG-2014 : Chip validation success: PH1A90
+RUN-1003 : finish command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0" in  7.813516s wall, 0.093750s user + 0.046875s system = 0.140625s CPU (1.8%)
+
+RUN-1004 : used memory is 125 MB, reserved memory is 97 MB, peak memory is 261 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0"
+PRG-2014 : Chip validation success: PH1A90
+RUN-1003 : finish command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0" in  7.833794s wall, 0.140625s user + 0.062500s system = 0.203125s CPU (2.6%)
+
+RUN-1004 : used memory is 127 MB, reserved memory is 99 MB, peak memory is 261 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit ..\IM415_720P\fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0"
+PRG-2014 : Chip validation success: PH1A90
+RUN-1003 : finish command "download -bit ..\IM415_720P\fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0" in  7.987509s wall, 0.296875s user + 0.140625s system = 0.437500s CPU (5.5%)
+
+RUN-1004 : used memory is 126 MB, reserved memory is 98 MB, peak memory is 263 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0"
+PRG-2014 : Chip validation success: PH1A90
+RUN-1003 : finish command "download -bit fpga_prj_Runs\phy_1\fpga_prj_compress.bit -mode jtag -spd 7 -cable 0" in  7.869105s wall, 0.359375s user + 0.062500s system = 0.421875s CPU (5.4%)
+
+RUN-1004 : used memory is 127 MB, reserved memory is 100 MB, peak memory is 263 MB
+GUI-1001 : Downloading succeeded!
+RUN-1002 : start command "connect_cable -allink"
+RUN-1002 : start command "connect_cable -allink"
