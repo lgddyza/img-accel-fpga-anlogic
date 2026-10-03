@@ -2,30 +2,30 @@
 | QoR metrics               |         value               |
 -----------------------------------------------------------
 | Timing                    |                             |
-|     Setup WNS             |         1040                |
+|     Setup WNS             |         1046                |
 |     Setup TNS             |            0                |
 |     Num of violated S-EP  |            0                |
-|     FMAX                  |    81.347MHz                |
+|     FMAX                  |    81.387MHz                |
 |     SWNS path clock period|      13333ps                |
 -----------------------------------------------------------
 | Routing Resource          |                             |
-|     Wire length           |      3344633                |
-|     Route Net Num         |        41713                |
+|     Wire length           |      3589879                |
+|     Route Net Num         |        45256                |
 -----------------------------------------------------------
 | Utilization               |                             |
-|     #slices               |        21809                |
-|     slices percentage     |       33.91%                |
-|     #RAMs                 |          112                |
+|     #slices               |        24503                |
+|     slices percentage     |       38.10%                |
+|     #RAMs                 |          120                |
 |     #DSPs                 |           36                |
-|     #DRAMHARDCON          |          113                |
+|     #DRAMHARDCON          |          273                |
 -----------------------------------------------------------
 | Congestion                |                             |
-|     Top 1% tile util      |           64                |
-|     Top 1% tile avg util  |       71.82%                |
-|     Over 100% util #tile  |            0                |
+|     Top 1% tile util      |           65                |
+|     Top 1% tile avg util  |       71.40%                |
+|     Over 100% util #tile  |            1                |
 |     Max level             |            0                |
 |     Total Congo Region    |            0                |
-|     Window                |  [ 56  72] - [ 56  73]      |
+|     Window                |  [ 24 101] - [ 24 102]      |
 -----------------------------------------------------------
 Report place stage QoR done.
 

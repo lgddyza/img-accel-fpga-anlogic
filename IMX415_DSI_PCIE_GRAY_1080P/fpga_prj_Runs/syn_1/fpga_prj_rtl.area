@@ -8,31 +8,31 @@ IO Statistics
   #inout                   23
 
 Gate Statistics
-#Basic gates            44138
-  #and                   4686
+#Basic gates            46205
+  #and                   5324
   #nand                     0
-  #or                    2004
+  #or                    2431
   #nor                      0
-  #xor                    651
+  #xor                    652
   #xnor                     0
   #buf                      0
-  #not                   3122
+  #not                   3147
   #bufif1                   5
-  #MX21                  5395
+  #MX21                  5452
   #FADD                     0
-  #DFF                  28275
+  #DFF                  29194
   #LATCH                    0
-#MACRO_ADD                843
-#MACRO_EQ                 677
+#MACRO_ADD                902
+#MACRO_EQ                 697
 #MACRO_MULT                45
-#MACRO_MUX              13591
+#MACRO_MUX              14005
 #MACRO_OTHERS              31
 
 Report Hierarchy Area:
 +--------------------------------------------------------------------------------------------------------------------------------------------+
 |Instance                                                            |Module                                         |gates  |seq    |macros |
 +--------------------------------------------------------------------------------------------------------------------------------------------+
-|top                                                                 |system_top                                     |15863  |28275  |1596   |
+|top                                                                 |system_top                                     |17011  |29194  |1675   |
 |  X_mipi_dphy_rx_over_lvds_wrapper                                  |mipi_dphy_rx_over_lvds_wrapper                 |243    |529    |76     |
 |    u_hs_rx_wrapper                                                 |hs_rx_wrapper                                  |243    |529    |76     |
 |      MIPI_DATA_LANE_GEN[0]$u_data_lane_rx_wrapper                  |data_lane_rx_wrapper                           |51     |92     |19     |
@@ -280,12 +280,15 @@ Report Hierarchy Area:
 |      u_hs_tx_controler                                             |hs_tx_controler                                |34     |13     |5      |
 |    u_lp_tx_wrapper                                                 |lp_tx_wrapper                                  |36     |97     |16     |
 |      u_dphy_tx_fifo                                                |dphy_tx_fifo                                   |2      |18     |5      |
-|  u_pcie_gray                                                       |pcie_gray_endpoint                             |6422   |17019  |681    |
+|  u_pcie_gray                                                       |pcie_gray_endpoint                             |7570   |17938  |760    |
 |    u_isp_tap                                                       |isp_gray_1080p_cdc                             |494    |738    |43     |
 |      u_gray_fifo                                                   |demo_async_sfifo                               |38     |225    |6      |
 |        ram_inst                                                    |ram_infer_0322d65db018                         |0      |131    |0      |
 |        rd_to_wr_cross_inst                                         |fifo_cross_domain_addr_process_al_0322d65db018 |16     |36     |0      |
 |        wr_to_rd_cross_inst                                         |fifo_cross_domain_addr_process_al_0322d65db018 |16     |36     |0      |
+|    u_preproc                                                       |gray_preprocess4                               |1113   |911    |78     |
+|      u_gauss                                                       |gray_gauss4                                    |28     |356    |51     |
+|      u_hist                                                        |gray_hist4                                     |1084   |518    |27     |
 |    u_sgdma_pll                                                     |sgdma_pll                                      |0      |0      |1      |
 |    u_sgdma_subsys                                                  |sgdma_subsys                                   |5815   |16158  |632    |
 |      DEVICE_IS_PH1A$u_ph1a_if_ep                                   |al_pcie_if_ep                                  |1156   |4787   |127    |

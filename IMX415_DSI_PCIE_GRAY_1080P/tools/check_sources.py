@@ -71,6 +71,14 @@ def main():
         "TD project name must match the .al filename"
     paths = [f.attrib["Path"] for f in project.findall("./Source_Files/*/File")]
     assert len(paths) == len(set(paths)), "Duplicate project source path"
+    required_preproc_sources = {
+        "uisrc/01_rtl/gray_gauss4.v",
+        "uisrc/01_rtl/gray_hist4.v",
+        "uisrc/01_rtl/gray_preprocess4.v",
+    }
+    missing_preproc_sources = required_preproc_sources - set(paths)
+    assert not missing_preproc_sources, \
+        f"Preprocessing RTL missing from TD project: {sorted(missing_preproc_sources)}"
     for path in paths:
         project_path = Path(path)
         assert not project_path.is_absolute() and ".." not in project_path.parts, \
@@ -78,6 +86,7 @@ def main():
         assert (ROOT / path).is_file(), f"Missing project source: {path}"
     assert project.findtext("./TOP_MODULE/MODULE") == "system_top"
     print(f"PASS manifest: {len(paths)} source/IP/constraint files exist")
+    print("PASS TD project registers all preprocessing RTL exactly once")
 
     fresh = sorted((ROOT / "uisrc/01_rtl").glob("*.v"))
     files = fresh + [

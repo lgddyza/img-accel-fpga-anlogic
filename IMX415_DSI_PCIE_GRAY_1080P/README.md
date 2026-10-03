@@ -1,5 +1,71 @@
 # IMX415 dual display: grayscale DSI + 1080p GREY PCIe/HDMI
 
+## 2026-10-02 preprocessing candidate
+
+**Board test status:** The first candidate produced black frames in `he` (2)
+and `all` (3) because each histogram ERAM bin was read and cleared on the same
+clock. The fixed source uses separate read and clear states. After programming
+the fixed candidate, all four modes delivered complete nonzero frames; modes 2
+and 3 covered the full 0..255 output range. The RK HDMI viewer runs mode 3 at
+60 FPS with Gaussian padding overrun 0. The fixed candidate is
+`tools/preproc_histfix_candidate.bit` in the workspace project (SHA-256
+`1B3D098174ABD828B4B0E521243B0E314FB1A0A70C772B38E0D9581B34B64507`).
+Its routed utilization is 23,741/64,320 slice, 117/272 ERAM and 36/240 DSP;
+setup WNS is +0.573 ns and hold WNS is +0.020 ns.
+
+The TD GUI project now registers `gray_gauss4.v`, `gray_hist4.v`, and
+`gray_preprocess4.v` directly in `fpga_prj.al`. This is required for the GUI
+synthesis run; an earlier project save omitted them and reported
+`gray_preprocess4 is a black box`. The official TD 2026.1 SP2 GUI `syn_1`
+DefaultFlow passed from the corrected project on 2026-10-03 with setup WNS
++0.513 ns, TNS 0, 117 ERAM, 36 DSP, and no timing or area check failures.
+Reload the project in an already-open TD GUI before launching synthesis so its
+in-memory source list is refreshed.
+
+The FPGA source now has a 1920x1080, four-pixel-per-clock preprocessing chain
+on the PCIe/HDMI path: BT.601 grayscale -> 3x3 Gaussian -> histogram
+equalization. These are cascaded stages that operate concurrently on different
+pixels. The DSI path remains the camera grayscale reference. Gaussian and
+equalization can be bypassed independently through PCIe user BAR offset
+`0xA4`: bit 0 enables Gaussian, bit 1 enables equalization. Reset value is
+`3`; each frame latches the mode at its input SOF. Offset `0xA8` bit 0 reports
+a sticky Gaussian line-padding overrun. Histogram equalization applies the
+previous complete frame's CDF-min mapping to the current frame; the first
+frame uses an identity mapping. The PCIe payload remains ABI 5 GREY8 at
+2,073,600 bytes/frame so the current RK3576 display driver can continue to
+receive it.
+
+The existing `fpga_prj_Runs/best_result/fpga_prj.bit` remains the earlier
+dual-display rollback bitstream. The user programmed the first preprocessing
+candidate; its BAR behavior matches the new register map. The bit file itself
+has not been read back from the FPGA for a hash comparison.
+The candidate does not yet implement compression or compressed transmission.
+Independent TD place/route and bit generation completed: 23,650/64,320 slice,
+117/272 ERAM, 36/240 DSP, setup WNS +0.692 ns, hold WNS +0.020 ns. The
+first candidate bit is `tools/preproc_candidate.bit` in the workspace project
+(SHA-256 `325D3E58C8FF9A8A54D77B6407B03802A2EECF0F13640819B34CE4915A3C6444`).
+TD still flags the inherited PCIe IP PLL frequency mismatch (requested
+62.5 MHz, actual 125 MHz); board verification remains required.
+Simulation benches are under `sim/tb_gray_*.v`; independent TD synthesis and
+route scripts are under `tools/td_preproc_*.tcl` and write reports under
+`tools/preproc_*` without changing the board-verified bitstream.
+
+On the RK3576, `sudo python3 deploy/preproc_mode.py status` reads the mode and
+overrun flag. `sudo python3 deploy/preproc_mode.py gray|gauss|he|all` switches
+the PCIe/HDMI path at the next camera frame. Use this only with the new bit;
+the utility probes the writable register before changing modes. For the fixed
+bit's board test, keep camera exposure and scene fixed, capture one complete GREY8
+frame in `gray`, `gauss`, and `all` modes, and compare line/frame integrity,
+mean brightness, and edge/noise detail. Watch `0xA8`, DMA short-frame errors,
+and sink FPS for five minutes. A nonzero overrun means vertical blanking did
+not fit the Gaussian final-row flush, so the line buffering must be revised
+before relying on the output. Wait at least two complete frames after a mode
+change before comparing equalized images, because the LUT learns the prior
+frame. Record the bit hash and all measurements.
+
+The dated notes below record earlier experiments. Their register maps and
+source status do not supersede the preprocessing candidate described here.
+
 Open `fpga_prj.al` in Anlogic TD. Top module: `system_top`; target:
 PH1A90SEG324-2. This is an independent copy of the previously routed
 `IMX415_DSI_PCIE_GRAY` project. Do not use the older
@@ -13,7 +79,8 @@ output. The user synthesized and programmed this new two-output source on
 IMX415 RAW10 -> correction/ISP RGB888 (1920x1080, four pixels/clock)
                   +-> BT.601 luma -> RGB gray 8:15 downscale -> DDR 1024x576 -> 1024x600 DSI
                   |                                      (12 black rows top/bottom)
-                  +-> BT.601 luma -> async FIFO -> SGDMA C2H
+                  +-> BT.601 luma -> 3x3 Gaussian -> frame histogram equalization
+                                   -> async FIFO -> SGDMA C2H
                                                                 -> RK3576 HDMI
 ```
 

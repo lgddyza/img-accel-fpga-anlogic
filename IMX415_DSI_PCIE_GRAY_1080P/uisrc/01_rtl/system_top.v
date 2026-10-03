@@ -1208,6 +1208,7 @@ module pcie_gray_endpoint (
     );
 
     reg enable,soft_reset;
+    reg [1:0] preproc_mode;
     reg aw_pending,w_pending;
     reg [31:0] aw_hold,w_hold;
     reg [3:0] strb_hold;
@@ -1216,7 +1217,8 @@ module pcie_gray_endpoint (
     assign arready=!rvalid;
     always @(posedge user_clk or negedge user_rst_n) begin
         if(!user_rst_n) begin
-            enable<=0;soft_reset<=0;aw_pending<=0;w_pending<=0;bvalid<=0;
+            enable<=0;soft_reset<=0;preproc_mode<=2'b11;
+            aw_pending<=0;w_pending<=0;bvalid<=0;
             aw_hold<=0;w_hold<=0;strb_hold<=0;
         end else begin
             soft_reset<=0;
@@ -1228,6 +1230,8 @@ module pcie_gray_endpoint (
                 if(aw_hold[15:0]==16'h0060 && strb_hold[0]) begin
                     enable<=w_hold[0];soft_reset<=w_hold[1];
                 end
+                if(aw_hold[15:0]==16'h00a4 && strb_hold[0])
+                    preproc_mode<=w_hold[1:0];
             end
         end
     end
@@ -1242,10 +1246,37 @@ module pcie_gray_endpoint (
     wire stream_valid;
     wire [31:0] capture_frames,capture_errors;
     wire [31:0] pass_count,drop_count,delivered_count;
+    reg [1:0] preproc_mode_meta,preproc_mode_cam;
+    always @(posedge cam_clk or negedge cam_rst_n) begin
+        if(!cam_rst_n) begin
+            preproc_mode_meta<=2'b11;
+            preproc_mode_cam<=2'b11;
+        end else begin
+            preproc_mode_meta<=preproc_mode;
+            preproc_mode_cam<=preproc_mode_meta;
+        end
+    end
+    wire [127:0] processed_rgb;
+    wire processed_valid,processed_sof,processed_eol;
+    wire gauss_overrun;
+    wire [31:0] hist_frames,hist_errors;
+    gray_preprocess4 u_preproc (
+        .clk(cam_clk),.rst_n(cam_rst_n),
+        .s_rgb(isp_data),.s_valid(isp_valid),
+        .s_sof(isp_sof),.s_eol(isp_eol),.mode(preproc_mode_cam),
+        .m_rgb_gray(processed_rgb),.m_valid(processed_valid),
+        .m_sof(processed_sof),.m_eol(processed_eol),
+        .gauss_overrun(gauss_overrun),
+        .hist_frames(hist_frames),.hist_errors(hist_errors)
+    );
+    (* ASYNC_REG = "TRUE" *) reg [1:0] gauss_overrun_sync;
+    always @(posedge user_clk or negedge user_rst_n)
+        if(!user_rst_n) gauss_overrun_sync<=0;
+        else gauss_overrun_sync<={gauss_overrun_sync[0],gauss_overrun};
     isp_gray_1080p_cdc u_isp_tap (
         .cam_clk(cam_clk),.cam_rst_n(cam_rst_n),
-        .s_tdata(isp_data),.s_tvalid(isp_valid),
-        .s_tuser(isp_sof),.s_tlast(isp_eol),
+        .s_tdata(processed_rgb),.s_tvalid(processed_valid),
+        .s_tuser(processed_sof),.s_tlast(processed_eol),
         .user_clk(user_clk),.user_rst_n(pipeline_rst_n),
         .enable(enable && link_up),.dma_ready(c2h_ready),
         .m_tdata(c2h_data),.m_tvalid(c2h_valid),
@@ -1296,6 +1327,8 @@ module pcie_gray_endpoint (
                     16'h0094: rdata<=capture_errors;
                     16'h009c: rdata<=drop_count;
                     16'h00a0: rdata<=pass_count;
+                    16'h00a4: rdata<={30'd0,preproc_mode};
+                    16'h00a8: rdata<={31'd0,gauss_overrun_sync[1]};
                     default: rdata<=0;
                 endcase
             end

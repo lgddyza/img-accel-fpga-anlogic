@@ -64,6 +64,30 @@
                     <Attr Name="CompileOrder" Val="3"/>
                 </FileInfo>
             </File>
+            <File Path="uisrc/01_rtl/gray_gauss4.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="84"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/gray_hist4.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="85"/>
+                </FileInfo>
+            </File>
+            <File Path="uisrc/01_rtl/gray_preprocess4.v">
+                <FileInfo>
+                    <Attr Name="UsedInSyn" Val="true"/>
+                    <Attr Name="UsedInP&R" Val="true"/>
+                    <Attr Name="BelongTo" Val="design_1"/>
+                    <Attr Name="CompileOrder" Val="86"/>
+                </FileInfo>
+            </File>
             <File Path="uisrc/03_ip/vid_pipeline/axis_stream_fifo.v">
                 <FileInfo>
                     <Attr Name="AutoExcluded" Val="true"/>
