@@ -1,0 +1,4 @@
+Peaceinlife
+21093
+53960
+E:\FPGA\workspace\IMX415_DSI_PCIE_JPEG_1080P_60FPS\.lock.f

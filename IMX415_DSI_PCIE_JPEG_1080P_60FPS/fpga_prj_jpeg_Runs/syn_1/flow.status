@@ -1,0 +1,23 @@
+Location         : E:\FPGA\workspace\IMX415_DSI_PCIE_JPEG_1080P_60FPS\fpga_prj_jpeg_Runs\syn_1
+Running with     : Tang Dynasty Release_2026.1_SP2
+                   Copyright (c) 2012-2026 Anlogic Inc.
+Top Model        : system_top
+Device           : PH1A90SEG324
+Speed            : 2
+
+Timing Mode      : basic
+Setup            : WNS -1166ps  TNS  -108240ps  NUM_FEPS   286
+Hold             : WNS 2147483647ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+---------------------------------------------------------------------------------------------------
+     command     |  #calls  |  wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+---------------------------------------------------------------------------------------------------
+  optimize_gate  |    1     |  3m55s(57%)  |   233(57%)    |       3319        |       3323        
+  optimize_rtl   |    1     |  2m50s(41%)  |   168(41%)    |       2597        |       3057        
+  import_device  |    1     |    4s(0%)    |     2(0%)     |        970        |       1014        
+    read_adc     |    3     |    0s(0%)    |     0(0%)     |       1906        |       1906        
+    read_sdc     |    3     |    0s(0%)    |     0(0%)     |       1906        |       1906        
+---------------------------------------------------------------------------------------------------
+      total      |    9     |    6m49s     |      403      |       3319        |       3323        
+---------------------------------------------------------------------------------------------------

@@ -382,3 +382,31 @@ The observed short packet was 1,056,768 instead of 2,073,600 bytes about
 every 17.07 seconds. Over one 18-second interval BAR capture frames advanced
 1080, while the FPGA tap error count increased by 2 and drop count by 1,
 placing this residual fault upstream of RK color conversion and KMS display.
+
+## RK temporal stabilization for mode-3 HDMI, 2026-10-03
+
+The user reported visible rapid brightness flicker on HDMI while the DSI
+camera picture stayed stable. Twenty complete GREY8 frames in FPGA mode 3
+alternated between about 139.5 and 111.4 average levels; with histogram
+equalization bypassed but Gaussian filtering retained (mode 1), they
+alternated by 4.92 levels. The HDMI link and viewer kept approximately 60
+FPS, so the mode-3 framewise histogram LUT amplified an existing two-state
+variation rather than the HDMI sink creating it.
+
+`deploy/rk_temporal_gray.c` is a GREY8 GStreamer filter placed between
+`capssetter` and `videoconvert`. Each frame's 10th, 50th, and 90th
+percentiles map to a slowly updated reference curve, followed by a small
+whole-frame mean correction. This operates in place, retains all frames, and
+preserves the wide contrast produced by the FPGA equalizer. Build on RK with
+`sh deploy/build_rk_temporal_gray.sh`; `deploy/show_gray_hdmi.sh` builds
+it automatically if needed. Set `HDMI_TEMPORAL=0` when starting the viewer
+to bypass the filter for comparison.
+
+On the same 20 mode-3 frames, adjacent sampled mean jump fell from 28.19 to
+0.76 GREY levels (97.3% lower), with 20 complete output frames. Eight captured
+HDMI sink inputs were complete 1920x1080 RGBx frames and had a 1.18-level
+adjacent sampled mean jump. Over 111 seconds of live display after startup,
+mean sink rate was 59.69 FPS; 105 seconds reached at least 59 FPS, with three
+seconds below 58 FPS. The user confirmed the visible flicker had markedly
+decreased. The board was left running mode 3 with the RK filter enabled.
+See `BOARD_TEST_RK_TEMPORAL_20261003.md` for exact test conditions.

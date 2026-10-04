@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 from pathlib import Path
 import zlib
@@ -15,7 +16,7 @@ WIDTH = 640
 HEIGHT = 360
 FRAME_COUNT = 3
 ROOT = Path(__file__).resolve().parents[1]
-INPUT_DIR = ROOT / "captures" / "comparison_20261003"
+DEFAULT_INPUT_DIR = ROOT / "captures" / "comparison_20261003"
 FONT_PATH = Path("C:/Windows/Fonts/arial.ttf")
 
 
@@ -25,8 +26,8 @@ def font(size: int) -> ImageFont.FreeTypeFont | ImageFont.ImageFont:
     return ImageFont.load_default()
 
 
-def load_frame(kind: str, index: int) -> np.ndarray:
-    payload = zlib.decompress((INPUT_DIR / f"{kind}_{index}.zlib").read_bytes())
+def load_frame(input_dir: Path, kind: str, index: int) -> np.ndarray:
+    payload = zlib.decompress((input_dir / f"{kind}_{index}.zlib").read_bytes())
     expected = WIDTH * HEIGHT
     if len(payload) != expected:
         raise ValueError(f"{kind}_{index}: expected {expected} bytes, got {len(payload)}")
@@ -79,8 +80,12 @@ def draw_histogram(draw: ImageDraw.ImageDraw, box: tuple[int, int, int, int],
 
 
 def main() -> None:
-    before = [load_frame("before", i) for i in range(FRAME_COUNT)]
-    after = [load_frame("after", i) for i in range(FRAME_COUNT)]
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--input-dir", type=Path, default=DEFAULT_INPUT_DIR)
+    args = parser.parse_args()
+    input_dir = args.input_dir.resolve()
+    before = [load_frame(input_dir, "before", i) for i in range(FRAME_COUNT)]
+    after = [load_frame(input_dir, "after", i) for i in range(FRAME_COUNT)]
     stats = {
         "capture": {
             "preview_resolution": [WIDTH, HEIGHT],
@@ -100,8 +105,8 @@ def main() -> None:
             "before": before_metrics,
             "after": after_metrics,
         })
-        Image.fromarray(raw, mode="L").save(INPUT_DIR / f"before_{index}.png")
-        Image.fromarray(processed, mode="L").save(INPUT_DIR / f"after_{index}.png")
+        Image.fromarray(raw, mode="L").save(input_dir / f"before_{index}.png")
+        Image.fromarray(processed, mode="L").save(input_dir / f"after_{index}.png")
 
     metric_names = ("stddev", "dynamic_p05_p95", "entropy_bits", "edge_mean",
                     "black_pct", "white_pct")
@@ -141,9 +146,9 @@ def main() -> None:
                   fill="white", font=font(17))
         draw_histogram(draw, (x_hist, y, x_hist + hist_width, y + HEIGHT), raw, processed)
 
-    comparison_path = INPUT_DIR / "before_after_comparison.png"
+    comparison_path = input_dir / "before_after_comparison.png"
     canvas.save(comparison_path, quality=95)
-    (INPUT_DIR / "comparison_stats.json").write_text(
+    (input_dir / "comparison_stats.json").write_text(
         json.dumps(stats, indent=2, ensure_ascii=True) + "\n", encoding="utf-8"
     )
     print(comparison_path)

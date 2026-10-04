@@ -29,4 +29,11 @@ if [ ! -f "$script_dir/libgstrkfastosd.so" ] && command -v cc >/dev/null 2>&1; t
     sh "$script_dir/build_rk_fast_osd.sh" || \
         echo 'Fast status overlay unavailable; using the standard text overlay.' >&2
 fi
+if [ "${HDMI_TEMPORAL:-1}" != 0 ] &&
+   [ ! -f "$script_dir/libgstrktemporalgray.so" ]; then
+    sh "$script_dir/build_rk_temporal_gray.sh" || {
+        echo 'Temporal GREY stabilizer could not be built; set HDMI_TEMPORAL=0 to bypass it.' >&2
+        exit 1
+    }
+fi
 exec python3 "$script_dir/show_gray_hdmi.py" "$video_device" "$connector"
