@@ -3,6 +3,13 @@
 #include <gst/video/video.h>
 #include <stdio.h>
 #include <string.h>
+#include <fcntl.h>
+#include <stdint.h>
+#include <sys/mman.h>
+#include <unistd.h>
+
+#define BAR_PATH "/sys/bus/pci/devices/0000:21:00.0/resource0"
+#define CONTROL_ABI 0x4a435431u
 
 #define PACKAGE "rkfastosd"
 
@@ -12,6 +19,10 @@ typedef struct {
     gint64 second_start;
     guint frames_this_second;
     double fps;
+    void *bar;
+    int bar_fd;
+    unsigned int quality;
+    gboolean quality_valid;
 } GstRkFastOsd;
 
 typedef struct {
@@ -50,12 +61,14 @@ static void glyph(char c, unsigned char out[7]) {
     static const unsigned char x[7] = {0,17,10,4,10,17,0};
     static const unsigned char colon[7] = {0,4,4,0,4,4,0};
     static const unsigned char point[7] = {0,0,0,0,0,4,4};
+    static const unsigned char q[7] = {14,17,17,17,21,18,13};
     const unsigned char *rows = NULL;
     switch(c) {
     case 'H': rows=h; break; case 'D': rows=d; break;
     case 'M': rows=m; break; case 'I': rows=i; break;
     case 'F': rows=f; break; case 'P': rows=p; break;
     case 'S': rows=s; break; case 'x': rows=x; break;
+    case 'Q': rows=q; break;
     case ':': rows=colon; break; case '.': rows=point; break;
     default: memset(out, 0, 7); return;
     }
@@ -77,7 +90,18 @@ static GstFlowReturn transform_ip(GstBaseTransform *base, GstBuffer *buffer) {
                     (double)(now - self->second_start);
         self->frames_this_second = 0;
         self->second_start = now;
-        g_print("HDMI 1920x1080 FPS:%.1f\n", self->fps);
+        if(self->bar != MAP_FAILED) {
+            volatile const uint32_t *regs = (volatile const uint32_t *)self->bar;
+            uint32_t applied = regs[0xf8 / 4];
+            self->quality_valid = (regs[0xfc / 4] == CONTROL_ABI) &&
+                                  ((applied & 0x80u) != 0);
+            self->quality = applied & 0x7fu;
+        }
+        if(self->quality_valid)
+            g_print("HDMI 1920x1080 FPS:%.1f QF:%u\n",
+                    self->fps, self->quality);
+        else
+            g_print("HDMI 1920x1080 FPS:%.1f\n", self->fps);
     }
 
     GstVideoFrame frame;
@@ -87,18 +111,22 @@ static GstFlowReturn transform_ip(GstBaseTransform *base, GstBuffer *buffer) {
     int stride = GST_VIDEO_FRAME_PLANE_STRIDE(&frame, 0);
     int width = GST_VIDEO_FRAME_WIDTH(&frame);
     int height = GST_VIDEO_FRAME_HEIGHT(&frame);
-    if(width >= 380 && height >= 60) {
+    if(width >= 450 && height >= 60) {
         char label[80];
-        snprintf(label, sizeof(label), "HDMI 1920x1080 FPS:%.1f", self->fps);
+        if(self->quality_valid)
+            snprintf(label, sizeof(label), "HDMI 1920x1080 FPS:%.1f QF:%u",
+                     self->fps, self->quality);
+        else
+            snprintf(label, sizeof(label), "HDMI 1920x1080 FPS:%.1f", self->fps);
         /* Draw a small opaque panel and 2x white bitmap glyphs. */
         for(int y=16; y<48; ++y) {
             unsigned char *row = data + y*stride + 16*4;
-            for(int x=16; x<360; ++x, row+=4) {
+            for(int x=16; x<440; ++x, row+=4) {
                 row[0]=16; row[1]=40; row[2]=64; row[3]=255;
             }
         }
         int x0=24;
-        for(const char *p=label; *p && x0<350; ++p, x0+=12) {
+        for(const char *p=label; *p && x0<430; ++p, x0+=12) {
             unsigned char rows[7];
             glyph(*p, rows);
             for(int gy=0; gy<7; ++gy)
@@ -117,7 +145,10 @@ static GstFlowReturn transform_ip(GstBaseTransform *base, GstBuffer *buffer) {
     return GST_FLOW_OK;
 }
 
+static void gst_rk_fast_osd_finalize(GObject *object);
+
 static void gst_rk_fast_osd_class_init(GstRkFastOsdClass *klass) {
+    GObjectClass *object_class = G_OBJECT_CLASS(klass);
     GstElementClass *element = GST_ELEMENT_CLASS(klass);
     GstBaseTransformClass *transform = GST_BASE_TRANSFORM_CLASS(klass);
     gst_element_class_set_static_metadata(element, "RK fast HDMI OSD",
@@ -126,13 +157,25 @@ static void gst_rk_fast_osd_class_init(GstRkFastOsdClass *klass) {
     gst_element_class_add_static_pad_template(element, &src_template);
     transform->set_caps = set_caps;
     transform->transform_ip = transform_ip;
+    object_class->finalize = gst_rk_fast_osd_finalize;
 }
 
 static void gst_rk_fast_osd_init(GstRkFastOsd *self) {
     self->second_start = 0;
     self->frames_this_second = 0;
     self->fps = 0;
+    self->bar_fd = open(BAR_PATH, O_RDWR | O_SYNC);
+    self->bar = self->bar_fd >= 0 ? mmap(NULL, 4096, PROT_READ | PROT_WRITE,
+                                         MAP_SHARED, self->bar_fd, 0) : MAP_FAILED;
+    self->quality_valid = FALSE;
     gst_base_transform_set_in_place(GST_BASE_TRANSFORM(self), TRUE);
+}
+
+static void gst_rk_fast_osd_finalize(GObject *object) {
+    GstRkFastOsd *self = (GstRkFastOsd *)object;
+    if(self->bar != MAP_FAILED) munmap(self->bar, 4096);
+    if(self->bar_fd >= 0) close(self->bar_fd);
+    G_OBJECT_CLASS(gst_rk_fast_osd_parent_class)->finalize(object);
 }
 
 static gboolean plugin_init(GstPlugin *plugin) {

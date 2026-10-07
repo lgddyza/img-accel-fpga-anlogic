@@ -9,7 +9,7 @@ module tb_gray_hist4_1080p;
     wire ov,os,oe,lut_active;
     wire [31:0] frames,errors;
     integer tx,ty,frame,seen=0;
-    gray_hist4 dut (
+    gray_hist4 #(.LUT_IIR_SHIFT(2)) dut (
         .clk(clk),.rst_n(rst_n),.s_gray(data),.s_valid(valid),
         .s_sof(sof),.s_eol(eol),.enable(1'b1),
         .m_gray(result),.m_valid(ov),.m_sof(os),.m_eol(oe),
@@ -21,7 +21,7 @@ module tb_gray_hist4_1080p;
         if (seen < B*H) begin
             if (result !== {8'd192,8'd128,8'd64,8'd16})
                 $fatal(1,"first frame beat %0d got %h",seen,result);
-        end else if (result !== {8'd255,8'd170,8'd85,8'd0})
+        end else if (result !== {8'd208,8'd139,8'd69,8'd12})
             $fatal(1,"equalized beat %0d got %h",seen,result);
         seen=seen+1;
     end
@@ -41,7 +41,7 @@ module tb_gray_hist4_1080p;
         end
         if (seen!=2*B*H || frames!=2 || errors!=0)
             $fatal(1,"counts seen=%0d hist=%0d errors=%0d",seen,frames,errors);
-        $display("PASS 1080p four-level equalization, two complete frames");
+        $display("PASS 1080p four-level equalization with LUT IIR, two complete frames");
         $finish;
     end
 endmodule

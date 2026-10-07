@@ -8,31 +8,31 @@ IO Statistics
   #inout                   23
 
 Gate Statistics
-#Basic gates            79696
-  #and                  10589
+#Basic gates            79724
+  #and                  10588
   #nand                     0
-  #or                    6488
+  #or                    6489
   #nor                      0
   #xor                    827
   #xnor                     0
   #buf                      0
-  #not                   4246
+  #not                   4245
   #bufif1                   5
   #MX21                  9258
   #FADD                     0
-  #DFF                  48283
+  #DFF                  48312
   #LATCH                    0
-#MACRO_ADD               1533
-#MACRO_EQ                1029
+#MACRO_ADD               1540
+#MACRO_EQ                1030
 #MACRO_MULT               102
-#MACRO_MUX              24781
+#MACRO_MUX              24856
 #MACRO_OTHERS              32
 
 Report Hierarchy Area:
 +--------------------------------------------------------------------------------------------------------------------------------------------+
 |Instance                                                            |Module                                         |gates  |seq    |macros |
 +--------------------------------------------------------------------------------------------------------------------------------------------+
-|top                                                                 |system_top                                     |31413  |48283  |2696   |
+|top                                                                 |system_top                                     |31412  |48312  |2704   |
 |  X_mipi_dphy_rx_over_lvds_wrapper                                  |mipi_dphy_rx_over_lvds_wrapper                 |243    |529    |76     |
 |    u_hs_rx_wrapper                                                 |hs_rx_wrapper                                  |243    |529    |76     |
 |      MIPI_DATA_LANE_GEN[0]$u_data_lane_rx_wrapper                  |data_lane_rx_wrapper                           |51     |92     |19     |
@@ -280,14 +280,14 @@ Report Hierarchy Area:
 |      u_hs_tx_controler                                             |hs_tx_controler                                |34     |13     |5      |
 |    u_lp_tx_wrapper                                                 |lp_tx_wrapper                                  |36     |97     |16     |
 |      u_dphy_tx_fifo                                                |dphy_tx_fifo                                   |2      |18     |5      |
-|  u_pcie_gray                                                       |pcie_gray_endpoint                             |21803  |37027  |1781   |
+|  u_pcie_gray                                                       |pcie_gray_endpoint                             |21802  |37056  |1789   |
 |    u_isp_tap                                                       |isp_gray_1080p_cdc                             |494    |738    |43     |
 |      u_gray_fifo                                                   |demo_async_sfifo                               |38     |225    |6      |
 |        ram_inst                                                    |ram_infer_0322d65db018                         |0      |131    |0      |
 |        rd_to_wr_cross_inst                                         |fifo_cross_domain_addr_process_al_0322d65db018 |16     |36     |0      |
 |        wr_to_rd_cross_inst                                         |fifo_cross_domain_addr_process_al_0322d65db018 |16     |36     |0      |
 |    u_jpeg_clk_pll                                                  |jpeg_clk_pll                                   |0      |0      |1      |
-|    u_jpeg_tiles                                                    |jpeg_triple_tile_branch                        |7842   |8190   |527    |
+|    u_jpeg_tiles                                                    |jpeg_triple_tile_branch                        |7843   |8211   |528    |
 |      g_tile[0]$u_config                                            |jpeg_axil_config                               |31     |27     |7      |
 |      g_tile[0]$u_encoder                                           |mjpegzero_enc_top                              |2426   |1982   |145    |
 |        u_bitpacker                                                 |bitstream_packer                               |757    |85     |6      |
@@ -358,9 +358,9 @@ Report Hierarchy Area:
 |          rd_to_wr_cross_inst                                       |fifo_cross_domain_addr_process_al_0322d65db018 |12     |28     |0      |
 |          wr_to_rd_cross_inst                                       |fifo_cross_domain_addr_process_al_0322d65db018 |12     |28     |0      |
 |      u_format                                                      |gray4_to_yuyv4                                 |2      |35     |0      |
-|    u_preproc                                                       |gray_preprocess4                               |1113   |911    |78     |
+|    u_preproc                                                       |gray_preprocess4                               |1104   |919    |85     |
 |      u_gauss                                                       |gray_gauss4                                    |28     |356    |51     |
-|      u_hist                                                        |gray_hist4                                     |1084   |518    |27     |
+|      u_hist                                                        |gray_hist4                                     |1075   |526    |34     |
 |    u_sgdma_pll                                                     |sgdma_pll                                      |0      |0      |1      |
 |    u_sgdma_subsys                                                  |sgdma_subsys                                   |12152  |27042  |1120   |
 |      DEVICE_IS_PH1A$u_ph1a_if_ep                                   |al_pcie_if_ep                                  |1158   |4799   |127    |

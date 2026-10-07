@@ -60,7 +60,9 @@ module gray_preprocess4 #(
     wire [31:0] selected4 = frame_mode[0] ? gauss4 : center4;
     wire [31:0] equalized4;
     wire lut_active;
-    gray_hist4 #(.WIDTH(WIDTH),.HEIGHT(HEIGHT)) u_hist (
+    // LUT smoothing runs once per histogram bin in vertical blanking;
+    // the four-pixel camera datapath and its one-cycle HE lookup stay intact.
+    gray_hist4 #(.WIDTH(WIDTH),.HEIGHT(HEIGHT),.LUT_IIR_SHIFT(2)) u_hist (
         .clk(clk),.rst_n(rst_n),.s_gray(selected4),
         .s_valid(gauss_valid),.s_sof(gauss_sof),.s_eol(gauss_eol),
         .enable(frame_mode[1]),

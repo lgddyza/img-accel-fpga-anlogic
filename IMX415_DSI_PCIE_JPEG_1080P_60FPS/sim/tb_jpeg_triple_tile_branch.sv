@@ -53,6 +53,7 @@ module tb_jpeg_triple_tile_branch;
     wire [127:0] a_data,b_data,c_data;
     wire [15:0] a_keep,b_keep,c_keep;
     wire a_valid,b_valid,c_valid,a_last,b_last,c_last,configured,busy,fault;
+    wire [6:0] applied_quality;
     wire [31:0] sent_a,sent_b,sent_c,fault_count,bytes_a,bytes_b,bytes_c;
     reg [7:0] prev_a=0,prev_b=0,prev_c=0;
     reg soi_a=0,soi_b=0,soi_c=0,eoi_a=0,eoi_b=0,eoi_c=0;
@@ -84,7 +85,8 @@ module tb_jpeg_triple_tile_branch;
         .b_valid(b_valid),.b_last(b_last),.c_data(c_data),
         .c_keep(c_keep),.c_valid(c_valid),.c_last(c_last),
         .status_configured(configured),.status_busy(busy),
-        .status_fault(fault),.sent_a(sent_a),.sent_b(sent_b),.sent_c(sent_c),
+        .status_fault(fault),.status_quality(applied_quality),
+        .sent_a(sent_a),.sent_b(sent_b),.sent_c(sent_c),
         .fault_count(fault_count),.bytes_a(bytes_a),.bytes_b(bytes_b),.bytes_c(bytes_c)
     );
     initial begin
@@ -147,6 +149,8 @@ module tb_jpeg_triple_tile_branch;
         repeat(10) @(negedge user_clk);
         rst_n=1;
         wait(configured);
+        if(applied_quality!=TEST_QUALITY)
+            $fatal(1,"unexpected applied quality %0d",applied_quality);
         repeat(20) @(negedge cam_clk);
         for(y=0;y<TEST_HEIGHT;y=y+1) begin
             for(x=0;x<TEST_WIDTH/4;x=x+1) begin

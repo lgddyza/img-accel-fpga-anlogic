@@ -2,27 +2,30 @@
 | QoR metrics               |         value               |
 -----------------------------------------------------------
 | Timing                    |                             |
-|     Setup WNS             |          949                |
+|     Setup WNS             |         1023                |
 |     Setup TNS             |            0                |
 |     Num of violated S-EP  |            0                |
-|     FMAX                  |    80.749MHz                |
-|     SWNS path clock period|      13333ps                |
+|     FMAX                  |   251.446MHz                |
+|     SWNS path clock period|       5000ps                |
 -----------------------------------------------------------
 | Routing Resource          |                             |
-|     Wire length           |      6134051                |
-|     Route Net Num         |        73960                |
+|     Wire length           |      6200849                |
+|     Route Net Num         |        74011                |
 -----------------------------------------------------------
 | Utilization               |                             |
-|     #slices               |        40382                |
-|     slices percentage     |       62.78%                |
+|     #slices               |        40351                |
+|     slices percentage     |       62.73%                |
 |     #RAMs                 |          253                |
 |     #DSPs                 |           93                |
-|     #DRAMHARDCON          |          402                |
+|     #DRAMHARDCON          |          406                |
 -----------------------------------------------------------
 | Congestion                |                             |
 |     Top 1% tile util      |           71                |
-|     Top 1% tile avg util  |       77.14%                |
+|     Top 1% tile avg util  |       77.90%                |
 |     Over 100% util #tile  |            1                |
+|     Max level             |            1                |
+|     Total Congo Region    |            0                |
+|     Window                |  [ 40 118] - [ 41 119]      |
 -----------------------------------------------------------
 Report place stage QoR done.
 

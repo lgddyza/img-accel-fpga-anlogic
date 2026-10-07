@@ -10,10 +10,12 @@ module tb_jpeg_axil_config;
     wire [3:0] wstrb;
     wire ctrl_enable,ctrl_soft_reset;
     wire [6:0] ctrl_quality;
+    wire [6:0] applied_quality;
     wire [15:0] restart_interval;
     jpeg_axil_config dut (
         .clk(clk),.rst_n(rst_n),.quality(quality),.frame_busy(frame_busy),
-        .ready(ready),.awaddr(awaddr),.awvalid(awvalid),.awready(awready),
+        .ready(ready),.applied_quality(applied_quality),
+        .awaddr(awaddr),.awvalid(awvalid),.awready(awready),
         .wdata(wdata),.wstrb(wstrb),.wvalid(wvalid),.wready(wready),
         .bvalid(bvalid),.bready(bready)
     );
@@ -35,16 +37,16 @@ module tb_jpeg_axil_config;
         repeat(5) @(negedge clk); rst_n=1;
         wait(ready);
         @(negedge clk);
-        if(!ctrl_enable || ctrl_quality!=85)
+        if(!ctrl_enable || ctrl_quality!=85 || applied_quality!=85)
             $fatal(1,"initial config enable=%b q=%0d",ctrl_enable,ctrl_quality);
         frame_busy=1; quality=75;
         repeat(20) @(negedge clk);
-        if(ready || ctrl_quality!=85)
+        if(ready || ctrl_quality!=85 || applied_quality!=85)
             $fatal(1,"quality changed during active frame");
         frame_busy=0;
         wait(ready);
         @(negedge clk);
-        if(!ctrl_enable || ctrl_quality!=75)
+        if(!ctrl_enable || ctrl_quality!=75 || applied_quality!=75)
             $fatal(1,"quality update failed: q=%0d",ctrl_quality);
         $display("JPEG_AXIL_CONFIG_PASS");
         $finish;

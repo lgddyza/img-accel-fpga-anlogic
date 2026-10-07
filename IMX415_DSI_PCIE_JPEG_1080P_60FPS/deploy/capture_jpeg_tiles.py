@@ -7,6 +7,7 @@ GStreamer v4l2src/appsink/jpegdec/videoconvert, and all three JPEG V4L2 modules.
 
 import argparse
 from collections import deque
+import os
 import queue
 import sys
 import time
@@ -53,8 +54,11 @@ def receiver(device, height, tile, output):
         'appsink name=jpeg_sink emit-signals=true max-buffers=4 drop=true sync=false'
     )
     sink = pipe.get_by_name("jpeg_sink")
+    trace_count = 0
+    trace_enabled = os.environ.get("JPEG_PAIR_TRACE") == "1"
 
     def on_sample(sink):
+        nonlocal trace_count
         sample = sink.emit("pull-sample")
         if sample is None:
             return flow_error
@@ -62,6 +66,14 @@ def receiver(device, height, tile, output):
         # three appsinks call back concurrently on this RK image. Resolve the
         # introspected method on the class instead.
         buf = sample_get_buffer(sample)
+        trace_count += 1
+        if trace_enabled and (trace_count <= 4 or trace_count % 600 == 0):
+            try:
+                print(f"JPEG DMA tile={tile} callback={trace_count} "
+                      f"pts={buf.pts} offset={buf.offset} "
+                      f"arrival_ns={time.monotonic_ns()}", flush=True)
+            except (AttributeError, TypeError) as error:
+                print(f"JPEG DMA tile={tile} metadata unavailable: {error}", flush=True)
         payload = buffer_extract_dup(buf, 0, buffer_get_size(buf))
         if not payload.startswith(b"\xff\xd8") or not payload.endswith(b"\xff\xd9"):
             return flow_ok

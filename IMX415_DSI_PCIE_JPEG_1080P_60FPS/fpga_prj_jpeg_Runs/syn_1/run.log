@@ -5,7 +5,7 @@
    Build number = 6.2.2.200067
    Built at =   16:15:53 Apr 23 2026
    Run by =     21093
-   Run Date =   Mon Oct  5 01:31:07 2026
+   Run Date =   Tue Oct  6 20:49:09 2026
 
    Run on =     PEACEINLIFE
 ============================================================
@@ -17,9 +17,9 @@ ARC-1001 : ----------------------------------------------------------------
 ARC-1001 :   non_jtag_persist(none)  |        36 IOs         |    gpio    
 ARC-1001 :            jtag           |  C10/D11/A10/B11/E11  |  dedicate  
 ARC-1001 : ----------------------------------------------------------------
-RUN-1003 : finish command "import_device ph1_90.db -package PH1A90SEG324 -speed 2" in  4.554749s wall, 2.812500s user + 0.171875s system = 2.984375s CPU (65.5%)
+RUN-1003 : finish command "import_device ph1_90.db -package PH1A90SEG324 -speed 2" in  5.176321s wall, 3.265625s user + 0.437500s system = 3.703125s CPU (71.5%)
 
-RUN-1004 : used memory is 970 MB, reserved memory is 1111 MB, peak memory is 1014 MB
+RUN-1004 : used memory is 1109 MB, reserved memory is 1111 MB, peak memory is 1109 MB
 RUN-1002 : start command "open_project fpga_prj_jpeg.prj"
 RUN-1002 : start command "commit_param -step design"
 RUN-1001 : Print Global Property
@@ -181,8 +181,8 @@ HDL-1007 : analyze verilog file ../../uisrc/01_rtl/system_top.v
 HDL-1007 : undeclared symbol 'O_clk_lp_dir', assumed default net type 'wire' in ../../uisrc/01_rtl/system_top.v(1010)
 HDL-1007 : undeclared symbol 'O_dsi_pwm', assumed default net type 'wire' in ../../uisrc/01_rtl/system_top.v(1011)
 HDL-1007 : undeclared symbol 'O_data_lp_dir', assumed default net type 'wire' in ../../uisrc/01_rtl/system_top.v(1012)
-HDL-5373 WARNING: identifier 'pixel_y' is used before its declaration in ../../uisrc/01_rtl/system_top.v(2672)
-HDL-5373 WARNING: identifier 'pixel_y' is used before its declaration in ../../uisrc/01_rtl/system_top.v(2672)
+HDL-5373 WARNING: identifier 'pixel_y' is used before its declaration in ../../uisrc/01_rtl/system_top.v(2676)
+HDL-5373 WARNING: identifier 'pixel_y' is used before its declaration in ../../uisrc/01_rtl/system_top.v(2676)
 HDL-1007 : analyze verilog file ../../uisrc/01_rtl/isp_gray_1080p_cdc.v
 HDL-1007 : analyze verilog file ../../uisrc/03_ip/ui_ae_set/ui_ae_set.v
 HDL-1007 : analyze verilog file ../../uisrc/03_ip/ui_ae_set/ui_key.v
@@ -449,9 +449,9 @@ HDL-1007 : analyze verilog file ../../third_party/mjpegZero/rtl/mjpegzero_enc_to
 HDL-1007 : analyze verilog file ../../third_party/mjpegZero/rtl/quantizer.v
 HDL-1007 : analyze verilog file ../../third_party/mjpegZero/rtl/zigzag_reorder.v
 PRJ-1401 : Successfully analyzed 102 source files.
-RUN-1003 : finish command "open_project fpga_prj_jpeg.prj" in  1.342836s wall, 1.171875s user + 0.078125s system = 1.250000s CPU (93.1%)
+RUN-1003 : finish command "open_project fpga_prj_jpeg.prj" in  2.106378s wall, 1.875000s user + 0.171875s system = 2.046875s CPU (97.2%)
 
-RUN-1004 : used memory is 989 MB, reserved memory is 1124 MB, peak memory is 1014 MB
+RUN-1004 : used memory is 1127 MB, reserved memory is 1124 MB, peak memory is 1127 MB
 RUN-1002 : start command "commit_param -step design"
 RUN-1001 : Print Global Property
 RUN-1001 : -------------------------------------------------------------
@@ -482,7 +482,7 @@ HDL-1007 : port 'M_AXI_WID' remains unconnected for this instance in ../../uisrc
 HDL-1007 : port 'usr_ref_ack' remains unconnected for this instance in ../../uisrc/01_rtl/system_top.v(682)
 HDL-1007 : elaborate module system_top in ../../uisrc/01_rtl/system_top.v(46)
 HDL-1007 : elaborate module dsi_gray_pack4 in ../../uisrc/01_rtl/system_top.v(1017)
-HDL-1007 : elaborate module dsi_color_downscale in ../../uisrc/01_rtl/system_top.v(2815)
+HDL-1007 : elaborate module dsi_color_downscale in ../../uisrc/01_rtl/system_top.v(2819)
 HDL-1007 : elaborate module ui_pll in ../../uisrc/03_ip/al_ip/ui_pll/ui_pll.v(28)
 HDL-1007 : elaborate module PH1_LOGIC_BUFG in F:\FPGA\AnLu\arch/ph1_macro.v(11589)
 HDL-1007 : elaborate module PH1_PHY_PLL(FBCLK_DIV=3,CLKC5_FPHASE=4,CLKC0_CPHASE=15,CLKC1_CPHASE=49,CLKC2_CPHASE=23,CLKC3_CPHASE=11,CLKC4_CPHASE=5,CLKC6_CPHASE=119,CLKC0_DIV=16,CLKC1_DIV=50,CLKC2_DIV=24,CLKC3_DIV=12,CLKC4_DIV=6,CLKC5_DIV=6,CLKC6_DIV=120,CLKC0_DUTY_INT=8,CLKC1_DUTY_INT=25,CLKC2_DUTY_INT=12,CLKC3_DUTY_INT=6,CLKC4_DUTY_INT=3,CLKC5_DUTY_INT=3,CLKC6_DUTY_INT=60,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",CLKC2_ENABLE="ENABLE",CLKC3_ENABLE="ENABLE",CLKC4_ENABLE="ENABLE",CLKC5_ENABLE="ENABLE",CLKC6_ENABLE="ENABLE",FIN="25.000000",PLL_USR_RST="ENABLE",PLL_FEED_TYPE="EXTERNAL",LPF_RES=3,ICP_CUR=11,GMC_GAIN=1,CLKC5_FPHASE_RSTSEL=1,INTPI=1,SSC_RNGE=0) in F:\FPGA\AnLu\arch/ph1_macro.v(856)
@@ -875,7 +875,7 @@ HDL-5007 WARNING: actual bit length 30 differs from formal bit length 28 for por
 HDL-1007 : elaborate module reset_gen in ../../uisrc/03_ip/dsi/hdl_source/reset_gen.v(2)
 HDL-1007 : elaborate module video_source(HTOTAL=1312,HFP=128) in ../../uisrc/03_ip/dsi/hdl_source/video_source.v(1)
 HDL-1007 : elaborate module video_tpg(HTOTAL=1312,HFP=128) in ../../uisrc/03_ip/dsi/hdl_source/video_tpg.v(29)
-HDL-1007 : elaborate module dsi_status_overlay in ../../uisrc/01_rtl/system_top.v(2653)
+HDL-1007 : elaborate module dsi_status_overlay in ../../uisrc/01_rtl/system_top.v(2657)
 HDL-1007 : elaborate module pcie_gray_endpoint in ../../uisrc/01_rtl/system_top.v(1141)
 HDL-1007 : elaborate module sgdma_pll in ../../al_ip/sgdma_pll.v(23)
 HDL-1007 : elaborate module PH1_PHY_PLL(FBCLK_DIV=5,CLKC0_CPHASE=7,CLKC1_CPHASE=39,CLKC0_DIV=8,CLKC1_DIV=40,CLKC0_DUTY_INT=4,CLKC1_DUTY_INT=20,CLKC0_ENABLE="ENABLE",CLKC1_ENABLE="ENABLE",FIN="25.000000",PLL_USR_RST="ENABLE",PLL_FEED_TYPE="EXTERNAL",LPF_RES=3,ICP_CUR=11,GMC_GAIN=1,SSC_RNGE=0) in F:\FPGA\AnLu\arch/ph1_macro.v(856)
@@ -1196,19 +1196,20 @@ HDL-1007 : elaborate module gray_preprocess4 in ../../uisrc/01_rtl/gray_preproce
 HDL-1007 : elaborate module gray_gauss4 in ../../uisrc/01_rtl/gray_gauss4.v(7)
 HDL-1007 : extracting RAM for identifier 'line1' in ../../uisrc/01_rtl/gray_gauss4.v(28)
 HDL-1007 : extracting RAM for identifier 'line2' in ../../uisrc/01_rtl/gray_gauss4.v(29)
-HDL-1007 : elaborate module gray_hist4 in ../../uisrc/01_rtl/gray_hist4.v(7)
-HDL-1007 : extracting RAM for identifier 'hist0' in ../../uisrc/01_rtl/gray_hist4.v(39)
-HDL-1007 : extracting RAM for identifier 'hist1' in ../../uisrc/01_rtl/gray_hist4.v(40)
-HDL-1007 : extracting RAM for identifier 'hist2' in ../../uisrc/01_rtl/gray_hist4.v(41)
-HDL-1007 : extracting RAM for identifier 'hist3' in ../../uisrc/01_rtl/gray_hist4.v(42)
-HDL-1007 : extracting RAM for identifier 'lut_a0' in ../../uisrc/01_rtl/gray_hist4.v(55)
-HDL-1007 : extracting RAM for identifier 'lut_a1' in ../../uisrc/01_rtl/gray_hist4.v(55)
-HDL-1007 : extracting RAM for identifier 'lut_a2' in ../../uisrc/01_rtl/gray_hist4.v(55)
-HDL-1007 : extracting RAM for identifier 'lut_a3' in ../../uisrc/01_rtl/gray_hist4.v(55)
-HDL-1007 : extracting RAM for identifier 'lut_b0' in ../../uisrc/01_rtl/gray_hist4.v(56)
-HDL-1007 : extracting RAM for identifier 'lut_b1' in ../../uisrc/01_rtl/gray_hist4.v(56)
-HDL-1007 : extracting RAM for identifier 'lut_b2' in ../../uisrc/01_rtl/gray_hist4.v(56)
-HDL-1007 : extracting RAM for identifier 'lut_b3' in ../../uisrc/01_rtl/gray_hist4.v(56)
+HDL-1007 : elaborate module gray_hist4(LUT_IIR_SHIFT=2) in ../../uisrc/01_rtl/gray_hist4.v(7)
+HDL-1007 : extracting RAM for identifier 'hist0' in ../../uisrc/01_rtl/gray_hist4.v(41)
+HDL-1007 : extracting RAM for identifier 'hist1' in ../../uisrc/01_rtl/gray_hist4.v(42)
+HDL-1007 : extracting RAM for identifier 'hist2' in ../../uisrc/01_rtl/gray_hist4.v(43)
+HDL-1007 : extracting RAM for identifier 'hist3' in ../../uisrc/01_rtl/gray_hist4.v(44)
+HDL-1007 : extracting RAM for identifier 'lut_a0' in ../../uisrc/01_rtl/gray_hist4.v(57)
+HDL-1007 : extracting RAM for identifier 'lut_a1' in ../../uisrc/01_rtl/gray_hist4.v(57)
+HDL-1007 : extracting RAM for identifier 'lut_a2' in ../../uisrc/01_rtl/gray_hist4.v(57)
+HDL-1007 : extracting RAM for identifier 'lut_a3' in ../../uisrc/01_rtl/gray_hist4.v(57)
+HDL-1007 : extracting RAM for identifier 'lut_b0' in ../../uisrc/01_rtl/gray_hist4.v(58)
+HDL-1007 : extracting RAM for identifier 'lut_b1' in ../../uisrc/01_rtl/gray_hist4.v(58)
+HDL-1007 : extracting RAM for identifier 'lut_b2' in ../../uisrc/01_rtl/gray_hist4.v(58)
+HDL-1007 : extracting RAM for identifier 'lut_b3' in ../../uisrc/01_rtl/gray_hist4.v(58)
+HDL-1007 : extracting RAM for identifier 'previous_lut' in ../../uisrc/01_rtl/gray_hist4.v(61)
 HDL-1007 : elaborate module isp_gray_1080p_cdc in ../../uisrc/01_rtl/isp_gray_1080p_cdc.v(6)
 HDL-1007 : elaborate module demo_async_sfifo(DATA_WIDTH_W=131,DATA_WIDTH_R=131,ADDR_WIDTH_W=9,ADDR_WIDTH_R=9,AL_FULL_NUM=16,AL_EMPTY_NUM=4,SHOW_AHEAD_EN=1'b1) in ../../uisrc/03_ip/ui_dbuf/sfifo/sfifo.v(3)
 HDL-1007 : elaborate module fifo_cross_domain_addr_process_al_0322d65db018 in ../../uisrc/03_ip/ui_dbuf/sfifo/sfifo.v(240)
@@ -1342,10 +1343,10 @@ HDL-5106 WARNING: Initial value omitted on non-DFF net "pixel_value[18]" in ../.
 HDL-5106 WARNING: Initial value omitted on non-DFF net "pixel_value[17]" in ../../uisrc/03_ip/dsi/hdl_source/video_tpg.v(227) 
 HDL-5106 WARNING: Initial value omitted on non-DFF net "pixel_value[16]" in ../../uisrc/03_ip/dsi/hdl_source/video_tpg.v(227) 
 HDL-5106 Similar messages will be suppressed.
-HDL-1100 : Inferred 98 RAMs.
-RUN-1003 : finish command "elaborate -top system_top" in  6.547222s wall, 6.093750s user + 0.390625s system = 6.484375s CPU (99.0%)
+HDL-1100 : Inferred 99 RAMs.
+RUN-1003 : finish command "elaborate -top system_top" in  9.038317s wall, 8.390625s user + 0.437500s system = 8.828125s CPU (97.7%)
 
-RUN-1004 : used memory is 1829 MB, reserved memory is 2074 MB, peak memory is 1901 MB
+RUN-1004 : used memory is 1446 MB, reserved memory is 2074 MB, peak memory is 1678 MB
 RUN-1002 : start command "read_adc -ip al_pcie_ip -file ../../al_ip/PH1_LOGIC_PCIE.adc"
 RUN-1002 : start command "set_ipinst_assignment al_pcie_ip  u_al_pcie_ip_ph1_clock_ctrl/u_al_pcie_ip_ph1_core_pll/pll_inst location = x0y120z0"
 RUN-1002 : start command "set_ipinst_assignment al_pcie_ip  u_al_pcie_ip_ph1_clock_ctrl/u_al_pcie_ip_ph1_pcie_sclk  location =x37y139z0"
@@ -1427,9 +1428,9 @@ RUN-1001 : Exported timing constraints
 RUN-1001 : Exported IO constraints
 RUN-1001 : Exported Inst constraints
 RUN-1001 : Exported ChipWatcher
-RUN-1003 : finish command "export_db fpga_prj_jpeg_elaborate.db" in  1.426203s wall, 2.046875s user + 0.062500s system = 2.109375s CPU (147.9%)
+RUN-1003 : finish command "export_db fpga_prj_jpeg_elaborate.db" in  1.818424s wall, 2.500000s user + 0.125000s system = 2.625000s CPU (144.4%)
 
-RUN-1004 : used memory is 1905 MB, reserved memory is 2210 MB, peak memory is 1905 MB
+RUN-1004 : used memory is 1524 MB, reserved memory is 2210 MB, peak memory is 1678 MB
 RUN-1002 : start command "commit_param -step rtl"
 RUN-1001 : Print Global Property
 RUN-1001 : -------------------------------------------------------------
@@ -1501,14 +1502,14 @@ RUN-1002 : start command "optimize_rtl"
 RUN-1001 : Open license file F:/FPGA/AnLu/license/Anlogic.lic
 SYN-1001 : Stage 1 | Optimize RTL
 SYN-1001 : Stage 1.1 | Check Design Sanity
-SYN-1001 : End Stage 1.1 | Check Design Sanity; Time: 0.088972s wall, 0.078125s user + 0.000000s system = 0.078125s CPU (87.8%); Memory(MB): used = 1907, reserved = 2210, peak = 1907;
+SYN-1001 : End Stage 1.1 | Check Design Sanity; Time: 0.118906s wall, 0.109375s user + 0.000000s system = 0.109375s CPU (92.0%); Memory(MB): used = 1528, reserved = 2210, peak = 1678;
 
-SYN-1079 : finish stage Check Design Sanity. Total instances: 193417, Total nets: 512843.
+SYN-1079 : finish stage Check Design Sanity. Total instances: 193609, Total nets: 513170.
 
 SYN-1001 : Stage 1.2 | Initialize Design
-SYN-1001 : End Stage 1.2 | Initialize Design; Time: 1.177943s wall, 1.171875s user + 0.000000s system = 1.171875s CPU (99.5%); Memory(MB): used = 1908, reserved = 2210, peak = 1908;
+SYN-1001 : End Stage 1.2 | Initialize Design; Time: 1.522432s wall, 1.468750s user + 0.015625s system = 1.484375s CPU (97.5%); Memory(MB): used = 1528, reserved = 2210, peak = 1678;
 
-SYN-1079 : finish stage Initialize Design. Total instances: 41493, Total nets: 294466.
+SYN-1079 : finish stage Initialize Design. Total instances: 41520, Total nets: 294622.
 
 SYN-1001 : Stage 1.3 | Flatten Module
 SYN-1011 : Flatten model system_top
@@ -1523,9 +1524,9 @@ RUN-1001 :  u_rgb_24b_to_32b/U_fifo...  |       true       |        fifo_w32_d51
 RUN-1001 :     X_ui_dbuf/wdbuf_fifo     |       true       | demo_async_sfifo(DATA_W...  | ../../uisrc/03_ip/ui_db...  
 RUN-1001 :     X_ui_dbuf/rdbuf_fifo     |       true       | demo_async_sfifo(DATA_W...  | ../../uisrc/03_ip/ui_db...  
 RUN-1001 : ------------------------------------------------------------------------------------------------------------
-SYN-1001 : End Stage 1.3 | Flatten Module; Time: 3.107384s wall, 3.078125s user + 0.000000s system = 3.078125s CPU (99.1%); Memory(MB): used = 1925, reserved = 2210, peak = 1925;
+SYN-1001 : End Stage 1.3 | Flatten Module; Time: 3.910984s wall, 3.843750s user + 0.046875s system = 3.890625s CPU (99.5%); Memory(MB): used = 1546, reserved = 2210, peak = 1678;
 
-SYN-1079 : finish stage Flatten Module. Total instances: 105813, Total nets: 337031.
+SYN-1079 : finish stage Flatten Module. Total instances: 105840, Total nets: 337159.
 
 SYN-1001 : Stage 1.4 | Uniform Instance
 SYN-5044 CRITICAL-WARNING: The pin "phy0_rx0_m" of inst "u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep/PH1A_PCIE_CORE_BLK$u_al_pcie_ip/uep_PH1_PHY_PCIE" in ../../al_ip/PH1_LOGIC_PCIE.v(1172) is hardwired pin, but connect to a const net, it will be disconnected. You can connect it to the related hardwired pin or just leave it undriven.
@@ -1575,9 +1576,9 @@ SYN-5013 WARNING: Undriven net: model "system_top" / net "X_ui_ddr/u_axi2mc/axi_
 		the net's pin: pin "i0[0]" in ../../uisrc/03_ip/al_ip/ui_ddr/ui_ddr.sv(0)
 SYN-5013 Similar messages will be suppressed.
 SYN-5025 WARNING: Using 0 for all undriven pins and nets
-SYN-1001 : End Stage 1.4 | Uniform Instance; Time: 1.325594s wall, 1.281250s user + 0.046875s system = 1.328125s CPU (100.2%); Memory(MB): used = 1692, reserved = 1902, peak = 1925;
+SYN-1001 : End Stage 1.4 | Uniform Instance; Time: 1.575777s wall, 1.468750s user + 0.109375s system = 1.578125s CPU (100.1%); Memory(MB): used = 1316, reserved = 1903, peak = 1678;
 
-SYN-1079 : finish stage Uniform Instance. Total instances: 99545, Total nets: 329944.
+SYN-1079 : finish stage Uniform Instance. Total instances: 99572, Total nets: 330072.
 
 SYN-1001 : Stage 1.5 | Optimize Design
 SYN-1066 : Inferred FSM for state register 'X_mipi_dphy_rx_over_lvds_wrapper/u_hs_rx_wrapper/MIPI_DATA_LANE_GEN[0]$u_data_lane_rx_wrapper/u_hs_receive/S_lp_state_reg' in module 'system_top'
@@ -1638,29 +1639,29 @@ SYN-1080 : No more FSM messages will be printed, If more FSM messages are needed
 SYN-1057 : Inferred 33 FSM(s)
 SYN-1001 : Optimize 1 less-than instances
 SYN-1001 : Optimize 12 less-than instances
-SYN-1032 : 218060/10830 useful/useless nets, 37959/301 useful/useless insts
+SYN-1032 : 218188/10830 useful/useless nets, 37986/301 useful/useless insts
 SYN-1021 : Optimized 3 onehot mux instances.
 SYN-1001 : Bypass 40 mux instances
 SYN-1021 : Optimized 53 onehot mux instances.
 SYN-1068 : Optimized 3 binary mux instances.
 SYN-1019 : Optimized 30 mux instances.
-SYN-1021 : Optimized 32 onehot mux instances.
+SYN-1021 : Optimized 31 onehot mux instances.
 SYN-1021 : Optimized 12 onehot mux instances.
 SYN-1021 : Optimized 24 onehot mux instances.
 SYN-1001 : Optimize 1 less-than instances
-SYN-1016 : Merged 6818 instances.
+SYN-1016 : Merged 6814 instances.
 SYN-1035 : Inferred 18 ROM(s)
 SYN-1016 : Merged 7807 instances.
-SYN-1001 : End Stage 1.5 | Optimize Design; Time: 38.523818s wall, 37.453125s user + 0.718750s system = 38.171875s CPU (99.1%); Memory(MB): used = 2753, reserved = 2942, peak = 2753;
+SYN-1001 : End Stage 1.5 | Optimize Design; Time: 47.665878s wall, 46.125000s user + 0.875000s system = 47.000000s CPU (98.6%); Memory(MB): used = 2230, reserved = 2923, peak = 2276;
 
-SYN-1079 : finish stage Optimize Design. Total instances: 122202, Total nets: 146632.
+SYN-1079 : finish stage Optimize Design. Total instances: 122298, Total nets: 146777.
 
 SYN-1001 : Stage 1.6 | Optimize Iteratively
 SYN-1018 : Transformed 12 mux instances.
 SYN-1019 : Optimized 34 mux instances.
 SYN-1021 : Optimized 1154 onehot mux instances.
 SYN-1014 : Optimize round 1
-SYN-1044 : Optimized 308 inv instances.
+SYN-1044 : Optimized 276 inv instances.
 SYN-1017 : Remove 146 const input seq instances
 SYN-1018 : Transformed 11 mux instances.
 SYN-1019 : Optimized 716 mux instances.
@@ -1678,19 +1679,19 @@ SYN-2543 : Parsing BIN init file
 SYN-2593 : bram inst: u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep/PH1A_PCIE_CORE_BLK$u_al_pcie_ip/u_al_pcie_ip_ph1_dbi_init_mux/u_al_pcie_ip_ph1_pcie_cfg_rom/inst will be optimized to a new one with A-width 50 due to unused data out
 SYN-2541 : Reading BRAM "u_display_config_wrapper/u_instruction_rom/inst/inst" init file "..\..\uisrc\03_ip\dsi\hdl_source\display_config\config_data_nes.mif"
 SYN-2542 : Parsing MIF init file
-SYN-1016 : Merged 43862 instances.
-SYN-1015 : Optimize round 1, 99276 better
+SYN-1016 : Merged 43864 instances.
+SYN-1015 : Optimize round 1, 99268 better
 SYN-1014 : Optimize round 2
 SYN-1044 : Optimized 60 inv instances.
 SYN-1017 : Remove 86 const input seq instances
 SYN-1019 : Optimized 2009 mux instances.
-SYN-1020 : Optimized 79 distributor mux.
+SYN-1020 : Optimized 71 distributor mux.
 SYN-1001 : Optimize 3 less-than instances
 SYN-1019 : Optimized 798 mux instances.
 SYN-2541 : Reading BRAM "u_display_config_wrapper/u_instruction_rom/inst/inst" init file "..\..\uisrc\03_ip\dsi\hdl_source\display_config\config_data_nes.mif"
 SYN-2542 : Parsing MIF init file
-SYN-1016 : Merged 520 instances.
-SYN-1015 : Optimize round 2, 6430 better
+SYN-1016 : Merged 498 instances.
+SYN-1015 : Optimize round 2, 6400 better
 SYN-5025 WARNING: Using 0 for all undriven pins and nets
 SYN-3010 : Optimized 750 DFF(s)
 SYN-1014 : Optimize round 1
@@ -1753,22 +1754,22 @@ SYN-1017 : Remove 1 const input seq instances
 SYN-2541 : Reading BRAM "u_display_config_wrapper/u_instruction_rom/inst/inst" init file "..\..\uisrc\03_ip\dsi\hdl_source\display_config\config_data_nes.mif"
 SYN-2542 : Parsing MIF init file
 SYN-1015 : Optimize round 8, 1 better
-SYN-1001 : End Stage 1.6 | Optimize Iteratively; Time: 126.630013s wall, 124.828125s user + 1.031250s system = 125.859375s CPU (99.4%); Memory(MB): used = 2597, reserved = 2800, peak = 3057;
+SYN-1001 : End Stage 1.6 | Optimize Iteratively; Time: 115.647895s wall, 113.781250s user + 1.218750s system = 115.000000s CPU (99.4%); Memory(MB): used = 2033, reserved = 2845, peak = 2478;
 
-SYN-1079 : finish stage Optimize Iteratively. Total instances: 112335, Total nets: 133889.
+SYN-1079 : finish stage Optimize Iteratively. Total instances: 112447, Total nets: 134050.
 
 SYN-1001 : Stage 1.7 | Check Design
-SYN-1001 : End Stage 1.7 | Check Design; Time: 0.037580s wall, 0.046875s user + 0.000000s system = 0.046875s CPU (124.7%); Memory(MB): used = 2597, reserved = 2801, peak = 3057;
+SYN-1001 : End Stage 1.7 | Check Design; Time: 0.035778s wall, 0.031250s user + 0.000000s system = 0.031250s CPU (87.3%); Memory(MB): used = 2033, reserved = 2845, peak = 2478;
 
-SYN-1079 : finish stage Check Design. Total instances: 112335, Total nets: 133889.
+SYN-1079 : finish stage Check Design. Total instances: 112447, Total nets: 134050.
 
-SYN-1001 : End Stage 1 | Optimize RTL; Time: 170.903419s wall, 167.953125s user + 1.796875s system = 169.750000s CPU (99.3%); Memory(MB): used = 2597, reserved = 2801, peak = 3057;
+SYN-1001 : End Stage 1 | Optimize RTL; Time: 170.493779s wall, 166.843750s user + 2.265625s system = 169.109375s CPU (99.2%); Memory(MB): used = 2033, reserved = 2845, peak = 2478;
 
-SYN-1079 : finish stage Optimize RTL. Total instances: 112335, Total nets: 133889.
+SYN-1079 : finish stage Optimize RTL. Total instances: 112447, Total nets: 134050.
 
-RUN-1003 : finish command "optimize_rtl" in  170.919532s wall, 167.968750s user + 1.796875s system = 169.765625s CPU (99.3%)
+RUN-1003 : finish command "optimize_rtl" in  170.515260s wall, 166.875000s user + 2.265625s system = 169.140625s CPU (99.2%)
 
-RUN-1004 : used memory is 2597 MB, reserved memory is 2801 MB, peak memory is 3057 MB
+RUN-1004 : used memory is 2033 MB, reserved memory is 2845 MB, peak memory is 2478 MB
 RUN-1002 : start command "report_area -file fpga_prj_jpeg_rtl.area"
 RUN-1001 : standard
 ***Report Model: system_top Device: PH1A90SEG324***
@@ -1780,24 +1781,24 @@ IO Statistics
   #inout                   23
 
 Gate Statistics
-#Basic gates            79696
-  #and                  10589
+#Basic gates            79724
+  #and                  10588
   #nand                     0
-  #or                    6488
+  #or                    6489
   #nor                      0
   #xor                    827
   #xnor                     0
   #buf                      0
-  #not                   4246
+  #not                   4245
   #bufif1                   5
   #MX21                  9258
   #FADD                     0
-  #DFF                  48283
+  #DFF                  48312
   #LATCH                    0
-#MACRO_ADD               1533
-#MACRO_EQ                1029
+#MACRO_ADD               1540
+#MACRO_EQ                1030
 #MACRO_MULT               102
-#MACRO_MUX              24781
+#MACRO_MUX              24856
 #MACRO_OTHERS              32
 
 RUN-1002 : start command "export_db fpga_prj_jpeg_rtl.db"
@@ -1819,9 +1820,9 @@ RUN-1001 : Exported timing constraints
 RUN-1001 : Exported IO constraints
 RUN-1001 : Exported Inst constraints
 RUN-1001 : Exported ChipWatcher
-RUN-1003 : finish command "export_db fpga_prj_jpeg_rtl.db" in  1.777498s wall, 2.328125s user + 0.015625s system = 2.343750s CPU (131.9%)
+RUN-1003 : finish command "export_db fpga_prj_jpeg_rtl.db" in  1.592737s wall, 1.968750s user + 0.109375s system = 2.078125s CPU (130.5%)
 
-RUN-1004 : used memory is 2708 MB, reserved memory is 3009 MB, peak memory is 3057 MB
+RUN-1004 : used memory is 2129 MB, reserved memory is 3012 MB, peak memory is 2478 MB
 RUN-1002 : start command "commit_param -step gate"
 RUN-1001 : Print Global Property
 RUN-1001 : -------------------------------------------------------------
@@ -1850,9 +1851,9 @@ RUN-1002 : start command "optimize_gate -packarea fpga_prj_jpeg_gate.area"
 RUN-1001 : Open license file F:/FPGA/AnLu/license/Anlogic.lic
 SYN-1001 : Stage 2 | Optimize Gate
 SYN-1001 : Stage 2.1 | Map Reg
-SYN-1001 : End Stage 2.1 | Map Reg; Time: 3.618931s wall, 3.578125s user + 0.031250s system = 3.609375s CPU (99.7%); Memory(MB): used = 2671, reserved = 2956, peak = 3057;
+SYN-1001 : End Stage 2.1 | Map Reg; Time: 3.083627s wall, 3.062500s user + 0.015625s system = 3.078125s CPU (99.8%); Memory(MB): used = 2112, reserved = 2996, peak = 2478;
 
-SYN-1079 : finish stage Map Reg. Total instances: 112335, Total nets: 133889.
+SYN-1079 : finish stage Map Reg. Total instances: 112447, Total nets: 134050.
 
 SYN-1001 : Stage 2.2 | Map IO
 SYN-6024 CRITICAL-WARNING: MapIO rule -- ODDR "u_mipi_dphy_tx_wrapper/u_hs_tx_wrapper/u_clk_lane_wrapper/u_hs_clk" not have rst or rst is const or ASYNCRST is DISABLE, this may lead PAD tx data out of sync with other PAD. Please consider rewriting code in ../../uisrc/03_ip/dsi/hdl_source/dphy_tx_general/enc_file/mipi_dphy_tx_wrapper.enc.v(0).
@@ -1861,7 +1862,7 @@ SYN-6024 CRITICAL-WARNING: MapIO rule -- ODDR "u_mipi_dphy_tx_wrapper/u_hs_tx_wr
 SYN-6024 CRITICAL-WARNING: MapIO rule -- ODDR "u_mipi_dphy_tx_wrapper/u_hs_tx_wrapper/MIPI_DATA_LANE_GEN[1]$u_data_lane_wrapper/u_data_hs_generate/U_oddr_x2" not have rst or rst is const or ASYNCRST is DISABLE, this may lead PAD tx data out of sync with other PAD. Please consider rewriting code in ../../uisrc/03_ip/dsi/hdl_source/dphy_tx_general/enc_file/mipi_dphy_tx_wrapper.enc.v(0).
 SYN-6024 CRITICAL-WARNING: MapIO rule -- ODDR "u_mipi_dphy_tx_wrapper/u_hs_tx_wrapper/MIPI_DATA_LANE_GEN[0]$u_data_lane_wrapper/u_data_hs_generate/U_oddr_x2" not have rst or rst is const or ASYNCRST is DISABLE, this may lead PAD tx data out of sync with other PAD. Please consider rewriting code in ../../uisrc/03_ip/dsi/hdl_source/dphy_tx_general/enc_file/mipi_dphy_tx_wrapper.enc.v(0).
 SYN-2001 : Map 89 IOs to PADs of model 'system_top'
-SYN-1001 : End Stage 2.2 | Map IO; Time: 0.933208s wall, 0.875000s user + 0.015625s system = 0.890625s CPU (95.4%); Memory(MB): used = 2674, reserved = 2960, peak = 3057;
+SYN-1001 : End Stage 2.2 | Map IO; Time: 0.841430s wall, 0.828125s user + 0.015625s system = 0.843750s CPU (100.3%); Memory(MB): used = 2115, reserved = 2997, peak = 2478;
 
 SYN-1001 : Stage 2.3 | Map Macro
 RUN-1002 : start command "update_pll_param -module system_top"
@@ -1879,12 +1880,12 @@ SYN-2599 : Bram u_pcie_gray/u_jpeg_tiles/g_tile[0]$u_encoder/u_huffman/ramread1_
 SYN-2599 : Bram u_pcie_gray/u_jpeg_tiles/g_tile[2]$u_encoder/u_huffman/ramread1_syn_22 will be implemented by dram for resource limit in ../../third_party/mjpegZero/rtl/huffman_encoder.v(564)
 SYN-2571 : Map 102 macro multiplier
 SYN-2571 : Optimize after map_dsp, round 1
-SYN-1016 : Merged 310 instances.
-SYN-2571 : Optimize after map_dsp, round 1, 310 better
+SYN-1016 : Merged 313 instances.
+SYN-2571 : Optimize after map_dsp, round 1, 313 better
 SYN-2571 : Optimize after map_dsp, round 2
 SYN-2571 : Optimize after map_dsp, round 2, 0 better
 SYN-2601 : All the used dsp number is 93
-SYN-1001 : Throwback 2342 control mux instances
+SYN-1001 : Throwback 2349 control mux instances
 SYN-1001 : clone 8 adder instances
 SYN-1001 : Generate 60 bigger adders
 SYN-1001 : Convert 28 adder
@@ -1904,65 +1905,65 @@ SYN-2501 : Optimize round 2
 SYN-2501 : Optimize round 2, 0 better
 SYN-1030 : Map 86 macro adder
 SYN-1031 : Map 13 macro less-than
-SYN-2501 : Map 1349 macro adder(s)
+SYN-2501 : Map 1356 macro adder(s)
 SYN-3009 : Map 266 FxMUX in MapMacro
-SYN-1019 : Optimized 2215 mux instances.
-SYN-1016 : Merged 5778 instances.
-SYN-1001 : End Stage 2.3 | Map Macro; Time: 91.008792s wall, 89.750000s user + 0.625000s system = 90.375000s CPU (99.3%); Memory(MB): used = 3116, reserved = 3372, peak = 3124;
+SYN-1019 : Optimized 2196 mux instances.
+SYN-1016 : Merged 5777 instances.
+SYN-1001 : End Stage 2.3 | Map Macro; Time: 77.189997s wall, 76.093750s user + 0.703125s system = 76.796875s CPU (99.5%); Memory(MB): used = 2512, reserved = 3366, peak = 2520;
 
-SYN-1079 : finish stage Map Macro. Total instances: 138527, Total nets: 178204.
+SYN-1079 : finish stage Map Macro. Total instances: 138739, Total nets: 178486.
 
 SYN-1001 : Stage 2.4 | Map Gate
-SYN-3001 : Collect 34520 PI 22373 PO (71 timing unconstrained) for mapping
-SYN-2581 : Mapping with K=6, #lut = 32888 (3.88), #lev = 15 (2.27), #crit_level = 4, #edge = 127744
+SYN-3001 : Collect 34606 PI 22424 PO (67 timing unconstrained) for mapping
+SYN-2581 : Mapping with K=6, #lut = 32925 (3.89), #lev = 15 (2.27), #crit_level = 4, #edge = 128031
 SYN-2551 : Post LUT mapping optimization.
-SYN-2581 : Mapping with K=6, #lut = 32705 (3.89), #lev = 14 (2.23), #crit_level = 3, #edge = 127204
-SYN-3001 : Logic optimization opt = 4.90 sec, map = 2.71 sec, post map opt = 10.74 sec.
+SYN-2581 : Mapping with K=6, #lut = 32699 (3.89), #lev = 14 (2.24), #crit_level = 3, #edge = 127274
+SYN-3001 : Logic optimization opt = 3.76 sec, map = 2.39 sec, post map opt = 8.71 sec.
 SYN-3001 : Mapper removed 3 lut buffers
-SYN-1001 : End Stage 2.4 | Map Gate; Time: 75.724719s wall, 74.843750s user + 0.281250s system = 75.125000s CPU (99.2%); Memory(MB): used = 3159, reserved = 3369, peak = 3203;
+SYN-1001 : End Stage 2.4 | Map Gate; Time: 59.324902s wall, 58.671875s user + 0.328125s system = 59.000000s CPU (99.5%); Memory(MB): used = 2550, reserved = 3369, peak = 2580;
 
 SYN-1001 : Packing model "system_top" ...
 SYN-1001 : Stage 2.5 | Pack Gate
 SYN-4010 : Pack lib has 89 rtl pack models with 60 top pack blocks
 SYN-1014 : Optimize round 1
 SYN-1015 : Optimize round 1, 0 better
-SYN-4002 : Packing 41747 DFF/LATCH to SEQ ...
-SYN-1001 : Remove 456 carry adders
+SYN-4002 : Packing 41776 DFF/LATCH to SEQ ...
+SYN-1001 : Remove 460 carry adders
 RUN-1002 : start command "start_timer"
-RUN-1003 : finish command "start_timer" in  20.023916s wall, 19.640625s user + 0.156250s system = 19.796875s CPU (98.9%)
+RUN-1003 : finish command "start_timer" in  14.679506s wall, 14.421875s user + 0.109375s system = 14.531250s CPU (99.0%)
 
-RUN-1004 : used memory is 3159 MB, reserved memory is 3369 MB, peak memory is 3203 MB
+RUN-1004 : used memory is 2550 MB, reserved memory is 3369 MB, peak memory is 2580 MB
 TMR-2502 : Net delay update with mode: Synthesized
 RUN-1002 : start command "end_timer"
-SYN-4009 : Pack 408 carry chain into lslice
-SYN-1001 : End Stage 2.5 | Pack Gate; Time: 27.709314s wall, 26.312500s user + 1.125000s system = 27.437500s CPU (99.0%); Memory(MB): used = 3159, reserved = 3369, peak = 3203;
+SYN-4009 : Pack 412 carry chain into lslice
+SYN-1001 : End Stage 2.5 | Pack Gate; Time: 21.907317s wall, 20.843750s user + 0.906250s system = 21.750000s CPU (99.3%); Memory(MB): used = 2550, reserved = 3369, peak = 2580;
 
 RUN-1002 : start command "report_qor -step gate -file gate.qor"
 RUN-1002 : start command "start_timer"
-RUN-1003 : finish command "start_timer" in  15.574347s wall, 15.375000s user + 0.140625s system = 15.515625s CPU (99.6%)
+RUN-1003 : finish command "start_timer" in  15.523730s wall, 15.296875s user + 0.109375s system = 15.406250s CPU (99.2%)
 
-RUN-1004 : used memory is 3318 MB, reserved memory is 3526 MB, peak memory is 3318 MB
+RUN-1004 : used memory is 2583 MB, reserved memory is 3528 MB, peak memory is 2678 MB
 TMR-2502 : Net delay update with mode: Synthesized
 -----------------------------------------------------------
 | QoR metrics               |         value               |
 -----------------------------------------------------------
 | Timing                    |                             |
-|     Setup WNS             |        -1761                |
-|     Setup TNS             |      -386439                |
-|     Num of violated S-EP  |          952                |
+|     Setup WNS             |        -1791                |
+|     Setup TNS             |      -386922                |
+|     Num of violated S-EP  |          939                |
 -----------------------------------------------------------
 | Utilization               |                             |
-|     #registers            |        41747                |
-|     #luts                 |        33385                |
+|     #registers            |        41776                |
+|     #luts                 |        33379                |
 |     #lut1                 |          290                |
 |     #lut1(~A)             |          286                |
-|     #slices               |        10790                |
-|     slices percentage     |       16.78%                |
+|     #slices               |        10856                |
+|     slices percentage     |       16.88%                |
 |     #RAMs                 |          250                |
 |     #DSPs                 |           93                |
 |     #f7mux                |        1.45%                |
-|     #MACROs               |         1204                |
-|     #insts in MACRO       |        11751                |
+|     #MACROs               |         1212                |
+|     #insts in MACRO       |        11821                |
 -----------------------------------------------------------
 | kept_net                  |                             |
 |     #syn_keep             |         1528                |
@@ -1972,14 +1973,14 @@ TMR-2502 : Net delay update with mode: Synthesized
 |     #max_fanout_keep      |           35                |
 |     #async_reg            |            0                |
 -----------------------------------------------------------
-| Top 1% datanet fanout#    |        50.60                |
-| dff(single fanout)->dff   |         6480                |
+| Top 1% datanet fanout#    |        50.58                |
+| dff(single fanout)->dff   |         6487                |
 | dff(single fanout)->dram  |          615                |
 -----------------------------------------------------------
 | Over-quota path num*      |                             |
-|     jpeg_enc_clk          |            5                |
-|     Total Number          |            5                |
-|     Total Level Slack     |           -5                |
+|     jpeg_enc_clk          |            3                |
+|     Total Number          |            3                |
+|     Total Level Slack     |           -3                |
 |     Worst Level Slack     |           -1                |
 -----------------------------------------------------------
 | Rent**                    |                             |
@@ -1994,55 +1995,53 @@ Over-quota Path Details
 --------------------------------------------------------------------------------------------------------------------------------------------------
      Clock      |  Index  |  Budget(Period)  |  Level(Quota)  |                        Cell Type List                        |  Reason  |  Slack  
 --------------------------------------------------------------------------------------------------------------------------------------------------
-  jpeg_enc_clk  |    1    |    4849(5000)    |      7(7)      |  SEQ,ADDER,ADDER,LUT4,LUT5,HIERKEEP,LUT3,HIERKEEP,LUT3,ERAM  |  normal  |  -1301  
+  jpeg_enc_clk  |    1    |    4849(5000)    |      7(7)      |  SEQ,ADDER,ADDER,LUT4,LUT5,HIERKEEP,LUT3,HIERKEEP,LUT3,ERAM  |  normal  |  -1331  
                 |    2    |    4849(5000)    |      7(7)      |  SEQ,ADDER,ADDER,LUT6,LUT5,HIERKEEP,LUT3,HIERKEEP,LUT3,ERAM  |  normal  |  -1285  
                 |    3    |    4849(5000)    |      7(7)      |  SEQ,ADDER,ADDER,LUT6,LUT5,HIERKEEP,LUT3,HIERKEEP,LUT3,ERAM  |  normal  |  -1285  
-                |    4    |    4849(5000)    |      7(7)      |            SEQ,LUT6,LUT2,LUT6,LUT4,LUT5,LUT5,ERAM            |  normal  |  -883   
-                |    5    |    4849(5000)    |      7(7)      |            SEQ,LUT6,LUT2,LUT6,LUT4,LUT6,LUT6,ERAM            |  normal  |  -879   
 --------------------------------------------------------------------------------------------------------------------------------------------------
 Note: Table only show top 5 paths for each clock group in default
 
 Logic Level Distribution
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  Clock                                                                                                 |  Period             |  0      |  1      |  2      |  3      |  4     |  5     |  6     |  7    |  8    |  9    |  10  |  11  |  12  |  13  |  15
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  S_clk                                                                                                 |  20.000ns (50MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  4   |  0   |  20  |  3
-  S_clk_25m                                                                                             |  41.668ns (23MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  S_clk_70m                                                                                             |  13.333ns (75MHz)   |  1      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  S_clk_x2                                                                                              |  10.000ns (100MHz)  |  10     |  20     |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  S_clk_x4                                                                                              |  5.000ns (200MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  S_clk_x4_90d                                                                                          |  5.000ns (200MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  S_lp_clk                                                                                              |  100.000ns (10MHz)  |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  X_ui_ddr/dfi_clk                                                                                      |  7.500ns (133MHz)   |  5802   |  1938   |  782    |  1037   |  660   |  362   |  7     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  X_ui_ddr/mcu_clk                                                                                      |  20.000ns (50MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  1    |  18  |  0   |  31  |  1   |  0
-  X_ui_ddr/ref_clk                                                                                      |  7.500ns (133MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  X_ui_ddr/u_ddrmc_top/u_ddr_phy/u_ddrphy_clk_gen/u_ddrphy_pll0/pll_inst.clkc[1]                        |  7.500ns (133MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  X_ui_ddr/u_ddrmc_top/u_ddr_phy/u_ddrphy_clk_gen/u_ddrphy_pll0/pll_inst.clkc[2]                        |  1.875ns (533MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  ddr_clk                                                                                               |  10.000ns (100MHz)  |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  jpeg_enc_clk                                                                                          |  5.000ns (200MHz)   |  2074   |  6670   |  2095   |  1665   |  494   |  819   |  136   |  5    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  mipi_clk_180m                                                                                         |  5.554ns (180MHz)   |  16     |  40     |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  mipi_clk_360m                                                                                         |  2.777ns (360MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  mipi_clk_90m                                                                                          |  11.108ns (90MHz)   |  6574   |  3425   |  1123   |  944    |  937   |  146   |  429   |  232  |  205  |  118  |  13  |  33  |  0   |  0   |  0
-  mipi_hs_clk                                                                                           |  2.777ns (360MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  pcie_aux_clk                                                                                          |  40.000ns (25MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  pcie_core_src                                                                                         |  8.000ns (125MHz)   |  0      |  1      |  21     |  22     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  sys_clk                                                                                               |  40.000ns (25MHz)   |  0      |  0      |  0      |  0      |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep/PH1A_PCIE_CORE_BLK$u_al_pcie_ip/core_clk       |  8.000ns (125MHz)   |  517    |  2      |  1      |  14     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep/PH1A_PCIE_CORE_BLK$u_al_pcie_ip/pcie_user_clk  |  8.000ns (125MHz)   |  29019  |  11122  |  9630   |  7465   |  1340  |  1015  |  812   |  129  |  0    |  0    |  0   |  0   |  0   |  0   |  0
-  Total                                                                                                 |  NA                 |  44013  |  23218  |  13652  |  11147  |  3431  |  2342  |  1384  |  366  |  205  |  119  |  31  |  37  |  31  |  21  |  3
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  Clock                                                                                                 |  Period             |  0      |  1      |  2      |  3     |  4     |  5     |  6     |  7    |  8    |  9    |  10  |  11  |  12  |  13  |  14  |  15
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  S_clk                                                                                                 |  20.000ns (50MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  4   |  0   |  20  |  0   |  3
+  S_clk_25m                                                                                             |  41.668ns (23MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  S_clk_70m                                                                                             |  13.333ns (75MHz)   |  1      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  S_clk_x2                                                                                              |  10.000ns (100MHz)  |  10     |  20     |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  S_clk_x4                                                                                              |  5.000ns (200MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  S_clk_x4_90d                                                                                          |  5.000ns (200MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  S_lp_clk                                                                                              |  100.000ns (10MHz)  |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  X_ui_ddr/dfi_clk                                                                                      |  7.500ns (133MHz)   |  5802   |  1913   |  855    |  1068  |  629   |  314   |  7     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  X_ui_ddr/mcu_clk                                                                                      |  20.000ns (50MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  34  |  33  |  17  |  14  |  1   |  0
+  X_ui_ddr/ref_clk                                                                                      |  7.500ns (133MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  X_ui_ddr/u_ddrmc_top/u_ddr_phy/u_ddrphy_clk_gen/u_ddrphy_pll0/pll_inst.clkc[1]                        |  7.500ns (133MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  X_ui_ddr/u_ddrmc_top/u_ddr_phy/u_ddrphy_clk_gen/u_ddrphy_pll0/pll_inst.clkc[2]                        |  1.875ns (533MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  ddr_clk                                                                                               |  10.000ns (100MHz)  |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  jpeg_enc_clk                                                                                          |  5.000ns (200MHz)   |  2081   |  6665   |  2107   |  1660  |  498   |  822   |  136   |  3    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  mipi_clk_180m                                                                                         |  5.554ns (180MHz)   |  16     |  40     |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  mipi_clk_360m                                                                                         |  2.777ns (360MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  mipi_clk_90m                                                                                          |  11.108ns (90MHz)   |  6431   |  3436   |  880    |  967   |  930   |  136   |  647   |  343  |  158  |  129  |  6   |  33  |  0   |  0   |  0   |  0
+  mipi_hs_clk                                                                                           |  2.777ns (360MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  pcie_aux_clk                                                                                          |  40.000ns (25MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  pcie_core_src                                                                                         |  8.000ns (125MHz)   |  0      |  1      |  21     |  22    |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  sys_clk                                                                                               |  40.000ns (25MHz)   |  0      |  0      |  0      |  0     |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep/PH1A_PCIE_CORE_BLK$u_al_pcie_ip/core_clk       |  8.000ns (125MHz)   |  517    |  2      |  1      |  14    |  0     |  0     |  0     |  0    |  0    |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep/PH1A_PCIE_CORE_BLK$u_al_pcie_ip/pcie_user_clk  |  8.000ns (125MHz)   |  29026  |  11141  |  11121  |  5960  |  1347  |  996   |  814   |  132  |  16   |  0    |  0   |  0   |  0   |  0   |  0   |  0
+  Total                                                                                                 |  NA                 |  43884  |  23218  |  14985  |  9691  |  3404  |  2268  |  1604  |  478  |  174  |  129  |  40  |  70  |  17  |  34  |  1   |  3
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Note: The table count the worst 100000 paths, each endpoint count only one time.(100000 paths analyzed)
 
 Hierarchical Rent Exponent Report
 +------------------------------------------------------------------------------------------------------------+
 |Inst                               |Model                            |Rent     |Cell     |Pin     |Term     |
 +------------------------------------------------------------------------------------------------------------+
-|top                                |system_top                       |0.17     |92097    |484499  |38       |
-|  X_ui_dbuf                        |ui_dbuf_6                        |0.63     |1627     |5236    |328      |
-|  X_ui_ddr                         |ui_ddr_7                         |0.45     |12490    |62125   |342      |
-|  X_ui_isp_top                     |ui_isp_top_9                     |0.42     |4580     |22301   |175      |
-|  X_mipi_dphy_rx_over_lvds_wrapper |mipi_dphy_rx_over_lvds_wrapper_1 |0.41     |1086     |4259    |70       |
-|  u_pcie_gray                      |pcie_gray_endpoint_18            |0.25     |67459    |364571  |85       |
+|top                                |system_top                       |0.17     |92190    |485528  |38       |
+|  X_ui_dbuf                        |ui_dbuf_6                        |0.63     |1625     |5232    |328      |
+|  X_ui_ddr                         |ui_ddr_7                         |0.45     |12492    |62190   |343      |
+|  X_ui_isp_top                     |ui_isp_top_9                     |0.42     |4577     |22268   |174      |
+|  X_mipi_dphy_rx_over_lvds_wrapper |mipi_dphy_rx_over_lvds_wrapper_1 |0.41     |1084     |4242    |70       |
+|  u_pcie_gray                      |pcie_gray_endpoint_18            |0.25     |67565    |365685  |86       |
 +------------------------------------------------------------------------------------------------------------+
 Note: Cell represents total number of cells inside module; Pin represents total number of pins
       which have net connection inside module; Term represents total number of PIs and POs of module.
@@ -2057,7 +2056,7 @@ QoR Evaluation
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
   ID        |  Priority  |  Description                                                     |  Suggestion
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
-  QOR-1002  |  HIGH      |  - 5 over-quota path exist.                                      |  - Try following setting to reduce over-quota:
+  QOR-1002  |  HIGH      |  - 3 over-quota path exist.                                      |  - Try following setting to reduce over-quota:
             |            |                                                                  |      set_param gate map_mode logic_level_prior
             |            |                                                                  |      set_param gate map_strategy 2
             |            |                                                                  |      set_param place logic_level_opt on
@@ -2069,7 +2068,7 @@ QoR Evaluation
             |            |                                                                  |    Try following method to reduce length of carry chain:
             |            |                                                                  |      set_param rtl min_ripple_len 20
             |            |                                                                  |  
-  QOR-1001  |  LOW       |  - Gate timing is too bad, SWNS -1761ps and STNS -386439ps.      |  - Try following setting to improve timing:
+  QOR-1001  |  LOW       |  - Gate timing is too bad, SWNS -1791ps and STNS -386922ps.      |  - Try following setting to improve timing:
             |            |                                                                  |      set_param gate map_mode logic_level_prior
             |            |                                                                  |      set_param gate map_strategy 2
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -2080,12 +2079,12 @@ Note** plesae resolve priority MUST FIX and HIGH issues firstly
 Note*** some suggested settings are not suitable to use together
         take care of using them separately if suggestion mentioned.
 SYN-1001 : The design has 1 dangling max_fanout inst,117 dangling syn_keep insts.
-RUN-1003 : finish command "report_qor -step gate -file gate.qor" in  34.354604s wall, 33.968750s user + 0.171875s system = 34.140625s CPU (99.4%)
+RUN-1003 : finish command "report_qor -step gate -file gate.qor" in  34.626380s wall, 34.312500s user + 0.125000s system = 34.437500s CPU (99.5%)
 
-RUN-1004 : used memory is 3319 MB, reserved memory is 3527 MB, peak memory is 3323 MB
+RUN-1004 : used memory is 2589 MB, reserved memory is 3535 MB, peak memory is 2678 MB
 RUN-1002 : start command "report_area -file fpga_prj_jpeg_gate.area"
-SYN-4034 : The count of slices with lut is 1335.
-SYN-4035 : The count of slices with lut+ripple is 6239.
+SYN-4034 : The count of slices with lut is 1334.
+SYN-4035 : The count of slices with lut+ripple is 6274.
 RUN-1001 : standard
 ***Report Model: system_top Device: PH1A90SEG324***
 
@@ -2094,26 +2093,26 @@ Design Statistics
   #input                   16
   #output                  44
   #inout                   23
-#lut                    44175
+#lut                    44235
   #lut1                   290
-  #lut2                  7467
-  #lut3                  8221
-  #lut4                  4780
-  #lut5                  5533
-  #lut6                 17884
-#reg                    41752
-  #slice reg            41747   out of 128640   32.45%
+  #lut2                  7465
+  #lut3                  8208
+  #lut4                  4796
+  #lut5                  5442
+  #lut6                 18034
+#reg                    41781
+  #slice reg            41776   out of 128640   32.48%
   #pad reg                  5
 
 Utilization Statistics
-#slice*                 35754   out of  64320   55.59%
-  #used ram              3216
-    #dram lut            3216
+#slice*                 35876   out of  64320   55.78%
+  #used ram              3248
+    #dram lut            3248
     #shifter lut            0
-  #used logic           32538
-    #with luts*         22897
-    #with adder          6239
-    #reg only*           3402
+  #used logic           32628
+    #with luts*         22946
+    #with adder          6274
+    #reg only*           3408
 #f7mux                    466   out of  32160    1.45%
 #f8mux                    133   out of  16080    0.83%
 #eram                     250   out of    272   91.91%
@@ -2134,11 +2133,11 @@ Utilization Statistics
 
 * Note! The LUT and Slice count after Optimize-Gate is not the final value, Run Optimize-place for a more realistic count.
 
-SYN-1001 : End Stage 2 | Optimize Gate; Time: 235.447359s wall, 231.046875s user + 2.625000s system = 233.671875s CPU (99.2%); Memory(MB): used = 3319, reserved = 3527, peak = 3323;
+SYN-1001 : End Stage 2 | Optimize Gate; Time: 199.039307s wall, 195.515625s user + 2.468750s system = 197.984375s CPU (99.5%); Memory(MB): used = 2589, reserved = 3535, peak = 2678;
 
-RUN-1003 : finish command "optimize_gate -packarea fpga_prj_jpeg_gate.area" in  235.458494s wall, 231.046875s user + 2.625000s system = 233.671875s CPU (99.2%)
+RUN-1003 : finish command "optimize_gate -packarea fpga_prj_jpeg_gate.area" in  199.048519s wall, 195.515625s user + 2.468750s system = 197.984375s CPU (99.5%)
 
-RUN-1004 : used memory is 3319 MB, reserved memory is 3527 MB, peak memory is 3323 MB
+RUN-1004 : used memory is 2589 MB, reserved memory is 3535 MB, peak memory is 2678 MB
 RUN-1002 : start command "legalize_phy_inst"
 SYN-1001 : Stage 3 | Legalize Phy Inst
 SYN-1011 : Flatten model system_top
@@ -2150,16 +2149,16 @@ SYN-1001 : ADC: Instance "u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep
 SYN-1001 : ADC: Instance "u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep/PH1A_PCIE_CORE_BLK$u_al_pcie_ip/u_al_pcie_ip_ph1_clock_ctrl/u_al_pcie_ip_ph1_core_pll/pll_inst" LOCATION="X0Y120Z0"
 SYN-1001 : ADC: Instance "u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep/PH1A_PCIE_CORE_BLK$u_al_pcie_ip/u_al_pcie_ip_ph1_clock_ctrl/u_al_pcie_ip_ph1_core_pll/u_pll_fb_sclk" LOCATION="X37Y139Z3"
 SYN-1001 : ADC: Instance "u_pcie_gray/u_sgdma_subsys/DEVICE_IS_PH1A$u_ph1a_if_ep/PH1A_PCIE_CORE_BLK$u_al_pcie_ip/u_al_pcie_ip_ph1_clock_ctrl/u_al_pcie_ip_ph1_pcie_sclk" LOCATION="X37Y139Z0"
-SYN-1001 : End Stage 3 | Legalize Phy Inst; Time: 0.527901s wall, 0.531250s user + 0.000000s system = 0.531250s CPU (100.6%); Memory(MB): used = 3320, reserved = 3527, peak = 3323;
+SYN-1001 : End Stage 3 | Legalize Phy Inst; Time: 0.543567s wall, 0.468750s user + 0.046875s system = 0.515625s CPU (94.9%); Memory(MB): used = 2589, reserved = 3535, peak = 2678;
 
 RUN-1002 : start command "update_timing"
 RUN-1002 : start command "start_timer"
-RUN-1003 : finish command "start_timer" in  16.238259s wall, 16.046875s user + 0.125000s system = 16.171875s CPU (99.6%)
+RUN-1003 : finish command "start_timer" in  15.890673s wall, 15.734375s user + 0.078125s system = 15.812500s CPU (99.5%)
 
-RUN-1004 : used memory is 3333 MB, reserved memory is 3540 MB, peak memory is 3333 MB
-RUN-1003 : finish command "update_timing" in  20.333187s wall, 20.046875s user + 0.140625s system = 20.187500s CPU (99.3%)
+RUN-1004 : used memory is 2601 MB, reserved memory is 3544 MB, peak memory is 2678 MB
+RUN-1003 : finish command "update_timing" in  19.934455s wall, 19.750000s user + 0.078125s system = 19.828125s CPU (99.5%)
 
-RUN-1004 : used memory is 3336 MB, reserved memory is 3545 MB, peak memory is 3336 MB
+RUN-1004 : used memory is 2604 MB, reserved memory is 3548 MB, peak memory is 2678 MB
 RUN-1002 : start command "report_timing_status -file fpga_prj_jpeg_gate.ts"
 RUN-1002 : start command "report_timing_summary -file fpga_prj_jpeg_gate.timing"
 RUN-1002 : start command "flow_status -file flow.status"
@@ -2171,7 +2170,7 @@ Device           : PH1A90SEG324
 Speed            : 2
 
 Timing Mode      : basic
-Setup            : WNS -1166ps  TNS  -108240ps  NUM_FEPS   286
+Setup            : WNS -1104ps  TNS  -110113ps  NUM_FEPS   273
 Hold             : WNS 2147483647ps  TNS        0ps  NUM_FEPS     0
 
 Flow Statistics  :
@@ -2179,13 +2178,13 @@ RUN-1001 : Flow Statistics:
 RUN-1001 : ---------------------------------------------------------------------------------------------------
 RUN-1001 :      command     |  #calls  |  wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
 RUN-1001 : ---------------------------------------------------------------------------------------------------
-RUN-1001 :   optimize_gate  |    1     |  3m55s(57%)  |   233(57%)    |       3319        |       3323        
-RUN-1001 :   optimize_rtl   |    1     |  2m50s(41%)  |   168(41%)    |       2597        |       3057        
-RUN-1001 :   import_device  |    1     |    4s(0%)    |     2(0%)     |        970        |       1014        
-RUN-1001 :     read_adc     |    3     |    0s(0%)    |     0(0%)     |       1906        |       1906        
-RUN-1001 :     read_sdc     |    3     |    0s(0%)    |     0(0%)     |       1906        |       1906        
+RUN-1001 :   optimize_gate  |    1     |  3m19s(53%)  |   197(53%)    |       2589        |       2678        
+RUN-1001 :   optimize_rtl   |    1     |  2m50s(45%)  |   168(45%)    |       2033        |       2478        
+RUN-1001 :   import_device  |    1     |    5s(1%)    |     3(0%)     |       1109        |       1109        
+RUN-1001 :     read_adc     |    3     |    0s(0%)    |     0(0%)     |       1526        |       1678        
+RUN-1001 :     read_sdc     |    3     |    0s(0%)    |     0(0%)     |       1526        |       1678        
 RUN-1001 : ---------------------------------------------------------------------------------------------------
-RUN-1001 :       total      |    9     |    6m49s     |      403      |       3319        |       3323        
+RUN-1001 :       total      |    9     |    6m14s     |      368      |       2589        |       2678        
 RUN-1001 : ---------------------------------------------------------------------------------------------------
 RUN-1002 : start command "export_db fpga_prj_jpeg_gate.db"
 RUN-1001 : Exported flow parameters
@@ -2206,9 +2205,9 @@ RUN-1001 : Exported timing constraints
 RUN-1001 : Exported IO constraints
 RUN-1001 : Exported Inst constraints
 RUN-1001 : Exported ChipWatcher
-RUN-1003 : finish command "export_db fpga_prj_jpeg_gate.db" in  1.853026s wall, 2.343750s user + 0.062500s system = 2.406250s CPU (129.9%)
+RUN-1003 : finish command "export_db fpga_prj_jpeg_gate.db" in  1.855452s wall, 2.328125s user + 0.062500s system = 2.390625s CPU (128.8%)
 
-RUN-1004 : used memory is 3237 MB, reserved memory is 3673 MB, peak memory is 3363 MB
+RUN-1004 : used memory is 2631 MB, reserved memory is 3674 MB, peak memory is 2678 MB
 RUN-1002 : start command "export_flow_status -s read_design -e opt_gate"
 RUN-1002 : start command "flow_status"
 
@@ -2220,18 +2219,18 @@ Device           : PH1A90SEG324
 Speed            : 2
 
 Timing Mode      : basic
-Setup            : WNS -1166ps  TNS  -108240ps  NUM_FEPS   286
+Setup            : WNS -1104ps  TNS  -110113ps  NUM_FEPS   273
 Hold             : WNS 2147483647ps  TNS        0ps  NUM_FEPS     0
 
 RUN-1001 : Flow Statistics:
 RUN-1001 : ---------------------------------------------------------------------------------------------------
 RUN-1001 :      command     |  #calls  |  wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
 RUN-1001 : ---------------------------------------------------------------------------------------------------
-RUN-1001 :   optimize_gate  |    1     |  3m55s(57%)  |   233(57%)    |       3319        |       3323        
-RUN-1001 :   optimize_rtl   |    1     |  2m50s(41%)  |   168(41%)    |       2597        |       3057        
-RUN-1001 :   import_device  |    1     |    4s(0%)    |     2(0%)     |        970        |       1014        
-RUN-1001 :     read_adc     |    3     |    0s(0%)    |     0(0%)     |       1906        |       1906        
-RUN-1001 :     read_sdc     |    3     |    0s(0%)    |     0(0%)     |       1906        |       1906        
+RUN-1001 :   optimize_gate  |    1     |  3m19s(53%)  |   197(53%)    |       2589        |       2678        
+RUN-1001 :   optimize_rtl   |    1     |  2m50s(45%)  |   168(45%)    |       2033        |       2478        
+RUN-1001 :   import_device  |    1     |    5s(1%)    |     3(0%)     |       1109        |       1109        
+RUN-1001 :     read_adc     |    3     |    0s(0%)    |     0(0%)     |       1526        |       1678        
+RUN-1001 :     read_sdc     |    3     |    0s(0%)    |     0(0%)     |       1526        |       1678        
 RUN-1001 : ---------------------------------------------------------------------------------------------------
-RUN-1001 :       total      |    9     |    6m49s     |      403      |       3319        |       3323        
+RUN-1001 :       total      |    9     |    6m14s     |      368      |       2589        |       2678        
 RUN-1001 : ---------------------------------------------------------------------------------------------------

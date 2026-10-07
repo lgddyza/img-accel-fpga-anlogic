@@ -31,20 +31,48 @@ def main():
                         help="repeat decoding the same tiles to load-test 60 FPS; frames are duplicates")
     parser.add_argument("--no-temporal", action="store_true",
                         help="disable the RK tone stabilizer for a controlled comparison")
+    parser.add_argument("--no-osd", action="store_true",
+                        help="disable the live FPS and resolution overlay")
+    parser.add_argument("--skip-vsync", action="store_true",
+                        help="diagnostic: submit KMS frames without waiting for vblank")
+    parser.add_argument("--diagnose-flicker", action="store_true",
+                        help="log sampled decoded brightness and sudden jumps")
+    parser.add_argument("--diagnose-pairing", action="store_true",
+                        help="measure JPEG tile arrival skew and brightness mismatch")
+    parser.add_argument("--clock-sync", action="store_true",
+                        help="pace HDMI buffers with the GStreamer clock")
+    parser.add_argument("--sink", choices=("kms", "xv"), default="kms",
+                        help="HDMI presentation path; xv uses the running X11 desktop")
+    parser.add_argument("--kms-sync-mode", choices=("auto", "none"), default="auto",
+                        help="KMS page-flip synchronization mode")
+    parser.add_argument("--output-format", choices=("RGBx", "NV12"), default="RGBx",
+                        help="pixel format sent to HDMI KMS plane")
+    parser.add_argument("--temporal-method", choices=("blend", "affine", "tone"),
+                        default="blend",
+                        help="affine also stabilizes per-frame contrast at low cost")
     args = parser.parse_args()
     if args.connector < 0 or args.seconds < 0 or args.capture_count < 0:
         parser.error("connector, seconds and capture-count must be nonnegative")
 
     plugin_dirs = (Path(__file__).resolve().parent,
                    Path("/root/imx415_pcie_gray_1080p"))
-    plugin_dir = next((path for path in plugin_dirs
-                       if (path / "libgstrktemporalgray.so").is_file()), None)
-    if not args.no_temporal and plugin_dir is None:
+    temporal_plugin_dir = next((path for path in plugin_dirs
+                                if (path / "libgstrktemporalgray.so").is_file()), None)
+    osd_plugin_dir = next((path for path in plugin_dirs
+                           if (path / "libgstrkfastosd.so").is_file()), None)
+    if not args.no_temporal and temporal_plugin_dir is None:
         raise RuntimeError("RK temporal GREY plugin is missing")
-    if plugin_dir is not None:
+    if not args.no_osd and osd_plugin_dir is None:
+        raise RuntimeError("RK fast OSD plugin is missing")
+    active_plugin_dirs = []
+    for path in (temporal_plugin_dir, osd_plugin_dir):
+        if path is not None and path not in active_plugin_dirs:
+            active_plugin_dirs.append(path)
+    if active_plugin_dirs:
         previous = os.environ.get("GST_PLUGIN_PATH", "")
-        os.environ["GST_PLUGIN_PATH"] = str(plugin_dir) + (
-            os.pathsep + previous if previous else "")
+        os.environ["GST_PLUGIN_PATH"] = os.pathsep.join(
+            [str(path) for path in active_plugin_dirs]
+            + ([previous] if previous else []))
     Gst.init(None)
     # Force GI method resolution before the GStreamer and decoder workers race
     # to look up lazily introspected methods.
@@ -66,24 +94,49 @@ def main():
             )
             decoders.append((pipe, pipe.get_by_name("jpeg_src"),
                              pipe.get_by_name("gray_sink")))
+    video_sink = (f'kmssink connector-id={args.connector} '
+                  f'sync={str(args.clock_sync).lower()} '
+                  f'sync-mode={args.kms_sync_mode} '
+                  f'skip-vsync={str(args.skip_vsync).lower()}'
+                  if args.sink == "kms" else
+                  f'xvimagesink sync={str(args.clock_sync).lower()} '
+                  'force-aspect-ratio=false double-buffer=true')
     display = Gst.parse_launch(
         'appsrc name=frames is-live=true format=time block=false '
         f'caps=video/x-raw,format=GRAY8,width=1920,height=1080,framerate={args.fps}/1 '
-        '! queue max-size-buffers=2 max-size-bytes=0 max-size-time=0 leaky=downstream '
-        + ('! rktemporalgray ' if not args.no_temporal else '')
-        + '! videoconvert n-threads=4 ! video/x-raw,format=RGBx '
-        '! fpsdisplaysink name=fps fps-update-interval=1000 '
-        'text-overlay=false signal-fps-measurements=true silent=true sync=false '
-        f'video-sink="kmssink connector-id={args.connector} '
-        'sync=false skip-vsync=true"'
+        '! queue name=display_queue max-size-buffers=6 max-size-bytes=0 '
+        'max-size-time=0 leaky=downstream '
+        + (f'! rktemporalgray fast-blend={str(args.temporal_method != "tone").lower()} '
+           f'affine-blend={str(args.temporal_method == "affine").lower()} '
+           if not args.no_temporal else '')
+        + f'! videoconvert n-threads=4 ! video/x-raw,format={args.output_format} '
+        + ('! rkfastosd ' if not args.no_osd else '')
+        + ('! videoconvert n-threads=4 ! video/x-raw,format=I420 '
+           if args.sink == "xv" else '')
+        + '! fpsdisplaysink name=fps fps-update-interval=1000 '
+        'text-overlay=false signal-fps-measurements=true silent=true '
+        f'sync={str(args.clock_sync).lower()} '
+        f'video-sink="{video_sink}"'
     )
-    print(f"RK temporal GREY stabilizer: {'disabled' if args.no_temporal else 'enabled'}",
+    temporal_status = "disabled" if args.no_temporal else args.temporal_method
+    print(f"RK temporal GREY stabilizer: {temporal_status}", flush=True)
+    print(f"RK HDMI status overlay: {'disabled' if args.no_osd else 'enabled'}",
           flush=True)
+    print(f"RK KMS waits for vblank: {not args.skip_vsync}", flush=True)
+    print(f"RK GStreamer clock pacing: {args.clock_sync}", flush=True)
+    print(f"RK HDMI presentation sink: {args.sink}", flush=True)
+    print(f"RK KMS sync mode: {args.kms_sync_mode}", flush=True)
+    print(f"RK HDMI pixel format: {args.output_format}", flush=True)
     source = display.get_by_name("frames")
     source.set_property("do-timestamp", True)
     fps = display.get_by_name("fps")
-    fps.connect("fps-measurements", lambda _obj, current, _dropped, _average:
-                print(f"HDMI JPEG sink FPS={current:.1f}", flush=True))
+    display_queue = display.get_by_name("display_queue")
+    queue_overruns = [0]
+    display_queue.connect("overrun", lambda _queue:
+                          queue_overruns.__setitem__(0, queue_overruns[0] + 1))
+    fps.connect("fps-measurements", lambda _obj, current, dropped, average:
+                print(f"HDMI JPEG sink FPS={current:.1f} dropped={dropped:.0f} "
+                      f"average={average:.1f}", flush=True))
     pending = [deque(), deque(), deque()]
     received = [0, 0, 0]
     mismatched = 0
@@ -94,6 +147,11 @@ def main():
     decode_ns = 0
     weave_ns = 0
     push_ns = 0
+    previous_means = None
+    skew_max_ns = 0
+    skew_over_8 = 0
+    skew_over_16 = 0
+    tile_phase_mismatch = 0
     stop = False
 
     def stopping(*_args):
@@ -138,6 +196,10 @@ def main():
                     pending[stamps.index(min(stamps))].popleft()
                     mismatched += 1
                     continue
+                skew_ns = max(stamps) - min(stamps)
+                skew_max_ns = max(skew_max_ns, skew_ns)
+                skew_over_8 += skew_ns > 8_000_000
+                skew_over_16 += skew_ns > 16_000_000
                 payloads = [pending[i].popleft()[1] for i in range(3)]
                 distinct += 1
                 for _repeat in range(args.benchmark_repeat):
@@ -150,6 +212,21 @@ def main():
                     else:
                         grays = [decode(decoders[i][1], decoders[i][2],
                                         payloads[i], HEIGHTS[i]) for i in range(3)]
+                    if args.diagnose_flicker or args.diagnose_pairing:
+                        means = tuple(sum(tile[::4096]) // len(tile[::4096])
+                                      for tile in grays)
+                        if args.diagnose_pairing and max(means) - min(means) >= 18:
+                            tile_phase_mismatch += 1
+                            print(f"JPEG_TILE_PHASE_MISMATCH frame={distinct} "
+                                  f"tile_means={means} arrival_skew_ms="
+                                  f"{skew_ns/1e6:.2f}", flush=True)
+                        if args.diagnose_flicker and (distinct <= 4 or distinct % 60 == 0 or
+                                (previous_means is not None and
+                                 any(abs(a-b) >= 20 for a, b in
+                                     zip(means, previous_means)))):
+                            print(f"JPEG decoded frame={distinct} tile_means={means} "
+                                  f"previous={previous_means}", flush=True)
+                        previous_means = means
                     t1 = time.monotonic_ns()
                     full = weave(*grays)
                     t2 = time.monotonic_ns()
@@ -175,6 +252,14 @@ def main():
                       f"ms/frame decode={decode_ns/max(displayed,1)/1e6:.1f} "
                       f"weave={weave_ns/max(displayed,1)/1e6:.1f} "
                       f"push={push_ns/max(displayed,1)/1e6:.1f}", flush=True)
+                print(f"HDMI queue overruns={queue_overruns[0]} "
+                      f"level={display_queue.get_property('current-level-buffers')}",
+                      flush=True)
+                if args.diagnose_pairing:
+                    print(f"JPEG_PAIR_DIAG frames={distinct} skew_max_ms="
+                          f"{skew_max_ns/1e6:.2f} skew_gt8={skew_over_8} "
+                          f"skew_gt16={skew_over_16} phase_mismatch="
+                          f"{tile_phase_mismatch}", flush=True)
                 last_report = now
     finally:
         executor.shutdown(wait=True)

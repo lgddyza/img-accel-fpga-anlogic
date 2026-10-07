@@ -21,6 +21,7 @@ module jpeg_triple_tile_branch #(
     output wire [15:0] a_keep,b_keep,c_keep,
     output wire a_valid,a_last,b_valid,b_last,c_valid,c_last,
     output wire status_configured,status_busy,status_fault,
+    output wire [6:0] status_quality,
     output reg [31:0] sent_a,sent_b,sent_c,fault_count,
     output wire [31:0] bytes_a,bytes_b,bytes_c,
     output wire [17:0] debug_status,
@@ -72,6 +73,7 @@ module jpeg_triple_tile_branch #(
         end
 
     wire [2:0] cfg_ready,bridge_fault,packer_fault;
+    wire [6:0] cfg_quality [0:2];
     wire [3:0] bridge_cause [0:2];
     wire [9:0] bridge_fault_line [0:2];
     wire [9:0] bridge_fault_beat [0:2];
@@ -184,7 +186,7 @@ module jpeg_triple_tile_branch #(
         jpeg_axil_config u_config (
             .clk(enc_clk),.rst_n(enc_rst_n),
             .quality(quality_enc),.frame_busy(busy[lane]),
-            .ready(cfg_ready[lane]),
+            .ready(cfg_ready[lane]),.applied_quality(cfg_quality[lane]),
             .awaddr(ax_awaddr),.awvalid(ax_awvalid),.awready(ax_awready),
             .wdata(ax_wdata),.wstrb(ax_wstrb),
             .wvalid(ax_wvalid),.wready(ax_wready),
@@ -254,6 +256,16 @@ module jpeg_triple_tile_branch #(
             debug_meta<=debug_enc;debug_sync<=debug_meta;
         end
     assign debug_status=debug_sync;
+
+    // Publish a quality value only after all three encoders report the same
+    // completed configuration. This is the applied value, not just the BAR
+    // request, so RK can distinguish acceptance from actual table update.
+    reg [6:0] applied_quality_enc;
+    always @(posedge enc_clk or negedge enc_rst_n)
+        if(!enc_rst_n) applied_quality_enc<=0;
+        else if(configured_enc && cfg_quality[0]==cfg_quality[1] &&
+                cfg_quality[1]==cfg_quality[2])
+            applied_quality_enc<=cfg_quality[0];
     // First-error details: C cause[3:0], C line[13:4], C beat[23:14],
     // B cause[27:24], A cause[31:28]. Values remain fixed after a fault.
     wire [31:0] detail_cam={bridge_cause[0],bridge_cause[1],
@@ -269,12 +281,14 @@ module jpeg_triple_tile_branch #(
     assign debug_detail=detail_sync;
 
     (* ASYNC_REG="TRUE" *) reg [1:0] fault_user,cfg_user,busy_user;
+    (* ASYNC_REG="TRUE" *) reg [6:0] quality_user_meta,quality_user_sync;
     (* ASYNC_REG="TRUE" *) reg [31:0] bytes_a_meta,bytes_b_meta,bytes_c_meta,
                                   bytes_a_sync,bytes_b_sync,bytes_c_sync;
     reg fault_seen;
     always @(posedge user_clk or negedge branch_rst_n) begin
         if(!branch_rst_n) begin
             fault_user<=0;cfg_user<=0;busy_user<=0;
+            quality_user_meta<=0;quality_user_sync<=0;
             bytes_a_meta<=0;bytes_b_meta<=0;bytes_c_meta<=0;
             bytes_a_sync<=0;bytes_b_sync<=0;bytes_c_sync<=0;
             sent_a<=0;sent_b<=0;sent_c<=0;fault_count<=0;fault_seen<=0;
@@ -282,6 +296,8 @@ module jpeg_triple_tile_branch #(
             fault_user<={fault_user[0],fault_enc};
             cfg_user<={cfg_user[0],configured_enc};
             busy_user<={busy_user[0],(|busy)};
+            quality_user_meta<=applied_quality_enc;
+            quality_user_sync<=quality_user_meta;
             bytes_a_meta<=last_bytes[0];bytes_b_meta<=last_bytes[1];
             bytes_c_meta<=last_bytes[2];
             bytes_a_sync<=bytes_a_meta;bytes_b_sync<=bytes_b_meta;
@@ -294,9 +310,13 @@ module jpeg_triple_tile_branch #(
                 fault_count<=fault_count+1'b1;
         end
     end
-    assign status_configured=cfg_user[1];
+    // Gate ready with the synchronized value as well as the three ready bits.
+    // The buses and flag cross independently, so this comparison prevents a
+    // transient ready indication with the preceding quality value.
+    assign status_configured=cfg_user[1] && quality_user_sync==quality;
     assign status_busy=busy_user[1];
     assign status_fault=fault_user[1];
+    assign status_quality=quality_user_sync;
     assign bytes_a=bytes_a_sync;
     assign bytes_b=bytes_b_sync;
     assign bytes_c=bytes_c_sync;

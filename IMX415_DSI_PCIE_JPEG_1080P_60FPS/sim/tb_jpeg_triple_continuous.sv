@@ -1,5 +1,7 @@
 `timescale 1ns/1ps
-// Three source frames in full-rate mode: encode every frame.
+// Three eligible source frames in full-rate mode. The reduced-size stimulus
+// waits for the encoder arm to cross back into the camera domain, modelling
+// the vertical blanking interval present in the real 1080p camera stream.
 module tb_jpeg_triple_continuous;
     reg cam_clk=0,enc_clk=0,user_clk=0,rst_n=0;
     always #20 cam_clk=~cam_clk;
@@ -11,6 +13,7 @@ module tb_jpeg_triple_continuous;
     wire [15:0] a_keep,b_keep,c_keep;
     wire a_valid,a_last,b_valid,b_last,c_valid,c_last;
     wire configured,busy,fault;
+    wire [6:0] applied_quality;
     wire [31:0] sent_a,sent_b,sent_c,fault_count,bytes_a,bytes_b,bytes_c;
     jpeg_triple_tile_branch #(.IMG_WIDTH(64),.IMG_HEIGHT(24)) dut (
         .cam_clk(cam_clk),.cam_rst_n(rst_n),
@@ -24,6 +27,7 @@ module tb_jpeg_triple_continuous;
         .b_data(b_data),.b_keep(b_keep),.b_valid(b_valid),.b_last(b_last),
         .c_data(c_data),.c_keep(c_keep),.c_valid(c_valid),.c_last(c_last),
         .status_configured(configured),.status_busy(busy),.status_fault(fault),
+        .status_quality(applied_quality),
         .sent_a(sent_a),.sent_b(sent_b),.sent_c(sent_c),
         .fault_count(fault_count),.bytes_a(bytes_a),.bytes_b(bytes_b),
         .bytes_c(bytes_c)
@@ -48,9 +52,15 @@ module tb_jpeg_triple_continuous;
         repeat(10) @(negedge user_clk);
         rst_n=1;
         wait(configured);
+        if(applied_quality!=7'd85)
+            $fatal(1,"unexpected applied quality %0d",applied_quality);
         repeat(20) @(negedge cam_clk);
         send_frame(0);
+        wait(!dut.arm_cam[1]);
+        wait(dut.arm_cam[1]);
         send_frame(1);
+        wait(!dut.arm_cam[1]);
+        wait(dut.arm_cam[1]);
         send_frame(2);
         wait(sent_a==3 && sent_b==3 && sent_c==3);
         repeat(10) @(negedge user_clk);

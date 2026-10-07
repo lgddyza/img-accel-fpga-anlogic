@@ -9,6 +9,7 @@ module jpeg_axil_config (
     input wire [6:0] quality,
     input wire frame_busy,
     output wire ready,
+    output wire [6:0] applied_quality,
     output wire [4:0] awaddr,
     output wire awvalid,
     input wire awready,
@@ -34,6 +35,7 @@ module jpeg_axil_config (
     assign wvalid = sending && !w_done;
     assign bready = state==Q_RESP || state==CTRL_RESP;
     assign ready = state==READY && quality==programmed_quality;
+    assign applied_quality = programmed_quality;
 
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin

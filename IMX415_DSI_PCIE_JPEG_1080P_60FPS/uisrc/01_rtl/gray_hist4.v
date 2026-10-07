@@ -6,7 +6,9 @@
 // complete LUT from frame N-1; a partial frame never publishes a LUT.
 module gray_hist4 #(
     parameter integer WIDTH = 1920,
-    parameter integer HEIGHT = 1080
+    parameter integer HEIGHT = 1080,
+    // 0 preserves the original mapping; 2 follows each new LUT by 1/4.
+    parameter integer LUT_IIR_SHIFT = 0
 )(
     input  wire        clk,
     input  wire        rst_n,
@@ -54,6 +56,9 @@ module gray_hist4 #(
 
     reg [7:0] lut_a0 [0:255],lut_a1 [0:255],lut_a2 [0:255],lut_a3 [0:255];
     reg [7:0] lut_b0 [0:255],lut_b1 [0:255],lut_b2 [0:255],lut_b3 [0:255];
+    // One extra 256-byte state table avoids adding a read port to the four
+    // LUTs used by the live four-pixel-per-clock path.
+    reg [7:0] previous_lut [0:255];
     reg active_bank, next_ready, eq_enabled, initial_clear;
     wire select_bank = (s_sof && next_ready && state==WAIT_SOF) ?
                        !active_bank : active_bank;
@@ -66,7 +71,26 @@ module gray_hist4 #(
     reg [FW-1:0] cdf,cdf_min,denominator;
     reg found;
     reg [FW+7:0] target,threshold;
-    reg [7:0] level,bin_value;
+    reg [7:0] level,bin_value,old_bin_value;
+    localparam integer IIR_ROUND = LUT_IIR_SHIFT > 0 ?
+                                   (1 << (LUT_IIR_SHIFT-1)) : 0;
+    function [7:0] filter_bin;
+        input [7:0] old_value,new_value;
+        reg [8:0] difference,step;
+        begin
+            if (LUT_IIR_SHIFT == 0) filter_bin = new_value;
+            else if (new_value >= old_value) begin
+                difference = {1'b0,new_value} - {1'b0,old_value};
+                step = (difference + IIR_ROUND) >> LUT_IIR_SHIFT;
+                filter_bin = old_value + step[7:0];
+            end else begin
+                difference = {1'b0,old_value} - {1'b0,new_value};
+                step = (difference + IIR_ROUND) >> LUT_IIR_SHIFT;
+                filter_bin = old_value - step[7:0];
+            end
+        end
+    endfunction
+    wire [7:0] filtered_bin = filter_bin(old_bin_value,bin_value);
     wire [FW-1:0] bin_sum = {{(FW-CW){1'b0}},q0}+
                              {{(FW-CW){1'b0}},q1}+
                              {{(FW-CW){1'b0}},q2}+
@@ -87,6 +111,7 @@ module gray_hist4 #(
         end else if (state==READ_BIN) begin
             q0 <= hist0[index]; q1 <= hist1[index];
             q2 <= hist2[index]; q3 <= hist3[index];
+            old_bin_value <= previous_lut[index];
         end
         // Keep the histogram read and clear on separate clocks. TD's ERAM
         // read-during-write result is not guaranteed to be the old count.
@@ -98,21 +123,23 @@ module gray_hist4 #(
             hist2[pend2] <= next2; hist3[pend3] <= next3;
         end
         if (state==CLEAR && initial_clear) begin
+            previous_lut[index] <= index;
             lut_a0[index] <= index; lut_a1[index] <= index;
             lut_a2[index] <= index; lut_a3[index] <= index;
             lut_b0[index] <= index; lut_b1[index] <= index;
             lut_b2[index] <= index; lut_b3[index] <= index;
         end else if (state==WRITE_BIN || state==UNIFORM) begin
+            previous_lut[index] <= state==UNIFORM ? index : filtered_bin;
             if (active_bank) begin
-                lut_a0[index] <= state==UNIFORM ? index : bin_value;
-                lut_a1[index] <= state==UNIFORM ? index : bin_value;
-                lut_a2[index] <= state==UNIFORM ? index : bin_value;
-                lut_a3[index] <= state==UNIFORM ? index : bin_value;
+                lut_a0[index] <= state==UNIFORM ? index : filtered_bin;
+                lut_a1[index] <= state==UNIFORM ? index : filtered_bin;
+                lut_a2[index] <= state==UNIFORM ? index : filtered_bin;
+                lut_a3[index] <= state==UNIFORM ? index : filtered_bin;
             end else begin
-                lut_b0[index] <= state==UNIFORM ? index : bin_value;
-                lut_b1[index] <= state==UNIFORM ? index : bin_value;
-                lut_b2[index] <= state==UNIFORM ? index : bin_value;
-                lut_b3[index] <= state==UNIFORM ? index : bin_value;
+                lut_b0[index] <= state==UNIFORM ? index : filtered_bin;
+                lut_b1[index] <= state==UNIFORM ? index : filtered_bin;
+                lut_b2[index] <= state==UNIFORM ? index : filtered_bin;
+                lut_b3[index] <= state==UNIFORM ? index : filtered_bin;
             end
         end
     end

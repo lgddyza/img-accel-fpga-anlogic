@@ -1318,6 +1318,7 @@ module pcie_gray_endpoint (
 
     // Independent triple-tile JPEG capture; GREY channel 0 and DSI stay live.
     wire jpeg_configured,jpeg_busy,jpeg_fault;
+    wire [6:0] jpeg_quality_applied;
     wire [31:0] jpeg_sent_a,jpeg_sent_b,jpeg_sent_c,jpeg_faults;
     wire [31:0] jpeg_bytes_a,jpeg_bytes_b,jpeg_bytes_c;
     wire [17:0] jpeg_debug_status;
@@ -1340,6 +1341,7 @@ module pcie_gray_endpoint (
         .c_valid(jpeg_c_valid),.c_last(jpeg_c_last),
         .status_configured(jpeg_configured),
         .status_busy(jpeg_busy),.status_fault(jpeg_fault),
+        .status_quality(jpeg_quality_applied),
         .sent_a(jpeg_sent_a),.sent_b(jpeg_sent_b),.sent_c(jpeg_sent_c),
         .fault_count(jpeg_faults),
         .bytes_a(jpeg_bytes_a),.bytes_b(jpeg_bytes_b),.bytes_c(jpeg_bytes_c),
@@ -1409,6 +1411,8 @@ module pcie_gray_endpoint (
                     16'h00ec: rdata<=jpeg_debug_detail;
                     16'h00f0: rdata<={31'd0,jpeg_full_rate};
                     16'h00f4: rdata<=32'h4a503630; // "JP60" feature tag
+                    16'h00f8: rdata<={24'd0,jpeg_configured,jpeg_quality_applied};
+                    16'h00fc: rdata<=32'h4a435431; // "JCT1" control ABI
                     default: rdata<=0;
                 endcase
             end
