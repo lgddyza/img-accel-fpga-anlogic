@@ -1,0 +1,7 @@
+Running: xsim.dir/preproc_clahe_1080p_tb/xsimk.exe -runall -simmode gui -wdb preproc_clahe_1080p_tb.wdb -simrunnum 0 -socket 57256
+Design successfully loaded
+Design Loading Memory Usage: 7800 KB (Peak: 7800 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8396 KB (Peak: 8396 KB)
+Simulation CPU Usage: 14905 ms

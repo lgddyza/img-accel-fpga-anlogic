@@ -1,0 +1,26 @@
+set_pin_assignment	{ I_clk }		{ LOCATION = T16; IOSTANDARD = LVCMOS18; PULLTYPE = NONE; }
+set_pin_assignment	{ I_rst_n }		{ LOCATION = U14; IOSTANDARD = LVCMOS18; PULLTYPE = NONE; }
+set_pin_assignment	{ O_dsi_pwm }	{ LOCATION = H17; IOSTANDARD = LVCMOS18; PULLTYPE = NONE; }
+
+set_pin_assignment	{ O_clk_hs_p }	{ LOCATION = C14; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M;}
+
+set_pin_assignment	{ O_data_hs_p[0] }	{ LOCATION = C17; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M;}
+set_pin_assignment	{ O_data_hs_p[1] }	{ LOCATION = A13; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M;}
+set_pin_assignment	{ O_data_hs_p[2] }	{ LOCATION = C15; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M;}
+set_pin_assignment	{ O_data_hs_p[3] }	{ LOCATION = A14; IOSTANDARD = LVDS18; PULLTYPE = NONE; PRE_EMP = ON; VOCM = L2; VOD = 300M;}
+
+set_pin_assignment	{ O_clk_lp_p }		{ LOCATION = D14; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; SLEWRATE = FAST; }
+set_pin_assignment	{ O_clk_lp_n }		{ LOCATION = E15; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; SLEWRATE = FAST; }
+
+set_pin_assignment	{ O_data_lp_p[0] }	{ LOCATION = D18; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_n[0] }	{ LOCATION = E18; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+
+set_pin_assignment	{ O_data_lp_p[1] }	{ LOCATION = A18; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_n[1] }	{ LOCATION = B18; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+
+set_pin_assignment	{ O_data_lp_p[2] }	{ LOCATION = B16; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_n[2] }	{ LOCATION = C16; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+
+set_pin_assignment	{ O_data_lp_p[3] }	{ LOCATION = A15; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+set_pin_assignment	{ O_data_lp_n[3] }	{ LOCATION = A16; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; SLEWRATE = FAST; }
+

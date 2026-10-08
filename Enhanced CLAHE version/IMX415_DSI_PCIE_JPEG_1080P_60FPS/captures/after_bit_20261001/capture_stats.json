@@ -1,0 +1,22 @@
+[
+  {
+    "frame": 0,
+    "min": 8,
+    "max": 255,
+    "mean": 72.4
+  },
+  {
+    "frame": 1,
+    "min": 8,
+    "max": 255,
+    "mean": 76.73,
+    "mean_abs_diff_from_previous": 4.55
+  },
+  {
+    "frame": 2,
+    "min": 8,
+    "max": 255,
+    "mean": 72.52,
+    "mean_abs_diff_from_previous": 4.44
+  }
+]

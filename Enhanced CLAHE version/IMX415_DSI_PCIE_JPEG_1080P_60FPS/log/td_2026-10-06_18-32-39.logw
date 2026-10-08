@@ -1,0 +1,5 @@
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in uisrc/03_ip/sgdma/pcie_bridge/bridge_v1_ph1/al_pcie_if/sideband_if/pcie_sideband_msi.v(344)
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in uisrc/03_ip/sgdma/pcie_bridge/bridge_v1_ph1/al_pcie_if/sideband_if/pcie_sideband_msi.v(344)
+PRJ-8818 ERROR: launch run phy_1 to step bitgen failed.
+PRJ-5303 WARNING: Run syn_1 failed.
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in uisrc/03_ip/sgdma/pcie_bridge/bridge_v1_ph1/al_pcie_if/sideband_if/pcie_sideband_msi.v(344)
