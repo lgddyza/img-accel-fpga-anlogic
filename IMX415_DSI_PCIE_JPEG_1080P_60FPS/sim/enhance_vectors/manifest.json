@@ -1,0 +1,28 @@
+{
+  "width": 32,
+  "height": 16,
+  "modes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    4,
+    5,
+    0,
+    3,
+    1,
+    6,
+    7,
+    2,
+    3
+  ],
+  "pixels": 8704,
+  "opencv": "4.11.0",
+  "blackhat_kernel": 3,
+  "blackhat_gain": 1,
+  "reference": "OpenCV enhancement pixels followed by independent Gaussian/CLAHE RTL"
+}

@@ -1,0 +1,349 @@
+{
+  "host_date": "2026-10-10",
+  "host_timezone": "Asia/Shanghai",
+  "board_time_untrusted": 1777826720.047067,
+  "bar": "/sys/bus/pci/devices/0000:21:00.0/resource0",
+  "registers": {
+    "algorithm": 1162367026,
+    "supported": 255,
+    "requested_mode": 3,
+    "applied_mode": 3,
+    "preproc_fault": 0,
+    "raw_fault": 0,
+    "jpeg_fault": 0,
+    "qf_request": 90,
+    "qf_applied_raw": 218,
+    "input_rate": 1
+  },
+  "files": [
+    {
+      "path": "/root/jpeg_rk/start_jpeg_hdmi_ai.sh",
+      "archive_path": "root/jpeg_rk/start_jpeg_hdmi_ai.sh",
+      "bytes": 6021,
+      "mode": "0o644",
+      "sha256": "34a5c6d1c90446b93d056b6c8fecd328325a46263e8e4b2df8adc0b6da463cfe"
+    },
+    {
+      "path": "/root/jpeg_rk/start_jpeg_hdmi_ai_fallback.sh",
+      "archive_path": "root/jpeg_rk/start_jpeg_hdmi_ai_fallback.sh",
+      "bytes": 342,
+      "mode": "0o644",
+      "sha256": "2b8c5e7f9e81321084a6e775607c9720a72dcb7fc0bffcb123bec5d0734ffcac"
+    },
+    {
+      "path": "/root/jpeg_rk/show_jpeg_hdmi_overlay.py",
+      "archive_path": "root/jpeg_rk/show_jpeg_hdmi_overlay.py",
+      "bytes": 19653,
+      "mode": "0o644",
+      "sha256": "eec962ef0a5879838eb952a5afee7573b4623839a81ebfed1d1d92f4f0ad8200"
+    },
+    {
+      "path": "/root/jpeg_rk/rk_hdmi_status_plane.c",
+      "archive_path": "root/jpeg_rk/rk_hdmi_status_plane.c",
+      "bytes": 10877,
+      "mode": "0o644",
+      "sha256": "ce1a42c06cda0b292f6b15d8f8a144972ed72734c9d857a8b5851e8a1fee0b8c"
+    },
+    {
+      "path": "/root/jpeg_rk/rk_hdmi_status_plane",
+      "archive_path": "root/jpeg_rk/rk_hdmi_status_plane",
+      "bytes": 72504,
+      "mode": "0o755",
+      "sha256": "dec2d33543a24beb112d004f6a0678ec5e6b73ee2475f09f556f3005bec74273"
+    },
+    {
+      "path": "/root/jpeg_rk/rk_temporal_ai.c",
+      "archive_path": "root/jpeg_rk/rk_temporal_ai.c",
+      "bytes": 25912,
+      "mode": "0o644",
+      "sha256": "abc46034c09064a6cc2e547a0dc2ce1d79408ca245281b2012dafa10e84feb58"
+    },
+    {
+      "path": "/root/jpeg_rk/rk_status_ai.c",
+      "archive_path": "root/jpeg_rk/rk_status_ai.c",
+      "bytes": 10654,
+      "mode": "0o644",
+      "sha256": "171543f46629fc5e1e8b8734ed6f57ed4f261e4aa1713833dbff1efb456dc58c"
+    },
+    {
+      "path": "/root/jpeg_rk/rk_font5x7.h",
+      "archive_path": "root/jpeg_rk/rk_font5x7.h",
+      "bytes": 1784,
+      "mode": "0o644",
+      "sha256": "b53dd2b9efb8aeb7f5d2fcb8806e36eae8570b826836628035e799499c090ce8"
+    },
+    {
+      "path": "/root/jpeg_rk/libroad_infer.so",
+      "archive_path": "root/jpeg_rk/libroad_infer.so",
+      "bytes": 76936,
+      "mode": "0o755",
+      "sha256": "2a3f594c940ac035f6d0c98bdebebd1b4e8a87a66b7a8cc2639d769a01fed7ea"
+    },
+    {
+      "path": "/root/jpeg_rk/libgstrktemporalai.so",
+      "archive_path": "root/jpeg_rk/libgstrktemporalai.so",
+      "bytes": 72840,
+      "mode": "0o755",
+      "sha256": "15d7ada16e2e1c52904fd295842aa9890f0dd36dbde65d209fa8d813a1e82b6e"
+    },
+    {
+      "path": "/root/jpeg_rk/libgstrkstatusai.so",
+      "archive_path": "root/jpeg_rk/libgstrkstatusai.so",
+      "bytes": 72224,
+      "mode": "0o755",
+      "sha256": "f75ba82a2d4148cf16d4f6a6d2c1eb0bc8922246ca2564f82f45551154275280"
+    },
+    {
+      "path": "/root/jpeg_rk/active_ai_plugins/libgstrktemporalai.so",
+      "archive_path": "root/jpeg_rk/active_ai_plugins/libgstrktemporalai.so",
+      "bytes": 72840,
+      "mode": "0o755",
+      "sha256": "15d7ada16e2e1c52904fd295842aa9890f0dd36dbde65d209fa8d813a1e82b6e"
+    },
+    {
+      "path": "/root/jpeg_rk/active_ai_plugins/libgstrkstatusai.so",
+      "archive_path": "root/jpeg_rk/active_ai_plugins/libgstrkstatusai.so",
+      "bytes": 72224,
+      "mode": "0o755",
+      "sha256": "f75ba82a2d4148cf16d4f6a6d2c1eb0bc8922246ca2564f82f45551154275280"
+    },
+    {
+      "path": "/root/jpeg_rk/capture_jpeg_tiles.py",
+      "archive_path": "root/jpeg_rk/capture_jpeg_tiles.py",
+      "bytes": 7661,
+      "mode": "0o666",
+      "sha256": "eae19f420c92589c56e137c9b9f64847b828670b7d490327f023654e6c892e9c"
+    },
+    {
+      "path": "/root/jpeg_rk/jpeg_control.py",
+      "archive_path": "root/jpeg_rk/jpeg_control.py",
+      "bytes": 7383,
+      "mode": "0o666",
+      "sha256": "f795885bc7db6bc789163c960cdab833f9d9c06ae9b0f3b0079bece6c756e935"
+    },
+    {
+      "path": "/root/jpeg_rk/preproc_mode.py",
+      "archive_path": "root/jpeg_rk/preproc_mode.py",
+      "bytes": 6060,
+      "mode": "0o666",
+      "sha256": "dac908806b4ae022db2a13a070aaef5bba1cd75d8171832ad92b47d396d37066"
+    },
+    {
+      "path": "/root/jpeg_rk/jpeg_qf_button.py",
+      "archive_path": "root/jpeg_rk/jpeg_qf_button.py",
+      "bytes": 8169,
+      "mode": "0o666",
+      "sha256": "cdebf537936c16cbe1fefe3ac6e77b7bd681f5008ca22f44895d5fc5bd3c52a5"
+    },
+    {
+      "path": "/root/jpeg_rk/set_video_governor.sh",
+      "archive_path": "root/jpeg_rk/set_video_governor.sh",
+      "bytes": 1080,
+      "mode": "0o666",
+      "sha256": "6a2a75294f6c416ad936de1ac492c7f53ffdf30e6ece5d7761ad6dec6647e0de"
+    },
+    {
+      "path": "/root/jpeg_rk/start_jpeg_hdmi_60.sh",
+      "archive_path": "root/jpeg_rk/start_jpeg_hdmi_60.sh",
+      "bytes": 2943,
+      "mode": "0o666",
+      "sha256": "ba2682107781e8b73af848b56a9343a941758b7035a17e4e9ee4e17cf9bb496e"
+    },
+    {
+      "path": "/root/jpeg_rk/show_jpeg_hdmi.py",
+      "archive_path": "root/jpeg_rk/show_jpeg_hdmi.py",
+      "bytes": 14415,
+      "mode": "0o666",
+      "sha256": "b882b2e38eb78927173c75146e54d806ca470fa38e9f8fd3bc10965f281fedf5"
+    },
+    {
+      "path": "/root/jpeg_rk/rk_temporal_gray.c",
+      "archive_path": "root/jpeg_rk/rk_temporal_gray.c",
+      "bytes": 20516,
+      "mode": "0o666",
+      "sha256": "489ad67d41e5e60a3ad05e5eff58f9aac149ca4a81a57e6d53dcd88e1442ecfc"
+    },
+    {
+      "path": "/root/jpeg_rk/rk_fast_osd.c",
+      "archive_path": "root/jpeg_rk/rk_fast_osd.c",
+      "bytes": 7536,
+      "mode": "0o666",
+      "sha256": "4961d274383c79b2f6922bd712e63c825b7820b9fbf6ab4af5dfea8adfdf8fa3"
+    },
+    {
+      "path": "/root/jpeg_rk/libgstrktemporalgray.so",
+      "archive_path": "root/jpeg_rk/libgstrktemporalgray.so",
+      "bytes": 72368,
+      "mode": "0o755",
+      "sha256": "68bfd5e92b1f1e469e9e54ec9b0a930d68f49b71a943c3dddad83d299fd512ee"
+    },
+    {
+      "path": "/root/jpeg_rk/libgstrkfastosd.so",
+      "archive_path": "root/jpeg_rk/libgstrkfastosd.so",
+      "bytes": 72072,
+      "mode": "0o755",
+      "sha256": "936da9d56fc2d088ee0ef6ef55b147db394c31476fe7be85a3ae2c79ed673a6b"
+    },
+    {
+      "path": "/root/jpeg_rk/build_rk_temporal_gray.sh",
+      "archive_path": "root/jpeg_rk/build_rk_temporal_gray.sh",
+      "bytes": 232,
+      "mode": "0o666",
+      "sha256": "eb2166d7386c209bceaca82800fbf3085583d42e6df3ec819b6a756c100a3134"
+    },
+    {
+      "path": "/root/jpeg_rk/build_rk_fast_osd.sh",
+      "archive_path": "root/jpeg_rk/build_rk_fast_osd.sh",
+      "bytes": 202,
+      "mode": "0o666",
+      "sha256": "658b9513752eb6e4211dd4bd0b845073b96771b0737ed361ab1875175bb12d60"
+    },
+    {
+      "path": "/root/jpeg_rk/.rk_temporal_gray_source.sha256",
+      "archive_path": "root/jpeg_rk/.rk_temporal_gray_source.sha256",
+      "bytes": 65,
+      "mode": "0o644",
+      "sha256": "49a93ccf033004e71d677210ad10501d4434f2c3f0fd662cce7fd8f4f913985e"
+    },
+    {
+      "path": "/root/jpeg_rk/milianke_jpeg_a.ko",
+      "archive_path": "root/jpeg_rk/milianke_jpeg_a.ko",
+      "bytes": 130216,
+      "mode": "0o644",
+      "sha256": "ea45cff69b091edfa21ff9865b85d4841052f8af3dec8f2c09782baf1b57ec5c"
+    },
+    {
+      "path": "/root/jpeg_rk/milianke_jpeg_b.ko",
+      "archive_path": "root/jpeg_rk/milianke_jpeg_b.ko",
+      "bytes": 130216,
+      "mode": "0o644",
+      "sha256": "e2d9da775172a6acd002c7363d3299a56fea5cd283e216749d772bb62492488d"
+    },
+    {
+      "path": "/root/jpeg_rk/milianke_jpeg_c.ko",
+      "archive_path": "root/jpeg_rk/milianke_jpeg_c.ko",
+      "bytes": 130832,
+      "mode": "0o644",
+      "sha256": "789874275b6144cca4ffff640bebd0219f0557e98df3a16c0cf188f7627c2bda"
+    },
+    {
+      "path": "/root/jpeg_rk/milianke_jpeg_a.c",
+      "archive_path": "root/jpeg_rk/milianke_jpeg_a.c",
+      "bytes": 173,
+      "mode": "0o666",
+      "sha256": "1cbfaa4ae1aa011d75dbdeaf0fbb96d0d29ebb1caba8bb209abda5fbc45a9012"
+    },
+    {
+      "path": "/root/jpeg_rk/milianke_jpeg_b.c",
+      "archive_path": "root/jpeg_rk/milianke_jpeg_b.c",
+      "bytes": 173,
+      "mode": "0o666",
+      "sha256": "ad38aba3a13df9ab06c6de6c4a6e9448eb545373cce366daf587d55a31105b5f"
+    },
+    {
+      "path": "/root/jpeg_rk/milianke_jpeg_c.c",
+      "archive_path": "root/jpeg_rk/milianke_jpeg_c.c",
+      "bytes": 173,
+      "mode": "0o666",
+      "sha256": "13edef65c160341d6340a48db6c73d690032afa3ef80a58fcfd7fd1587c39d18"
+    },
+    {
+      "path": "/root/jpeg_rk/milianke_jpeg_v4l2.c",
+      "archive_path": "root/jpeg_rk/milianke_jpeg_v4l2.c",
+      "bytes": 35973,
+      "mode": "0o666",
+      "sha256": "7a12d0abbec674fb0d5f8af476d01c7d8a732fa32d2dc3c2b00a3ecd37c2a038"
+    },
+    {
+      "path": "/root/jpeg_rk/Makefile",
+      "archive_path": "root/jpeg_rk/Makefile",
+      "bytes": 306,
+      "mode": "0o600",
+      "sha256": "52f31d97e683923a4eac4ede674fc875b2005dc5dba44f562f645f9b269a6faf"
+    },
+    {
+      "path": "/root/jpeg_rk/limit_rk_logs.sh",
+      "archive_path": "root/jpeg_rk/limit_rk_logs.sh",
+      "bytes": 806,
+      "mode": "0o644",
+      "sha256": "fff8acfa0fec22256870cb65e228a774296b1a31e004045d3b89188922f02577"
+    },
+    {
+      "path": "/root/jpeg_rk/check_jpeg_weave.py",
+      "archive_path": "root/jpeg_rk/check_jpeg_weave.py",
+      "bytes": 1749,
+      "mode": "0o666",
+      "sha256": "5ce9c44477a9fd8d50cfe9a92bc3a6039ef143dbd72bbf6c07c3488516811990"
+    },
+    {
+      "path": "/root/road_damage_yolov8n/road_damage_yolov8n_gray640_int8_rk3576.rknn",
+      "archive_path": "root/road_damage_yolov8n/road_damage_yolov8n_gray640_int8_rk3576.rknn",
+      "bytes": 6308424,
+      "mode": "0o644",
+      "sha256": "ecdc6accd6558c3394d4a73eeb03b876f09d9e82ba11c2754869d8bb9add55ae"
+    },
+    {
+      "path": "/root/road_damage_yolov8n/rk3576_infer.cpp",
+      "archive_path": "root/road_damage_yolov8n/rk3576_infer.cpp",
+      "bytes": 3549,
+      "mode": "0o644",
+      "sha256": "a8cbe74f45f6205d9953e4422b93a914ab01b54a4e998a67dd359870be6e5e17"
+    },
+    {
+      "path": "/root/road_damage_yolov8n/rk3576_benchmark.cpp",
+      "archive_path": "root/road_damage_yolov8n/rk3576_benchmark.cpp",
+      "bytes": 9836,
+      "mode": "0o644",
+      "sha256": "2c77cbd614dc12a098f0ab7c6be249476d6fc6e78efbfb8479eb018af14e1a98"
+    },
+    {
+      "path": "/root/road_damage_yolov8n/rknn_api.h",
+      "archive_path": "root/road_damage_yolov8n/rknn_api.h",
+      "bytes": 35707,
+      "mode": "0o644",
+      "sha256": "c48e11a6f41b451a5fd1e4ad774ea60252d3d94f78bee9b21ea3d21b21deba9a"
+    },
+    {
+      "path": "/lib/librknnrt.so",
+      "archive_path": "lib/librknnrt.so",
+      "bytes": 7259064,
+      "mode": "0o644",
+      "sha256": "73993ed4b440460825f21611731564503cc1d5a0c123746477da6cd574f34885"
+    },
+    {
+      "path": "/lib/modules/6.1.99/extra/anlogic_pci.ko",
+      "archive_path": "lib/modules/6.1.99/extra/anlogic_pci.ko",
+      "bytes": 740616,
+      "mode": "0o644",
+      "sha256": "502829d9f18fd2d967f63de87c8bb181e445eacbf369a787b7c3617b25ff7c3d"
+    },
+    {
+      "path": "/etc/modprobe.d/anlogic_pci.conf",
+      "archive_path": "etc/modprobe.d/anlogic_pci.conf",
+      "bytes": 77,
+      "mode": "0o644",
+      "sha256": "ec4b74f8ba516be84de92affa52182aae179e2b192db8b6972f2e17bdcd9a6ed"
+    },
+    {
+      "path": "/etc/systemd/system/anlogic-sgdma.service",
+      "archive_path": "etc/systemd/system/anlogic-sgdma.service",
+      "bytes": 316,
+      "mode": "0o644",
+      "sha256": "f37438303b307700352d0be0cd72875c59746ab3545a9d5b9d6eb5481f641f24"
+    },
+    {
+      "path": "/etc/systemd/system/pcie1-recover.service",
+      "archive_path": "etc/systemd/system/pcie1-recover.service",
+      "bytes": 352,
+      "mode": "0o644",
+      "sha256": "d91839d18ff8902918aac8def3efe0e6eae7c5afedbc942eb71c1d2228332ff7"
+    },
+    {
+      "path": "/usr/local/sbin/pcie1-recover.sh",
+      "archive_path": "usr/local/sbin/pcie1-recover.sh",
+      "bytes": 1382,
+      "mode": "0o755",
+      "sha256": "6b4efab2d8fd8699d7a23a23e3bf7a7df4a42b0035119788135f305e7e05aa70"
+    }
+  ]
+}

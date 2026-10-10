@@ -1,0 +1,84 @@
+{
+  "logic": {
+    "short_release": [
+      "short"
+    ],
+    "hold_once_release_no_qf": [
+      "long"
+    ],
+    "press_bounce": [
+      "short"
+    ],
+    "glitch_ignored": [],
+    "startup_held_ignored": [
+      "short"
+    ],
+    "late_poll_release_long": [
+      "long"
+    ],
+    "two_distinct_holds": [
+      "long",
+      "long"
+    ]
+  },
+  "bar": "/sys/bus/pci/devices/0000:21:00.0/resource0",
+  "initial_mode": 3,
+  "switches": [
+    {
+      "applied": 4,
+      "qf": 90,
+      "preproc_fault": 0,
+      "raw_fault": 0,
+      "jpeg_fault": 0
+    },
+    {
+      "applied": 5,
+      "qf": 90,
+      "preproc_fault": 0,
+      "raw_fault": 0,
+      "jpeg_fault": 0
+    },
+    {
+      "applied": 6,
+      "qf": 90,
+      "preproc_fault": 0,
+      "raw_fault": 0,
+      "jpeg_fault": 0
+    },
+    {
+      "applied": 7,
+      "qf": 90,
+      "preproc_fault": 0,
+      "raw_fault": 0,
+      "jpeg_fault": 0
+    },
+    {
+      "applied": 0,
+      "qf": 90,
+      "preproc_fault": 0,
+      "raw_fault": 0,
+      "jpeg_fault": 0
+    },
+    {
+      "applied": 1,
+      "qf": 90,
+      "preproc_fault": 0,
+      "raw_fault": 0,
+      "jpeg_fault": 0
+    },
+    {
+      "applied": 2,
+      "qf": 90,
+      "preproc_fault": 0,
+      "raw_fault": 0,
+      "jpeg_fault": 0
+    },
+    {
+      "applied": 3,
+      "qf": 90,
+      "preproc_fault": 0,
+      "raw_fault": 0,
+      "jpeg_fault": 0
+    }
+  ]
+}

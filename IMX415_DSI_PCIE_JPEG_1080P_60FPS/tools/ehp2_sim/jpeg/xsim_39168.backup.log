@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct  9 23:50:17 2026
+# Process ID: 39168
+# Current directory: E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/tools/ehp2_sim/jpeg
+# Command line: xsim.exe -mode tcl -source {xsim.dir/ehp2_jpeg/xsim_script.tcl}
+# Log file: E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/tools/ehp2_sim/jpeg/xsim.log
+# Journal file: E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/tools/ehp2_sim/jpeg\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/ehp2_jpeg/xsim_script.tcl
+# xsim {ehp2_jpeg} -autoloadwcfg -runall
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run -all
+Fatal: JPEG fault bridge=100 packer=000 B=0/0 C=8/355
+Time: 13891084 ns  Iteration: 0  Process: /tb_ehp2_jpeg_1080p/Always68_505  File: E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/sim/tb_ehp2_jpeg_1080p.sv
+$finish called at time : 13891084 ns
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:05:45 . Memory (MB): peak = 218.715 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct  9 23:56:05 2026...

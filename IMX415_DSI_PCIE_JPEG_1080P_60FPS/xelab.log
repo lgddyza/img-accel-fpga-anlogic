@@ -1,0 +1,31 @@
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: F:/FPGA/Vivado18.3/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe tb_gray_enhance4_1080p -s ehp1_1080p 
+Multi-threading is on. Using 14 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.gray_gauss4_default
+Compiling module work.gray_clahe4_default
+Compiling module work.gray_sobel_guided4
+Compiling module work.gray_extreme_default
+Compiling module work.gray_horizontal4_default
+Compiling module work.gray_window4_default
+Compiling module work.gray_rect_morph4_default
+Compiling module work.gray_extreme(MAXIMUM=0)
+Compiling module work.gray_horizontal4(MAXIMUM=0)
+Compiling module work.gray_rect_morph4(MAXIMUM=0)
+Compiling module work.gray_align_queue(DEPTH=2944)
+Compiling module work.gray_window4(K=5)
+Compiling module work.gray_extreme(K=5,MAXIMUM=0)
+Compiling module work.gray_extreme(K=5)
+Compiling module work.gray_extreme(K=4)
+Compiling module work.gray_window4(K=5,PIX_BITS=32,DRA...
+Compiling module work.gray_direction_open4_default
+Compiling module work.gray_align_queue(DEPTH=1984)
+Compiling module work.gray_blackhat4
+Compiling module work.gray_preprocess4_default
+Compiling module work.tb_gray_enhance4_1080p
+Built simulation snapshot ehp1_1080p

@@ -1,0 +1,1 @@
+"tb_gray_enhance4" -s "ehp1_gui_fix_small" --nolog 

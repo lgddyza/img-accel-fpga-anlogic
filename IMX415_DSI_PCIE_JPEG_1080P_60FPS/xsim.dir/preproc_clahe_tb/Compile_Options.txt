@@ -1,0 +1,1 @@
+-nolog "tb_gray_preprocess4" -s "preproc_clahe_tb" 

@@ -1,0 +1,13 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/gray_gauss4.v" into library work
+INFO: [VRFC 10-311] analyzing module gray_gauss4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/gray_preprocess4.v" into library work
+INFO: [VRFC 10-311] analyzing module gray_preprocess4
+INFO: [VRFC 10-311] analyzing module gray_clahe4
+INFO: [VRFC 10-311] analyzing module gray_align_queue
+INFO: [VRFC 10-311] analyzing module gray_window4
+INFO: [VRFC 10-311] analyzing module gray_extreme
+INFO: [VRFC 10-311] analyzing module gray_horizontal4
+INFO: [VRFC 10-311] analyzing module gray_rect_morph4
+INFO: [VRFC 10-311] analyzing module gray_direction_open4
+INFO: [VRFC 10-311] analyzing module gray_blackhat4
+INFO: [VRFC 10-311] analyzing module gray_sobel_guided4

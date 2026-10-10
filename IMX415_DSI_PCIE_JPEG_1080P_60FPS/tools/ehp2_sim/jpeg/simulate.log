@@ -1,0 +1,44 @@
+
+****** xsim v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/ehp2_jpeg/xsim_script.tcl
+# xsim {ehp2_jpeg} -autoloadwcfg -runall
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run -all
+tail row=1069 time=13839907000 learned gaps close/erode/dilate=676/676/676
+tail row=1070 time=13852748000 learned gaps close/erode/dilate=676/676/676
+tail row=1071 time=13865589000 learned gaps close/erode/dilate=676/676/676
+tail row=1072 time=13878430000 learned gaps close/erode/dilate=676/676/676
+tail row=1073 time=13883761000 learned gaps close/erode/dilate=676/676/676
+tail row=1074 time=13889093000 learned gaps close/erode/dilate=676/676/676
+tail row=1075 time=13901934000 learned gaps close/erode/dilate=676/676/676
+tail row=1076 time=13914775000 learned gaps close/erode/dilate=676/676/676
+tail row=1077 time=13927616000 learned gaps close/erode/dilate=676/676/676
+tail row=1078 time=13940457000 learned gaps close/erode/dilate=676/676/676
+JPEG packet lane=0 frame=1 bytes=184062
+JPEG packet lane=1 frame=1 bytes=184528
+JPEG packet lane=2 frame=1 bytes=183590
+EHP2 frame mode=5 complete, FIFO high water A/B/C=217/217/433
+tail row=1069 time=30501907000 learned gaps close/erode/dilate=676/676/676
+tail row=1070 time=30514748000 learned gaps close/erode/dilate=676/676/676
+tail row=1071 time=30527589000 learned gaps close/erode/dilate=676/676/676
+tail row=1072 time=30540430000 learned gaps close/erode/dilate=676/676/676
+tail row=1073 time=30545761000 learned gaps close/erode/dilate=676/676/676
+tail row=1074 time=30551093000 learned gaps close/erode/dilate=676/676/676
+tail row=1075 time=30563934000 learned gaps close/erode/dilate=676/676/676
+tail row=1076 time=30576775000 learned gaps close/erode/dilate=676/676/676
+tail row=1077 time=30589616000 learned gaps close/erode/dilate=676/676/676
+tail row=1078 time=30602457000 learned gaps close/erode/dilate=676/676/676
+JPEG packet lane=0 frame=2 bytes=296667
+JPEG packet lane=1 frame=2 bytes=298014
+JPEG packet lane=2 frame=2 bytes=296132
+EHP2 frame mode=7 complete, FIFO high water A/B/C=217/217/433
+PASS EHP2 1080p60 blackhat and blackhat+active CLAHE to three real JPEG encoders, no FIFO overflow
+$finish called at time : 33346871372 ps : File "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/sim/tb_ehp2_jpeg_1080p.sv" Line 120
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:12:20 . Memory (MB): peak = 218.258 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Oct 10 00:11:56 2026...

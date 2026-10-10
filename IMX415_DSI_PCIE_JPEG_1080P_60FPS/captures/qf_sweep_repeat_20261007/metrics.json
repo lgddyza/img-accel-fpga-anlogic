@@ -1,0 +1,245 @@
+{
+  "meaning": "actual FPGA JPEG tiles over PCIe, QF changed live",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "raw_gray8_bytes": 2073600,
+  "rate_setting_fps": 60,
+  "initial_qf": 85,
+  "initial_faults": 0,
+  "bar": "/sys/bus/pci/devices/0000:21:00.0/resource0",
+  "results": [
+    {
+      "qf": 30,
+      "requested": 30,
+      "applied": 30,
+      "applied_valid": true,
+      "frames": 180,
+      "elapsed_s": 2.984,
+      "receive_fps": 60.0,
+      "min_bytes": 118839,
+      "p05_bytes": 122848,
+      "median_bytes": 124598,
+      "mean_bytes": 124443,
+      "p95_bytes": 125534,
+      "max_bytes": 125779,
+      "tile_mean_bytes": [
+        41666,
+        41495,
+        41283
+      ],
+      "sample_tile_bytes": [
+        40193,
+        39360,
+        39286
+      ],
+      "raw_to_jpeg_ratio": 16.66,
+      "mbps_at_60fps": 59.73,
+      "fpga_sent": [
+        225,
+        225,
+        225
+      ],
+      "fpga_faults": 0
+    },
+    {
+      "qf": 40,
+      "requested": 40,
+      "applied": 40,
+      "applied_valid": true,
+      "frames": 180,
+      "elapsed_s": 2.984,
+      "receive_fps": 59.99,
+      "min_bytes": 142387,
+      "p05_bytes": 143879,
+      "median_bytes": 144799,
+      "mean_bytes": 144913,
+      "p95_bytes": 145827,
+      "max_bytes": 145977,
+      "tile_mean_bytes": [
+        48643,
+        48288,
+        47982
+      ],
+      "sample_tile_bytes": [
+        48024,
+        47106,
+        47257
+      ],
+      "raw_to_jpeg_ratio": 14.31,
+      "mbps_at_60fps": 69.56,
+      "fpga_sent": [
+        450,
+        450,
+        450
+      ],
+      "fpga_faults": 0
+    },
+    {
+      "qf": 50,
+      "requested": 50,
+      "applied": 50,
+      "applied_valid": true,
+      "frames": 180,
+      "elapsed_s": 2.983,
+      "receive_fps": 60.0,
+      "min_bytes": 153830,
+      "p05_bytes": 159429,
+      "median_bytes": 162317,
+      "mean_bytes": 162054,
+      "p95_bytes": 163862,
+      "max_bytes": 164087,
+      "tile_mean_bytes": [
+        54309,
+        54003,
+        53741
+      ],
+      "sample_tile_bytes": [
+        51704,
+        51277,
+        50849
+      ],
+      "raw_to_jpeg_ratio": 12.8,
+      "mbps_at_60fps": 77.79,
+      "fpga_sent": [
+        676,
+        676,
+        676
+      ],
+      "fpga_faults": 0
+    },
+    {
+      "qf": 60,
+      "requested": 60,
+      "applied": 60,
+      "applied_valid": true,
+      "frames": 180,
+      "elapsed_s": 2.984,
+      "receive_fps": 59.99,
+      "min_bytes": 181768,
+      "p05_bytes": 182514,
+      "median_bytes": 183802,
+      "mean_bytes": 184044,
+      "p95_bytes": 185361,
+      "max_bytes": 185635,
+      "tile_mean_bytes": [
+        61524,
+        61317,
+        61203
+      ],
+      "sample_tile_bytes": [
+        60794,
+        60508,
+        60466
+      ],
+      "raw_to_jpeg_ratio": 11.27,
+      "mbps_at_60fps": 88.34,
+      "fpga_sent": [
+        902,
+        902,
+        902
+      ],
+      "fpga_faults": 0
+    },
+    {
+      "qf": 70,
+      "requested": 70,
+      "applied": 70,
+      "applied_valid": true,
+      "frames": 180,
+      "elapsed_s": 2.983,
+      "receive_fps": 60.0,
+      "min_bytes": 213412,
+      "p05_bytes": 215087,
+      "median_bytes": 216367,
+      "mean_bytes": 216656,
+      "p95_bytes": 218184,
+      "max_bytes": 218386,
+      "tile_mean_bytes": [
+        72436,
+        72151,
+        72070
+      ],
+      "sample_tile_bytes": [
+        71443,
+        71001,
+        70968
+      ],
+      "raw_to_jpeg_ratio": 9.57,
+      "mbps_at_60fps": 103.99,
+      "fpga_sent": [
+        1127,
+        1127,
+        1127
+      ],
+      "fpga_faults": 0
+    },
+    {
+      "qf": 80,
+      "requested": 80,
+      "applied": 80,
+      "applied_valid": true,
+      "frames": 180,
+      "elapsed_s": 2.984,
+      "receive_fps": 59.99,
+      "min_bytes": 263875,
+      "p05_bytes": 265124,
+      "median_bytes": 267550,
+      "mean_bytes": 267853,
+      "p95_bytes": 270296,
+      "max_bytes": 270678,
+      "tile_mean_bytes": [
+        89652,
+        89052,
+        89149
+      ],
+      "sample_tile_bytes": [
+        88332,
+        87684,
+        87859
+      ],
+      "raw_to_jpeg_ratio": 7.74,
+      "mbps_at_60fps": 128.57,
+      "fpga_sent": [
+        1353,
+        1353,
+        1353
+      ],
+      "fpga_faults": 0
+    },
+    {
+      "qf": 90,
+      "requested": 90,
+      "applied": 90,
+      "applied_valid": true,
+      "frames": 180,
+      "elapsed_s": 2.984,
+      "receive_fps": 59.99,
+      "min_bytes": 373968,
+      "p05_bytes": 377030,
+      "median_bytes": 380191,
+      "mean_bytes": 380948,
+      "p95_bytes": 384215,
+      "max_bytes": 384676,
+      "tile_mean_bytes": [
+        127424,
+        126703,
+        126822
+      ],
+      "sample_tile_bytes": [
+        125062,
+        124421,
+        124485
+      ],
+      "raw_to_jpeg_ratio": 5.44,
+      "mbps_at_60fps": 182.86,
+      "fpga_sent": [
+        1579,
+        1579,
+        1579
+      ],
+      "fpga_faults": 0
+    }
+  ]
+}

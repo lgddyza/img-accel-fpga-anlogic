@@ -1,0 +1,38 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/03_ip/ui_dbuf/sfifo/sfifo.v" into library work
+INFO: [VRFC 10-311] analyzing module demo_async_sfifo
+INFO: [VRFC 10-311] analyzing module fifo_cross_domain_addr_process_al_0322d65db018
+INFO: [VRFC 10-311] analyzing module ram_infer_0322d65db018
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/gray4_to_yuyv4.v" into library work
+INFO: [VRFC 10-311] analyzing module gray4_to_yuyv4
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_gray4_axis_cdc.v" into library work
+INFO: [VRFC 10-311] analyzing module jpeg_gray4_axis_cdc
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_axil_config.v" into library work
+INFO: [VRFC 10-311] analyzing module jpeg_axil_config
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_byte_packer.v" into library work
+INFO: [VRFC 10-311] analyzing module jpeg_byte_packer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_triple_tile_branch.v" into library work
+INFO: [VRFC 10-311] analyzing module jpeg_triple_tile_branch
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/axi4_lite_regs.v" into library work
+INFO: [VRFC 10-311] analyzing module axi4_lite_regs
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/bitstream_packer.v" into library work
+INFO: [VRFC 10-311] analyzing module bitstream_packer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/bram_sdp.v" into library work
+INFO: [VRFC 10-311] analyzing module bram_sdp
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/dct_1d.v" into library work
+INFO: [VRFC 10-311] analyzing module dct_1d
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/dct_2d.v" into library work
+INFO: [VRFC 10-311] analyzing module dct_2d
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/huffman_encoder.v" into library work
+INFO: [VRFC 10-311] analyzing module huffman_encoder
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/input_buffer.v" into library work
+INFO: [VRFC 10-311] analyzing module input_buffer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/jfif_writer.v" into library work
+INFO: [VRFC 10-311] analyzing module jfif_writer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/tools/ehp2_sim/jpeg/mjpegzero_enc_top.v" into library work
+INFO: [VRFC 10-311] analyzing module mjpegzero_enc_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/quantizer.v" into library work
+INFO: [VRFC 10-311] analyzing module quantizer
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/rgb_to_ycbcr.v" into library work
+INFO: [VRFC 10-311] analyzing module rgb_to_ycbcr
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/zigzag_reorder.v" into library work
+INFO: [VRFC 10-311] analyzing module zigzag_reorder

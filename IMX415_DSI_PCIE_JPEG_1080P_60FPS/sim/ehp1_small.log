@@ -1,0 +1,20 @@
+#-----------------------------------------------------------
+# xsim v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Oct  9 19:26:19 2026
+# Process ID: 60904
+# Current directory: E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS
+# Command line: xsim.exe -log sim/ehp1_small.log -mode tcl -source {xsim.dir/ehp1_tb/xsim_script.tcl}
+# Log file: E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/sim/ehp1_small.log
+# Journal file: E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/ehp1_tb/xsim_script.tcl
+# xsim {ehp1_tb} -autoloadwcfg -runall
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+run -all
+PASS EHP1 all modes, OpenCV pixels, legacy reference, gaps, borders and frame-latched mode
+$finish called at time : 1612630 ns : File "E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/sim/tb_gray_enhance4.sv" Line 97
+exit
+INFO: [Common 17-206] Exiting xsim at Fri Oct  9 19:26:26 2026...

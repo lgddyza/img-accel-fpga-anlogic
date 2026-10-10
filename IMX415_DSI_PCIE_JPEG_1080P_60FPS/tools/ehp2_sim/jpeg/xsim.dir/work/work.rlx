@@ -1,0 +1,25 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/sim/tb_ehp2_jpeg_1080p.sv,1791561567,systemVerilog,,,,tb_ehp2_jpeg_1080p,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/axi4_lite_regs.v,1786393956,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/bitstream_packer.v,,axi4_lite_regs,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/bitstream_packer.v,1786393956,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/bram_sdp.v,,bitstream_packer,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/bram_sdp.v,1786393956,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/dct_1d.v,,bram_sdp,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/dct_1d.v,1786393956,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/dct_2d.v,,dct_1d,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/dct_2d.v,1786393956,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/huffman_encoder.v,,dct_2d,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/huffman_encoder.v,1786393956,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/input_buffer.v,,huffman_encoder,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/input_buffer.v,1791055649,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/jfif_writer.v,,input_buffer,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/jfif_writer.v,1791055686,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/tools/ehp2_sim/jpeg/mjpegzero_enc_top.v,,jfif_writer,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/quantizer.v,1791105459,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/rgb_to_ycbcr.v,,quantizer,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/rgb_to_ycbcr.v,1786393956,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/zigzag_reorder.v,,rgb_to_ycbcr,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/zigzag_reorder.v,1786393956,verilog,,,,zigzag_reorder,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/tools/ehp2_sim/jpeg/mjpegzero_enc_top.v,1791561568,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/quantizer.v,,mjpegzero_enc_top,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/gray4_to_yuyv4.v,1791048441,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_gray4_axis_cdc.v,,gray4_to_yuyv4,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/gray_gauss4.v,1791542703,systemVerilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/gray_preprocess4.v,,gray_gauss4,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/gray_preprocess4.v,1791561567,systemVerilog,,,,gray_align_queue;gray_blackhat4;gray_clahe4;gray_direction_open4;gray_extreme;gray_horizontal4;gray_preprocess4;gray_rect_morph4;gray_sobel_guided4;gray_window4,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_axil_config.v,1791211943,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_byte_packer.v,,jpeg_axil_config,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_byte_packer.v,1791051268,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_triple_tile_branch.v,,jpeg_byte_packer,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_gray4_axis_cdc.v,1791552481,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_axil_config.v,,jpeg_gray4_axis_cdc,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/jpeg_triple_tile_branch.v,1791212771,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/third_party/mjpegZero/rtl/axi4_lite_regs.v,,jpeg_triple_tile_branch,,,,,,,,
+E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/03_ip/ui_dbuf/sfifo/sfifo.v,1790762620,verilog,,E:/FPGA/workspace/IMX415_DSI_PCIE_JPEG_1080P_60FPS/uisrc/01_rtl/gray4_to_yuyv4.v,,demo_async_sfifo;fifo_cross_domain_addr_process_al_0322d65db018;ram_infer_0322d65db018,,,,,,,,
