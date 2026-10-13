@@ -1,0 +1,9 @@
+build/
+fpga_prj_jpeg_Runs/
+cw/
+log/
+.lock.f
+__pycache__/
+*.pyc
+td_*.log*
+sim/enhance_vectors/

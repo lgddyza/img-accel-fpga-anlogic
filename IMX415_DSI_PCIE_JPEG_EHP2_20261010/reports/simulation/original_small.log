@@ -1,0 +1,2 @@
+PASS EHP2 eight modes, exact OpenCV enhancement, post-CLAHE, gaps, borders and frame-latched mode
+sim/tb_gray_enhance4.sv:99: $finish called at 2105440000 (1ps)
