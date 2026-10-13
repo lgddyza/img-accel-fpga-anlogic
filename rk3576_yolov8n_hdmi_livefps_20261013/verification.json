@@ -1,0 +1,13 @@
+{
+  "capture_date": "2026-10-13",
+  "payload_files": 55,
+  "payload_hash_size_mode_verified": true,
+  "live_fps_sources_verified": true,
+  "live_fps_binary_property_verified": true,
+  "pc_board_agent_identical": true,
+  "board_archive_sha256": "7f70489436ad66251ad5bb15cd5e5f314aa3c85f4d2aaa500c7007adcd95718a",
+  "board_model_sha256": "ecdc6accd6558c3394d4a73eeb03b876f09d9e82ba11c2754869d8bb9add55ae",
+  "viewer_running_at_capture": true,
+  "restore_on_fresh_system_tested": false,
+  "temporalgray_builds_identical": false
+}
