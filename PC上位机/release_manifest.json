@@ -1,0 +1,1491 @@
+{
+  "date": "2026-10-14",
+  "name": "RKVisionHost",
+  "files": [
+    {
+      "path": "RKVisionHost/RKVisionHost.exe",
+      "bytes": 3512327,
+      "sha256": "078748af9a566c85baea558a8b5e8fb15a2c2f1037f395d0d8ff198648d70bf8"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-console-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "015bd08815c7b934a8952c3a7578e9ce59f21136e8a880d42bbd414bec2c6058"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-datetime-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "5534812cdbdae94ba45cb216e5eb9af686b853948df54365103555abbbaf9d9a"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-debug-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "837d2b1b2cd03e03fc6ccb050698b6b5763af17c201304872342a5eae9e0a2d2"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-errorhandling-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "de43b165f568c276c00e95acd454e3092f352a18e95874595f4f4658c06d2ec7"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-fibers-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "3cebc45bf479ad74cfabf2c6bfd4994d7ad639ed1221025981d19cedf9ce0416"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-fibers-l1-1-1.dll",
+      "bytes": 22872,
+      "sha256": "5ef70308bcca628ce6b0e2856b15b1c7ae340c3f9bbbc4c1071d8c191a34a5c3"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-file-l1-1-0.dll",
+      "bytes": 27008,
+      "sha256": "250ac829f2617bcac1c6e5b8c4f630462e20765863ba573526a3e11bbfb94a9a"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-file-l1-2-0.dll",
+      "bytes": 22888,
+      "sha256": "ae14079a114733f60ce87b92cba42acd8083c2cd67594e53bc37dc0b97a4b465"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-file-l2-1-0.dll",
+      "bytes": 22912,
+      "sha256": "914bf26a298713119477ea0a8e7bd43171b91344ebe24fb47ad77c49686e3d87"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-handle-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "ab5489955e371b15f77906c08ec3c7affe2c7a46a08c514ca628768b4478974b"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-heap-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "c70f9644d8377fa39c5b71f2e9734c1400d7598904fdeb772e8502099982dcb7"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-interlocked-l1-1-0.dll",
+      "bytes": 22888,
+      "sha256": "f8129710188e407bb0e6f46d30aeba277d67b947ece5fe09e883fde2323f3ae6"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-kernel32-legacy-l1-1-1.dll",
+      "bytes": 22888,
+      "sha256": "5200b16cb2ddc61cfc07373a9a84aa85a3ab50806ca96c879c883275832944c1"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-libraryloader-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "48786fb88b001dcd1f63acea903d3ca9cc0b3060d5a325e3f2f3cbc3bfd53166"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-localization-l1-2-0.dll",
+      "bytes": 22872,
+      "sha256": "9ec3898f7eba91faa28b51616c211a2689e3a13aeef8de6e13cb674e49d689eb"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-memory-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "3a6cbc524c99e1cd80d5368f5601402a37ad602528b1ab628093573ef638eb3b"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-namedpipe-l1-1-0.dll",
+      "bytes": 22888,
+      "sha256": "97145ef89c44949fcf0f04ac834a8bc7d687ef49ee73ae9fc32f3c11136b7201"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-processenvironment-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "8bc7c10b1851aea644e9c9f381cdb935e091fee6b0be3d3aedc6fffaac96adb7"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-processthreads-l1-1-0.dll",
+      "bytes": 22912,
+      "sha256": "d8030b777617c71f0f94564607699dbf7561487d779db9756aed378c5675213f"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-processthreads-l1-1-1.dll",
+      "bytes": 22872,
+      "sha256": "f5e676713340f73a03a3d41a6ec9883b431da7d16c7f07bd0a920fb80e6c0753"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-profile-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "f023d47e44d3eea6b0743580f57e8c6ba81e79d5ebfa7da26250076c647b980e"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-rtlsupport-l1-1-0.dll",
+      "bytes": 22888,
+      "sha256": "9746d8930704153578a628c010638a5f818ffe5a927e25591b108e256dc6afca"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-string-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "7c53ae24c982d16ffd1bf7f918d115b11b7f30e57bc7feaa18cb9781e4abb926"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-synch-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "56d9d62ca5dba79a6581b8d574a7d8b2a64a5ecb71e47dcf06ed0285708b1859"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-synch-l1-2-0.dll",
+      "bytes": 22888,
+      "sha256": "f6482bbec5612c39ecb4822787a333f2b7570f7a5f922a4059be41ba957bb372"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-sysinfo-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "272d02765fdd3582618236c2d309abba069642f9bc1062ede069d0c144e17007"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-sysinfo-l1-2-0.dll",
+      "bytes": 22912,
+      "sha256": "8a0900788859d0eb51c2f48f50cc6ed376a120b518100fa20e11d7702ccde260"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-timezone-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "ff35de6c03812b332e140f17dade25c5dd4775156da9eeb1eaae3fddd27236ec"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-core-util-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "191ef3e98641a57296f19d572d8eb62489470ff1ef6030d136af170c2f835173"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-conio-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "54ee5ec719a051496ff60aa00dbeaa94b9a7d2cdac27fe9b7317f1a666b6a2aa"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-convert-l1-1-0.dll",
+      "bytes": 26992,
+      "sha256": "8b94662429171019fcd63c70bbf2095a075170599704a5e7dcdbe3da13f3a429"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-environment-l1-1-0.dll",
+      "bytes": 22912,
+      "sha256": "39e5929593709e8af3bc9e0a75ec1155778d6f4a247f4cdfc58928ad6db88434"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-filesystem-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "5a8ecebac32edf4e1f3c5c6c1c8ea1a1add6cda4f9c9cb26f752fb295bea6865"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-heap-l1-1-0.dll",
+      "bytes": 22872,
+      "sha256": "c71080cbcb43bf1f8f3e391deb12a582eb0abefc80946f340675a2c616e4feb4"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-locale-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "6c68648e524187e03c4ad9aaa4a99113c6ee9f29fb39cc0ed93f951975138e63"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-math-l1-1-0.dll",
+      "bytes": 31064,
+      "sha256": "d4fbcccbe29371cbce431e43b2eb4f7ba9a6f04a3d740a071f02457a505e9dc8"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-process-l1-1-0.dll",
+      "bytes": 22896,
+      "sha256": "47c1935942e3ac0812e4dcf18c0e265e565f0194a3349111c299712f5565f7ac"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-runtime-l1-1-0.dll",
+      "bytes": 26968,
+      "sha256": "72adc1b3677e0814d9c4ebf0964000e84bb2acf67336c8963061665e44f78029"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-stdio-l1-1-0.dll",
+      "bytes": 26968,
+      "sha256": "900afc3989673c9bb1a687ed38c192f46db9e6ba6d11a668898a539e7fc23798"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-string-l1-1-0.dll",
+      "bytes": 26968,
+      "sha256": "fcf12466cc12fd3b73611fc0763a5a1f9d44e90349513c34a0c83b0f36421793"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-time-l1-1-0.dll",
+      "bytes": 22912,
+      "sha256": "886e57c4a6adb299b38f02945369f590a67da4e79a798359fc60aaa067212d7c"
+    },
+    {
+      "path": "RKVisionHost/_internal/api-ms-win-crt-utility-l1-1-0.dll",
+      "bytes": 22912,
+      "sha256": "5f8f26b216ade615b67a41f6fbbb910972fc6153315a65bb8f09912be50215b1"
+    },
+    {
+      "path": "RKVisionHost/_internal/base_library.zip",
+      "bytes": 1333490,
+      "sha256": "82cb204b23dea0ef3c79dc518bc93b316b7630026fe1e8516993d72533f57383"
+    },
+    {
+      "path": "RKVisionHost/_internal/board_agent.py",
+      "bytes": 18712,
+      "sha256": "2378577a82941046d1ce9fbca96c70487542a4c9380903054b0b11f7e8f1af1d"
+    },
+    {
+      "path": "RKVisionHost/_internal/icudt78.dll",
+      "bytes": 33126192,
+      "sha256": "ceb6ff1e834fd7700d05d90e970420ebf3c31dcd5a2b573c6d131bc7bef9dfce"
+    },
+    {
+      "path": "RKVisionHost/_internal/libcrypto-3-x64.dll",
+      "bytes": 7449904,
+      "sha256": "993583ccd784f62e16e224ff3b84e49313c14ef7e0c9643cb40296c77830896f"
+    },
+    {
+      "path": "RKVisionHost/_internal/libffi-8.dll",
+      "bytes": 43824,
+      "sha256": "f39e5a9ff36f4c3dd74b72bce4726e07b8b77ceec92d4a8d5b788e7f0bc061af"
+    },
+    {
+      "path": "RKVisionHost/_internal/libssl-3-x64.dll",
+      "bytes": 1336624,
+      "sha256": "88db43cbaa5f17495835eb5460e1a257a92e8b0dc54b0698f2d2912883f2922a"
+    },
+    {
+      "path": "RKVisionHost/_internal/pyexpat.pyd",
+      "bytes": 226096,
+      "sha256": "fff5b9efc872724bef995e189977b66339e6222d2161c19d0a360904d6017c80"
+    },
+    {
+      "path": "RKVisionHost/_internal/python3.dll",
+      "bytes": 71984,
+      "sha256": "0366ee3d630c26ffc27bfab162648ae8c5cadc74b4b46f3e179ca70f4436cab9"
+    },
+    {
+      "path": "RKVisionHost/_internal/python312.dll",
+      "bytes": 6985520,
+      "sha256": "8bb70bceffd5877733a957b31c392ca027bd2f84230e00de1654f994422fa2af"
+    },
+    {
+      "path": "RKVisionHost/_internal/select.pyd",
+      "bytes": 34608,
+      "sha256": "63db102d9edcdbd1fbdab77ba62d40c7653ec7d684f8e98ebb50d0542f2e0245"
+    },
+    {
+      "path": "RKVisionHost/_internal/ucrtbase.dll",
+      "bytes": 1362264,
+      "sha256": "3239227d27667ba20d10a880751924e5719de0078f9fce232d149d383f7681f6"
+    },
+    {
+      "path": "RKVisionHost/_internal/unicodedata.pyd",
+      "bytes": 1143600,
+      "sha256": "6fd49b72920f549c8582b31796320cef6870ba7d464098e58c1f4235dd608849"
+    },
+    {
+      "path": "RKVisionHost/_internal/VCRUNTIME140.dll",
+      "bytes": 124544,
+      "sha256": "d5e4d9a3e835fa679450145d6a7d94e36573a509317111904d9b3712c30d9066"
+    },
+    {
+      "path": "RKVisionHost/_internal/VCRUNTIME140_1.dll",
+      "bytes": 49792,
+      "sha256": "1f2d41c4aa5db0bc33ebf7b66d72943a817d7ce6cbe880502a9403823633093f"
+    },
+    {
+      "path": "RKVisionHost/_internal/_asyncio.pyd",
+      "bytes": 75056,
+      "sha256": "6b8466f190e973f7fb42bc928839eb0d2a8b95ef142bf19534b524ba84375029"
+    },
+    {
+      "path": "RKVisionHost/_internal/_bz2.pyd",
+      "bytes": 88880,
+      "sha256": "861f0743d5ccb82886894ae76217b314b0d5394743c4f021cd8578c997a4b2fc"
+    },
+    {
+      "path": "RKVisionHost/_internal/_cffi_backend.cp312-win_amd64.pyd",
+      "bytes": 181248,
+      "sha256": "9af5e4f68a41f26b726f2e9424f9d58a4f5666189f6a48be95f406b257102aec"
+    },
+    {
+      "path": "RKVisionHost/_internal/_ctypes.pyd",
+      "bytes": 131888,
+      "sha256": "926df1f47c2a782ba154d6824a84aee7197a32eb6b781c2fc33120851e0fb53b"
+    },
+    {
+      "path": "RKVisionHost/_internal/_decimal.pyd",
+      "bytes": 263984,
+      "sha256": "ff83d946d36a108f72475a274ef97d00210ce7616ca6498212557e800b082a35"
+    },
+    {
+      "path": "RKVisionHost/_internal/_hashlib.pyd",
+      "bytes": 70448,
+      "sha256": "6b7e1eb9676af48db2e4a2812ab0825379e20e76b6f901631589a9cdb8f96ff6"
+    },
+    {
+      "path": "RKVisionHost/_internal/_lzma.pyd",
+      "bytes": 168240,
+      "sha256": "00d365936c7860dd887bcec422168c3404fcae221dea40e4e6a677adcaebd6b5"
+    },
+    {
+      "path": "RKVisionHost/_internal/_multiprocessing.pyd",
+      "bytes": 39728,
+      "sha256": "10553874fffc57a649b42d63509f5e87a4cd4cf2c40e2a6a0657b1c2ac805647"
+    },
+    {
+      "path": "RKVisionHost/_internal/_overlapped.pyd",
+      "bytes": 59696,
+      "sha256": "57b9635e180fa1b89f9ff0d44b9dff121ce7c05a3dc6dd0371cbc13dbfa487e8"
+    },
+    {
+      "path": "RKVisionHost/_internal/_queue.pyd",
+      "bytes": 36144,
+      "sha256": "300aba733854beb48a9426c955627c0d0e945e5b76175e5f2b68c5fe5aa81201"
+    },
+    {
+      "path": "RKVisionHost/_internal/_socket.pyd",
+      "bytes": 87344,
+      "sha256": "6be442ce5355de1c9d7f2c1bd3d911f37eda93b43c30acf8b1eeccfc58a5df37"
+    },
+    {
+      "path": "RKVisionHost/_internal/_ssl.pyd",
+      "bytes": 180528,
+      "sha256": "65dcf1f0a513ee4c7f4717da11aa1ec098acb00446341c7277b8ee740425b4ff"
+    },
+    {
+      "path": "RKVisionHost/_internal/_uuid.pyd",
+      "bytes": 29488,
+      "sha256": "cd456dce0f6d88f0e05ca4f273fb39e91ef1fbe1e035c7ec4d27c37cbe7b4b03"
+    },
+    {
+      "path": "RKVisionHost/_internal/_wmi.pyd",
+      "bytes": 41264,
+      "sha256": "effc630565fa74e4ece15d574c47e0ef3af58af7ed4700c041155f9dc0eafbeb"
+    },
+    {
+      "path": "RKVisionHost/_internal/bcrypt/_bcrypt.pyd",
+      "bytes": 305152,
+      "sha256": "898d1fe05e287d66bd379f26eb49d27a260f14666c7dc8b1719dae8c489abff0"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography-50.0.2.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography-50.0.2.dist-info/METADATA",
+      "bytes": 4394,
+      "sha256": "047cfc71226409de4318b360aef15c63a2adf609731e3dcf7fe932f14ea042ee"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography-50.0.2.dist-info/RECORD",
+      "bytes": 17865,
+      "sha256": "2b3cbe1deb5ef6689bc2379c516d4ff72773781fb07ea358bec2b654baa478d1"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography-50.0.2.dist-info/WHEEL",
+      "bytes": 96,
+      "sha256": "9efe56059dbb731c438c822ac4132a2b670e174db90f09059aa246a8bdd2a575"
+    },
+    {
+      "path": "RKVisionHost/_internal/invoke-3.0.3.dist-info/entry_points.txt",
+      "bytes": 81,
+      "sha256": "7f3ee50cf8a9c3f5759e7ba4e3508dc5aef7f5d06927c4cef5ca4ab945d50cfb"
+    },
+    {
+      "path": "RKVisionHost/_internal/invoke-3.0.3.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "RKVisionHost/_internal/invoke-3.0.3.dist-info/METADATA",
+      "bytes": 3246,
+      "sha256": "3aa7e6bc583c04b62f77455f519b49be6529bf8ef165eb52022b0da7fac9d4ab"
+    },
+    {
+      "path": "RKVisionHost/_internal/invoke-3.0.3.dist-info/RECORD",
+      "bytes": 7557,
+      "sha256": "fdd874dddda1a2e140d03f56107ac4676a285c4256667a8f2f1a7d9c6aa4cf0d"
+    },
+    {
+      "path": "RKVisionHost/_internal/invoke-3.0.3.dist-info/top_level.txt",
+      "bytes": 7,
+      "sha256": "6654e501531df25ce7dec5f20210918b42cdb2509ab00eeb96e7111eaf70efdc"
+    },
+    {
+      "path": "RKVisionHost/_internal/invoke-3.0.3.dist-info/WHEEL",
+      "bytes": 91,
+      "sha256": "69e6228a0d35958183cc1812f07c565ce837b95eb51bd8a33acba9fa4f68d6c9"
+    },
+    {
+      "path": "RKVisionHost/_internal/nacl/py.typed",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RKVisionHost/_internal/nacl/_sodium.pyd",
+      "bytes": 405504,
+      "sha256": "57822e7aed944269943bcb855fc14560a5b6ae38869de4e3d00c380a5119ecc7"
+    },
+    {
+      "path": "RKVisionHost/_internal/paramiko-5.0.0.dist-info/INSTALLER",
+      "bytes": 4,
+      "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508"
+    },
+    {
+      "path": "RKVisionHost/_internal/paramiko-5.0.0.dist-info/METADATA",
+      "bytes": 3666,
+      "sha256": "94061b17f3d5e7fe935cc7d3bd01baed65533e43e2fcf39825e703d3629998f2"
+    },
+    {
+      "path": "RKVisionHost/_internal/paramiko-5.0.0.dist-info/RECORD",
+      "bytes": 5822,
+      "sha256": "22cc4fd3e5e056bbce2eabe4744223025a84d91ca45dbfc6d7f316e65ba458c7"
+    },
+    {
+      "path": "RKVisionHost/_internal/paramiko-5.0.0.dist-info/REQUESTED",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "RKVisionHost/_internal/paramiko-5.0.0.dist-info/top_level.txt",
+      "bytes": 9,
+      "sha256": "47d9fe78273fd64c750e78a317b1a59a6f87ebb93d8d4cf9ae6d98a0f2fc9f9e"
+    },
+    {
+      "path": "RKVisionHost/_internal/paramiko-5.0.0.dist-info/WHEEL",
+      "bytes": 91,
+      "sha256": "69e6228a0d35958183cc1812f07c565ce837b95eb51bd8a33acba9fa4f68d6c9"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/MSVCP140.dll",
+      "bytes": 549176,
+      "sha256": "f6f1d55bfd64027820ddce48f9cd8cf46d53bfa34047e6acf4ef348d492a05cb"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/MSVCP140_1.dll",
+      "bytes": 27448,
+      "sha256": "2be87527c41e1ba8aff48e326e0adcd4743516e0bbcc9304986c726e27de6aca"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/MSVCP140_2.dll",
+      "bytes": 271672,
+      "sha256": "6a72ed8a87eae1671640bd1ca98eccb989f1772ae46ab84594e385bf6d4ac4fb"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/opengl32sw.dll",
+      "bytes": 20639544,
+      "sha256": "18aedc7a4b610f53bcc7b7a5c5ed9293c7e86f030e3273ad54ed3bb1ebd36702"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/pyside6.abi3.dll",
+      "bytes": 262968,
+      "sha256": "d5b87ccb0a7c305854bd120242b0a75002d0b50a35532d0f6171e4ed0f3cc82a"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6Charts.dll",
+      "bytes": 1725752,
+      "sha256": "44ee6f27317b2aa7b1a77d6acd2b33e68c143f86224ed4e4275f3dde143460b2"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6Core.dll",
+      "bytes": 10472760,
+      "sha256": "f57ed38afd95d0306cca9d88d997f639f70c7628a4f1f064eae291d579487121"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6Gui.dll",
+      "bytes": 9683256,
+      "sha256": "abd20026e190e8cc69667d1bea042db05cd353cc05e7da74b063c20b7da3f6cd"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6Network.dll",
+      "bytes": 1780536,
+      "sha256": "1c7c393b264ae78f4dee211656377a086c4be714bf768d3135f94f11c1d0be61"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6OpenGL.dll",
+      "bytes": 1989944,
+      "sha256": "788b743bfaca141ca83e28c161646d51de92a71adf7a86c653c36fdea5a9bf5b"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6OpenGLWidgets.dll",
+      "bytes": 65336,
+      "sha256": "18a96c26211d3487a895679d3ad72b79af3a0a18664c0def63cb519e749176fe"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6Pdf.dll",
+      "bytes": 4623672,
+      "sha256": "5caf5744e017df85455c5c7e11028c5ec2765633a7ca64a11d7b64d127f6c4cc"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6Qml.dll",
+      "bytes": 5390136,
+      "sha256": "0be9fc8ad3b7d2d19d0ed49a9026f02b78c4498ab2f53ca574d34a0740d7888a"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6QmlMeta.dll",
+      "bytes": 158520,
+      "sha256": "6edac38b27868e69c8ae15b08145688b02358426d5d652a0d2865ca4476fde0a"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6QmlModels.dll",
+      "bytes": 1021752,
+      "sha256": "78e79eee241326da0754e29f4b372dee9ff7b75f3484099504c4750ac1f519e6"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6QmlWorkerScript.dll",
+      "bytes": 80184,
+      "sha256": "475456ab8f1e9570f5f5f496b0941445a34fca4bbac0dd07ea84ee5ea15e7194"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6Quick.dll",
+      "bytes": 6752568,
+      "sha256": "3c93688f36ad4e5c5c2fd73587f50ee94e1dfa4891805bbe5d6d0c031450faa2"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6Svg.dll",
+      "bytes": 608056,
+      "sha256": "8f1de5b28aab1eedb415c751c81f9cfaa2804242868c0ceea5f3fdb4b2babca4"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6VirtualKeyboard.dll",
+      "bytes": 424248,
+      "sha256": "973369caa6d13fa08f6b1cd57004dcf4f137f8ef98ec6876ad07ba690ee0b9a3"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/Qt6Widgets.dll",
+      "bytes": 6520120,
+      "sha256": "2f62cbe2869fff4e20df7369c2786e1ec7ec290d5a63d1371b7f70cf06909c3f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/QtCharts.pyd",
+      "bytes": 826680,
+      "sha256": "64b41e4b7d43c7c7908d5718a2aa96e4affd32e617f25e46a7ff40d79f1c0922"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/QtCore.pyd",
+      "bytes": 3521336,
+      "sha256": "6486f6f0a2fec42fc8c652c0b76bb3ad0d44eaccad9c72e577116a075681eebb"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/QtGui.pyd",
+      "bytes": 3936056,
+      "sha256": "9ac544d1bcf8a26c408c63090d05506f8382d5378ee3a204e29a3ac5449c5b2b"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/QtNetwork.pyd",
+      "bytes": 1039672,
+      "sha256": "22bffdb2a431b5a986de255f7eb0fcd1fd7d9e85c53967978e2ab479b33a13c5"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/QtOpenGL.pyd",
+      "bytes": 8685880,
+      "sha256": "a4ac55aebb12b5a5730d6e168a9689afcad4a8b13158fa9d8010084cadd79fd7"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/QtOpenGLWidgets.pyd",
+      "bytes": 123704,
+      "sha256": "522ac19342b007af27051eb69ad9f2e57edc72d9bdc9dd9198c6cce9d47bca9e"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/QtWidgets.pyd",
+      "bytes": 4911416,
+      "sha256": "a8e323e56a93c1a8a70981c36a409c0a2546e7a08da5be8ca4e03dfd27febc2a"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/VCRUNTIME140.dll",
+      "bytes": 116024,
+      "sha256": "a36e0cb185eb89533ed96d4568138f86a1315756a8b2644c5963a8ce23e32101"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/VCRUNTIME140_1.dll",
+      "bytes": 41272,
+      "sha256": "302b1e160e858602490a55e32ae2e29ddfc0bec2a188e19550cb655cdaa58f9c"
+    },
+    {
+      "path": "RKVisionHost/_internal/shiboken6/MSVCP140.dll",
+      "bytes": 549176,
+      "sha256": "1ba4d7c0a95d375da138a057a57593b33510ad5bda6c5e2686afd68faa5b4231"
+    },
+    {
+      "path": "RKVisionHost/_internal/shiboken6/Shiboken.pyd",
+      "bytes": 33080,
+      "sha256": "8ccf415b2cefb5b6462504581ab1993fb41afe04e415931d8a72049f1c79b267"
+    },
+    {
+      "path": "RKVisionHost/_internal/shiboken6/shiboken6.abi3.dll",
+      "bytes": 399672,
+      "sha256": "07c318c02be5a3a9f1475f5a2d0cd438f4d4ea3288c28e2e10bc5ebbbec8de86"
+    },
+    {
+      "path": "RKVisionHost/_internal/shiboken6/VCRUNTIME140.dll",
+      "bytes": 116024,
+      "sha256": "e7be9112ee9a5b9f44b44bff24cb761cca9b1ed7550b612f77b70edfcf5fdabf"
+    },
+    {
+      "path": "RKVisionHost/_internal/shiboken6/VCRUNTIME140_1.dll",
+      "bytes": 41272,
+      "sha256": "f02cd4a862b85a9a3153d27e15e5a213f5df8e3d77004ed2e87b8a7e8873d97c"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography/hazmat/bindings/_rust.pyd",
+      "bytes": 9897472,
+      "sha256": "1d4332a447cab13dec8e3a533ad579e0e562b79e40822c931f33769758fc7156"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography-50.0.2.dist-info/licenses/LICENSE",
+      "bytes": 197,
+      "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography-50.0.2.dist-info/licenses/LICENSE.APACHE",
+      "bytes": 11360,
+      "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography-50.0.2.dist-info/licenses/LICENSE.BSD",
+      "bytes": 1532,
+      "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography-50.0.2.dist-info/sboms/cryptography-rust.cyclonedx.json",
+      "bytes": 45629,
+      "sha256": "246af194b4c524807c5aaffd2b7ff86c2c9bee3eb3fceeac987709ad76e4e7ef"
+    },
+    {
+      "path": "RKVisionHost/_internal/cryptography-50.0.2.dist-info/sboms/sbom.json",
+      "bytes": 1223,
+      "sha256": "5b5eea08dd952a16eef188f7a85ad439a4409efa0e2bce9ca339a4de9c8db3f0"
+    },
+    {
+      "path": "RKVisionHost/_internal/invoke-3.0.3.dist-info/licenses/LICENSE",
+      "bytes": 1314,
+      "sha256": "7922f97f896f1d161e1ebf47083e304a23638361b255c6902b5e4f34eeda0dad"
+    },
+    {
+      "path": "RKVisionHost/_internal/paramiko-5.0.0.dist-info/licenses/LICENSE",
+      "bytes": 26436,
+      "sha256": "5fa25bf5f395fd26e701c2e1de4ca7d162816986dc791c22f8f4226857ad1bb2"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_ar.qm",
+      "bytes": 160017,
+      "sha256": "e03fe68d83201543698fd7fe267dd5dfc5bfd195147e74ff2f19ac3491401263"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_bg.qm",
+      "bytes": 165337,
+      "sha256": "e448ac9e3f16c29eb27af3012efe21052daa78fabfb34cd6dff2f69ee3bd3cdb"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_ca.qm",
+      "bytes": 269007,
+      "sha256": "5298532fc52ffbc4e2c549f277151a61e741921c834286f7c04d3753677b6b04"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_cs.qm",
+      "bytes": 174701,
+      "sha256": "03028b42df5479270371e4c3bdc7df2f56cbbe6dda956a2864ac6f6415861fe8"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_da.qm",
+      "bytes": 181387,
+      "sha256": "7d1e5ca3310b54d104c19bf2abd402b38e584e87039a70e153c4a9af74b25c22"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_de.qm",
+      "bytes": 224345,
+      "sha256": "a1483bae0385c380edad72b818ce7c2f54ba617ba4c709b2a34a76886d5b5f3d"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_en.qm",
+      "bytes": 33,
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_es.qm",
+      "bytes": 165170,
+      "sha256": "4ffda56ba3bb5414ab0482d1dde64a6f226e3488f6b7f3f11a150e01f53fa4c8"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_fa.qm",
+      "bytes": 148156,
+      "sha256": "f78e59b5bdd586181a999034ba418868ed17fe9c05707fb65e523f70e92253d2"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_fi.qm",
+      "bytes": 179941,
+      "sha256": "e47fe13713e184d07fa4495dde0c589b0e8f562e91574a3558a9363443a4fa72"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_fr.qm",
+      "bytes": 159463,
+      "sha256": "314243a55c32679ad473fdfe48dc7d66e973ad0fc8bf2164480c58dddb50c1a7"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_gd.qm",
+      "bytes": 189580,
+      "sha256": "63b439dd44139aa3aed54c2ebe03fa9bc77f22c14ed8fba8eff2608445bb233d"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_he.qm",
+      "bytes": 138690,
+      "sha256": "e1ebca16afe8994356f81ca007fbdb9ddf865842010fe908923d873b687cad3f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_hr.qm",
+      "bytes": 149711,
+      "sha256": "bb9eec9a9a652c1340dc75eb2e749be50df00f885b3d6900dfc76799c45b244d"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_hu.qm",
+      "bytes": 205885,
+      "sha256": "98463295539d769c8645a0b7fb95ad38454cfd0b14f36af485513f036ddbbbc6"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_it.qm",
+      "bytes": 161166,
+      "sha256": "7808ed542a7833c4bd94ec8bdfbbca00bb4f2fe15979b9121ce3249323687300"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_ja.qm",
+      "bytes": 129913,
+      "sha256": "2b9581c69b975f59be505b127cd3c19d403ef3d12e0e8386fb97238223e9c1df"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_ka.qm",
+      "bytes": 201105,
+      "sha256": "e55e4b72fa620bebee5297ca59dfe2f49894a1e544f2b7485b1cfd8829289d6f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_kk.qm",
+      "bytes": 259281,
+      "sha256": "8bab72c453e87489d76cc7efffc57e947cbfa239dee4d6fa113f7b7b8cbd5b86"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_ko.qm",
+      "bytes": 156799,
+      "sha256": "0179ed1b136e1cb3f583351eaa2c545ba3d83a6ee3f82c32505926a1a5f5f183"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_lg.qm",
+      "bytes": 315764,
+      "sha256": "31c0cc4ce13b1d74fe0c19ed0b47638fb31e20c93ee08092533e884007aebfb5"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_lv.qm",
+      "bytes": 153608,
+      "sha256": "846e047573ae40c83671c3ba7f73e27efc24b98c82701da0df9973e574178bb2"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_nl.qm",
+      "bytes": 202861,
+      "sha256": "f61513bcdbb6ad800585f9437a95d018aab17fa12ee414aa31462ff279d8240e"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_nn.qm",
+      "bytes": 196411,
+      "sha256": "f9f2fb7c60e7fcb38bbd3c1314ef122145594265e20b0659ff00004baab13ac7"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_pl.qm",
+      "bytes": 162962,
+      "sha256": "3cf6b5c14d5eb0cf81e9af2066e66b3aa579a6b9b3c323ed670761f6254a8c54"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_pt_BR.qm",
+      "bytes": 290955,
+      "sha256": "3475d61604b938d459949801a906dbd34a8ca824ade94120015d676e208da859"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_ru.qm",
+      "bytes": 203767,
+      "sha256": "3da6605668f9178d11a838c4515478084dcfb4f9cf22f99d7a92b492db9c224b"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_sk.qm",
+      "bytes": 125763,
+      "sha256": "d586ae2c314074cf398417fdecb40709d5478dfeb0a67c2fe60d509ee9b59ed7"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_sv.qm",
+      "bytes": 249963,
+      "sha256": "5a2178dd2c03cc4516697f1fb0049649c9ed53f5cde6b937786733dae06aeda8"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_tr.qm",
+      "bytes": 248720,
+      "sha256": "353fdfd7165659a49212e7a25bf91c0a71588e52c836f7496640f26782414634"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_uk.qm",
+      "bytes": 158274,
+      "sha256": "51b8ff55b37dc5907d637a8ddda12fbe816852b0244c74eb4f0fb84867a786e0"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_zh_CN.qm",
+      "bytes": 147222,
+      "sha256": "0481a9b92a6f0578400e960a7d5ee70217a6a450eaf7f98b7d32b8dbd0d58616"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qtbase_zh_TW.qm",
+      "bytes": 126185,
+      "sha256": "21012b2b427f8d09d31ce9cae582ca27955b478ca3dc2ec18a3068d808638c6a"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_ar.qm",
+      "bytes": 104,
+      "sha256": "b11333c520ccd8e375cde20985df402d586a1a95e0796313bbeb9f717d4db22e"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_bg.qm",
+      "bytes": 91,
+      "sha256": "1e22ee126ec9f76031d880285a907b3a0c4510392319ff700dcdee964abbb1ad"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_ca.qm",
+      "bytes": 91,
+      "sha256": "17ab2623c7f6e8def44b3dbcb517544185817d65f1298ddb10ef71136f232bdc"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_cs.qm",
+      "bytes": 95,
+      "sha256": "c585918fb1d4821a054ea40bdcf279f275ca76c88a5793f433dac6a611ac7e8f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_da.qm",
+      "bytes": 91,
+      "sha256": "f6773c672acb73fdef6e092060d69d1e5dfee840012bac912d1e92de28714386"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_de.qm",
+      "bytes": 91,
+      "sha256": "0401c316aa3b50a172eb44a4ff1ec384924073beec7c928ef888ec48e4612688"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_en.qm",
+      "bytes": 33,
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_es.qm",
+      "bytes": 91,
+      "sha256": "648ed4519bc45d7a4779479a7626ea16cf9aa23e93a0b178546cc47bea0591ab"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_fa.qm",
+      "bytes": 84,
+      "sha256": "3f4c989c6b2990d80cc6299408214b31698923b52f154483b3371875de91f88e"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_fi.qm",
+      "bytes": 91,
+      "sha256": "342d01c7eeb234e431d0506821c4cd03c0433115d8d63fee3357be2331858879"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_fr.qm",
+      "bytes": 91,
+      "sha256": "c896a38892a92346b033793d56440993236b23e47e06f3974afdb0552f628387"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_gd.qm",
+      "bytes": 70,
+      "sha256": "49df855a004a17950338af3146466f6df4d5852410bd0b58ea80e0d0203a9d24"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_gl.qm",
+      "bytes": 323590,
+      "sha256": "204a01ac7deb6b5bae193afecbd1e50d18c73bf7d94badeb2bbfdf6123c4ed93"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_he.qm",
+      "bytes": 57,
+      "sha256": "36f01fff2f25e116d4b7af78097b7e49520fd5b7fb6fb120e40be228c05c045f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_ar.qm",
+      "bytes": 8743,
+      "sha256": "222088c9752d1cc3bab985ef2dc77e5ae78578dce18a61ec15b39f02e588163d"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_bg.qm",
+      "bytes": 10599,
+      "sha256": "cbcdd1e0bbae332d80ddb0a286056f17c824fa28d353d7fdf12fc97d9f6fe054"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_ca.qm",
+      "bytes": 7435,
+      "sha256": "fe40962c814a9f489e18d033e4aaabe435232c9bcf760830c6165af507cca80e"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_cs.qm",
+      "bytes": 15297,
+      "sha256": "4ac56fc63e400943bab13f1d4c418502138908e1d488c24aee6131d3d17552aa"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_da.qm",
+      "bytes": 4795,
+      "sha256": "6bb092552a398687119f6d52145f04bf8373977446d8f00c0dcbd56b96829f0f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_de.qm",
+      "bytes": 7569,
+      "sha256": "037bc99abf98571ae9375c2513536c15b571d66406c36c1de447b547ff539c07"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_en.qm",
+      "bytes": 33,
+      "sha256": "494ac9a2b2cb2fdeced353f4a9f898ed8dcf616e9bc667438c62681e3f7f79cf"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_es.qm",
+      "bytes": 10704,
+      "sha256": "fd16b279f8cf69077f75e94d90c9c07a2afff3948a579e3789f5ffb5e5f4202d"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_fr.qm",
+      "bytes": 3573,
+      "sha256": "875ee2dcdc64e3dea888d84048e382d3921a175f12847de2e6b1cb12ad9add50"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_gl.qm",
+      "bytes": 10891,
+      "sha256": "7399a248609974773f60866c87b78ea7dfbc4f750313d692f7886cd763883c9f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_hr.qm",
+      "bytes": 5170,
+      "sha256": "8c8cc3c5b1ab2b074f82937001b896603420ef75592b3b78172177360dd7ea61"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_hu.qm",
+      "bytes": 7255,
+      "sha256": "7be32e015119c969453abb6e8f3fb377963a69fafb10c27b796737b5eb283eaf"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_it.qm",
+      "bytes": 10612,
+      "sha256": "316fe8d0815e2b4b396895beb38ef1a40431915b5e054df80f4c0cd556f26e4b"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_ja.qm",
+      "bytes": 7917,
+      "sha256": "ae603b2c0d434d40cde433ffcba65f9ee27978a9e19316007be7fe782a5b8b47"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_ka.qm",
+      "bytes": 7091,
+      "sha256": "159c74f94b384b5ee6afdf38b6cfc4806bc99ecf73be02d4a7021d4ceba7ec7e"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_kk.qm",
+      "bytes": 6971,
+      "sha256": "de92b7bc46998da4becb07f810e7947f0e22d5f7bf152b8bd7be90375027dfa0"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_ko.qm",
+      "bytes": 5708,
+      "sha256": "f11c64694e8e34e1d2c46c1a1d15d6ba9f2db7b61de4fdf54eca5ab977c3e052"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_nl.qm",
+      "bytes": 5087,
+      "sha256": "44a8a0daf775d14352180052d13f623814d7bdf98e2c5c80144b7bf74214e3b0"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_nn.qm",
+      "bytes": 6934,
+      "sha256": "4c8a7213942078e4f72f5babd26c41b77ace70189714a58b5504a7d5ad0193dc"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_pl.qm",
+      "bytes": 9673,
+      "sha256": "cc6cb4d8c54086224672f2e49e623c8cb7c0c1cd65b8d5ecd42fc9ba3a6065bd"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_pt_BR.qm",
+      "bytes": 16030,
+      "sha256": "b4015c5d519b4fe93c00bf734d1742e4f0094d89862664d548eb64a46a2feae7"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_ru.qm",
+      "bytes": 7288,
+      "sha256": "557b644e6da5f1ec720ef93965617087e4d1f40b2494cc5aa524cf3796108de7"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_sk.qm",
+      "bytes": 10388,
+      "sha256": "f41e33e1d790bd0d3eb180f1f875bc191fe74773628f25c2cad95e1402e66867"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_sl.qm",
+      "bytes": 10363,
+      "sha256": "2ec955e662407ebcd8dcdae5aaa21e4108e0b5b0aee0e9db712c27072943535f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_sv.qm",
+      "bytes": 6934,
+      "sha256": "95bdb03dbaa6dbdfda46c249e9ccce9a353f71ddb8b112961e8b005b2c60b13c"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_tr.qm",
+      "bytes": 6723,
+      "sha256": "81da2f88cd624097581f2d29b10311796bcd9ab289e65883346d276110542d28"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_uk.qm",
+      "bytes": 9750,
+      "sha256": "497cfc473684692ee44d7a3795e8fb2270c57069fd9eb98a615dd29ab9be8a7c"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_zh_CN.qm",
+      "bytes": 5115,
+      "sha256": "e256d1f6034a5a5521c62f129f91731216e474f71e1d9caea3d3dcb11b670deb"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_help_zh_TW.qm",
+      "bytes": 5160,
+      "sha256": "40112812abb43853d678cc6d97729f21f21b3a7321c827fc9d18f6c936447d1e"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_hr.qm",
+      "bytes": 102,
+      "sha256": "fc9e4146f33be3d09b234be01e56235d3037d8d82d64f0700b4d4a6e253a61a7"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_hu.qm",
+      "bytes": 84,
+      "sha256": "c2fa649f167cdb801d1cc0cb69c1d93594fd5bf8c0b7e79b969935da5c3e19aa"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_it.qm",
+      "bytes": 91,
+      "sha256": "9e7a18bc20ebeec54baaaf41c918a74534511271f796dffffd0f9b9ec31c68d3"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_ja.qm",
+      "bytes": 84,
+      "sha256": "0f5fe50452947d1ee9755249d860354bff6977279b4c496a5bc77e5b89dd745e"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_ka.qm",
+      "bytes": 94,
+      "sha256": "00b67c6dfc255079b5b98a5640f82519c96b2520a028682fba4078b39d743eaa"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_kk.qm",
+      "bytes": 86,
+      "sha256": "23f7ccad75b8b2d70eb0ed0fc910dacc667e9ff65ed1e328c65263ad2d172cda"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_ko.qm",
+      "bytes": 84,
+      "sha256": "1d254b535e1cb35cbcad8210b15b89f4488159826bf35b4504696263dd102fa3"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_lg.qm",
+      "bytes": 57,
+      "sha256": "6ba668501f4c040c66da1bdc022362da3c8cf663da6aa484cbdb599028da98ed"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_lt.qm",
+      "bytes": 165383,
+      "sha256": "47eb5f97467df769261421d54a5bea1131c9fb9b6388791d38bb6574335b64bf"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_lv.qm",
+      "bytes": 63,
+      "sha256": "addeca285282338294f24ca50d37d08a5f68d3785d0a94af86dd4ec8f2a3b449"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_nl.qm",
+      "bytes": 91,
+      "sha256": "39e870cbd25c0f97fa9b1828d5ea1ed9849857a2e26c5321b3f13c76be8f0548"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_nn.qm",
+      "bytes": 91,
+      "sha256": "4e544e23f75eafe1553dc896973db23b5795cd243786d5c653cc0f36a46ca74f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_pl.qm",
+      "bytes": 99,
+      "sha256": "e6890afa0caf0f6db0248e4c94f6016b8ec8bc266f1e0e9b8f01e8ea912cf968"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_pt_BR.qm",
+      "bytes": 106,
+      "sha256": "0e24c58e35271853f8cdfb3f0f7b0741b5a9a588e43cdec62ae85a3842771e0a"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_pt_PT.qm",
+      "bytes": 70334,
+      "sha256": "2c1e7bbf5168a64b43752dd4c547601c0bde6d610f8671fa3e3af38597e84783"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_ru.qm",
+      "bytes": 102,
+      "sha256": "1b388e2d6d1bd405603e794e498c6d7ec5f5a5ad819243546f6399181da36758"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_sk.qm",
+      "bytes": 95,
+      "sha256": "840c3b01c89df976fc1d2e5bfc6fc84b65666b8a3ceb4cbf5aa0c22af3d2a383"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_sl.qm",
+      "bytes": 228428,
+      "sha256": "c44e0313a9414cc0e490b65b0c036fa11bca959353b228886547bc2c8492034f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_sv.qm",
+      "bytes": 91,
+      "sha256": "daaae448e0814b469ac3d7a91096fde15491600a6b8bc6c01508425fb5e8b3ec"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_tr.qm",
+      "bytes": 84,
+      "sha256": "59e8a0c411be3b0802a68561b090f182099d6b75c4fe46f398e55f11528e11b9"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_uk.qm",
+      "bytes": 102,
+      "sha256": "053ec1f677c4dba48c6a97eb28f4fc78c1511324d1843d7f4cec2c7c00a66145"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_zh_CN.qm",
+      "bytes": 99,
+      "sha256": "c0e29d32c9540a7e78643b74214e633c56f6ab11f018e516629f2c11b1fb09fc"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/translations/qt_zh_TW.qm",
+      "bytes": 99,
+      "sha256": "24e226954491689549a1a1990db3b8cb78888008d8163b2fd2442b772b6d1b5f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/generic/qtuiotouchplugin.dll",
+      "bytes": 102712,
+      "sha256": "8565656807db29cfb6170e6803181f24e0bed3aa1b14684d29694e375cc5ee96"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/iconengines/qsvgicon.dll",
+      "bytes": 72504,
+      "sha256": "f9e21af351bd5d5629bc00e8e3796b552eca92d1a9645438c865b9c53af1714f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qgif.dll",
+      "bytes": 48440,
+      "sha256": "77782de4aa4f7b75a7cc4d3f24aee49da935c312ea13d25f4cda3a98d180145c"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qicns.dll",
+      "bytes": 56632,
+      "sha256": "93e2e588cd1036af3c6300b539d648b3825625788e59a3f0f1863d9901c9759f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qico.dll",
+      "bytes": 47416,
+      "sha256": "a0e4d0d0319e075f6cc5f774084bf390f7af83600f38685c6bc9c407681cc22c"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qjpeg.dll",
+      "bytes": 592696,
+      "sha256": "dd42bdcd229744a9515db82ba9a802c74b6589cc508c3e85fb30f06ba24b9da6"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qpdf.dll",
+      "bytes": 42296,
+      "sha256": "0625e11f7ed136d4556cdc248527f26ac23eca93fa77764e9b64535557613efc"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qsvg.dll",
+      "bytes": 40248,
+      "sha256": "b63f97ed0ae60aa5bc332c37e429c1f31154e1eee358352b2c49598c5269843b"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qtga.dll",
+      "bytes": 39224,
+      "sha256": "ce95aa019d940533341b4f08a10ddd3b0393162678c47904251da77aeadfd34e"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qtiff.dll",
+      "bytes": 991032,
+      "sha256": "ce696a2dd2e57b8852f7d01834725f54a4d0be66c3d2c491df60fd907fece907"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qwbmp.dll",
+      "bytes": 36664,
+      "sha256": "e118243bd3528aa5fe6378a8839abe0efc200e891af06ee369b97b2ff239b89c"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/imageformats/qwebp.dll",
+      "bytes": 566072,
+      "sha256": "02ae5555b688f78aade5cedcd66c646b73d519460c008c23e75ad408bd152668"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/networkinformation/qnetworklistmanager.dll",
+      "bytes": 79160,
+      "sha256": "2bd047476183c76004221fb44adb7ada9b4b6ce5c2929d63ff67a5305b430f1a"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/platforminputcontexts/qtvirtualkeyboardplugin.dll",
+      "bytes": 36664,
+      "sha256": "bbf479e6380061699e734a32f4fe0b6fc8bc2de007ae53b0206e6e36abf1e3e2"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/platforms/qdirect2d.dll",
+      "bytes": 1082168,
+      "sha256": "18213464be5a5a1d39af6a2c876ce21a6bb6a634c814651d09f0ef7e4719edc2"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/platforms/qminimal.dll",
+      "bytes": 62264,
+      "sha256": "c9025bc5f4653c5aadac87f06ab391763e82adf792f6759c6027a78a5efcaf5c"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/platforms/qoffscreen.dll",
+      "bytes": 111928,
+      "sha256": "d24ef380ab0882d39f21539dcf57ab4213875a6fc658a53012f2d2fd275c6f69"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/platforms/qwindows.dll",
+      "bytes": 1001784,
+      "sha256": "ddd5cf6a96f058cfafcbc901ddeb5df010d755f0716beacfb557f8b27b733afe"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/styles/qmodernwindowsstyle.dll",
+      "bytes": 241464,
+      "sha256": "74d4c47b56a942afb3723bb105900501bb8f91a46a8b592fa722cc4fdb2ce9bf"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/tls/qcertonlybackend.dll",
+      "bytes": 105784,
+      "sha256": "87574d467b6f9640a15e37bf4183179c6a7cefc4dc84346b8f4cffb989cf1e12"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/tls/qopensslbackend.dll",
+      "bytes": 317752,
+      "sha256": "94b3492bc4087da2818e2749a5a03f7d810611b2e3648bd8d580ad087363046f"
+    },
+    {
+      "path": "RKVisionHost/_internal/PySide6/plugins/tls/qschannelbackend.dll",
+      "bytes": 249144,
+      "sha256": "2915a86a2531e65fd4905f0cc1c8dc353772a4f52aeda5100725dd9249db54d1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 17406,
+      "sha256": "c378eb266059018c8e2da2ecc0db4cf4e788dca00dae9ea9e5b06942f509e3f0"
+    },
+    {
+      "path": "source/app.py",
+      "bytes": 43021,
+      "sha256": "652175032fa7937a6be9c8aedb1d931932a4a4a9da6375a4da94ce9ac2e39d60"
+    },
+    {
+      "path": "source/transport.py",
+      "bytes": 6780,
+      "sha256": "f2d2cfc1a21a483a3e180fdaafa6a9a3d4a641251671c6411e691f5ff32598a8"
+    },
+    {
+      "path": "source/board_agent.py",
+      "bytes": 18712,
+      "sha256": "2378577a82941046d1ce9fbca96c70487542a4c9380903054b0b11f7e8f1af1d"
+    },
+    {
+      "path": "source/dashboard.py",
+      "bytes": 5947,
+      "sha256": "d200d7289ca220c99013cd2645a7b672d78776beb5997ab0a2d221cb8259e249"
+    },
+    {
+      "path": "source/telemetry.py",
+      "bytes": 2967,
+      "sha256": "fd04928e9e8095ce4460de74d78fbf504303de8c77bd0c9b92b7408c56005957"
+    },
+    {
+      "path": "source/video_preview.py",
+      "bytes": 10712,
+      "sha256": "205b9c72274f125907b6c2ce1a576cd059546bf0445bcdccc9dc7479ab52af35"
+    },
+    {
+      "path": "source/requirements.txt",
+      "bytes": 46,
+      "sha256": "40dae679c6bde2f06c1b18f47b96d5c814bc87dade7fc2df886f3611d8c65ffe"
+    },
+    {
+      "path": "source/build.ps1",
+      "bytes": 558,
+      "sha256": "c974793517119b7bf964e73cfc9c758c72b017ccbdfa8425b96378e35d319fc6"
+    },
+    {
+      "path": "source/build_dashboard.ps1",
+      "bytes": 550,
+      "sha256": "10eaed8df091e859d51530b9910a58e7f30e90fa43e5b7982efc0f320d39293f"
+    },
+    {
+      "path": "source/test_telemetry.py",
+      "bytes": 2461,
+      "sha256": "636c1b9210051ff533894b97a8020937b707d904b4e54f1cb08f993292d2c013"
+    },
+    {
+      "path": "source/verify_dashboard_ui.py",
+      "bytes": 2616,
+      "sha256": "d2947f311fdfa27860120340a3733475b56b3b861b4ac404caf1a4ada57a49dd"
+    },
+    {
+      "path": "source/test_host.py",
+      "bytes": 1994,
+      "sha256": "8595b8dbb04fed806e331687072b502cc7e7060cac653991ab868e3c45e07817"
+    },
+    {
+      "path": "source/verify_board.py",
+      "bytes": 2657,
+      "sha256": "4c21da702361435a547585290d1636a2394ecca8aa9baaf62a620189a2a13118"
+    },
+    {
+      "path": "source/verify_ui.py",
+      "bytes": 2241,
+      "sha256": "d407a5f3cbb7f3a2809ec5b76c113ff328ea60a09ed9e5710da14c14c52112b4"
+    },
+    {
+      "path": "source/verify_live_ui.py",
+      "bytes": 3674,
+      "sha256": "83ac5ddddc4e50826b4c6aee332f8eca6c7d820f931c7024f10d89822266e875"
+    },
+    {
+      "path": "verification/background_comparison.json",
+      "bytes": 746,
+      "sha256": "e14c162299afd471a60e8111f6be45b87ce406ad30c3f216a4e4caf75e5efb36"
+    },
+    {
+      "path": "verification/deployment.json",
+      "bytes": 15773,
+      "sha256": "488d5c540afa0ff00fe10b0926c967223af973c1be0a20893f83082748d6470c"
+    },
+    {
+      "path": "verification/REPORT.md",
+      "bytes": 4376,
+      "sha256": "1a126ff9a144b2117010c1eb4293d7f522154ca22cc2f237d35a6196e4d71720"
+    },
+    {
+      "path": "verification/after_final_hdmi/analysis.json",
+      "bytes": 206570,
+      "sha256": "17e649dbd87b4e223adaabbb93126325cad9e2622d1ed5a9fc6a9dc92354ca2b"
+    },
+    {
+      "path": "verification/after_final_hdmi/background.json",
+      "bytes": 537,
+      "sha256": "279c5bf62395f07f2525af17fc7421b6e6528f96c78d67c1f623d1bf29ca0842"
+    },
+    {
+      "path": "verification/after_final_hdmi/max.png",
+      "bytes": 147668,
+      "sha256": "fc5a1b77582cda2923730f563fd04443d810329bc422e649fca35d01de05a1ef"
+    },
+    {
+      "path": "verification/after_final_hdmi/min.png",
+      "bytes": 145688,
+      "sha256": "e0b3e78b4ea13bef86944d4814a4224b30f23096b632eef35f3c8d79527f4ef0"
+    },
+    {
+      "path": "verification/before/analysis.json",
+      "bytes": 187439,
+      "sha256": "279aac5913ed4385413654377c380c936c1b607ef0d13b341d154df95544a95b"
+    },
+    {
+      "path": "verification/before/max.png",
+      "bytes": 225955,
+      "sha256": "eff1ba02780e5a14bb788ee7236e64e2e71337adf58cea7674a07482c51430f6"
+    },
+    {
+      "path": "verification/before/min.png",
+      "bytes": 138117,
+      "sha256": "835a28f9ae01cdee51d5327acdf9991e2aa690781f9d904fec693c250a2c80d0"
+    },
+    {
+      "path": "verification/before_current/analysis.json",
+      "bytes": 93341,
+      "sha256": "4bd157386ab12cc6ac475ec3b31475a270c6dcd67295301912ceb3766b615513"
+    },
+    {
+      "path": "verification/before_current/background.json",
+      "bytes": 564,
+      "sha256": "7da36b291eb0f707455e066b05c1d9da3fc40eccfd7adef17fe31027f38f9ada"
+    },
+    {
+      "path": "verification/before_current/max.png",
+      "bytes": 148224,
+      "sha256": "63c21fb03a1149375f2d9ae547f5f40c8e2ed9b32b08d8f2bd5631b4a4dde734"
+    },
+    {
+      "path": "verification/before_current/min.png",
+      "bytes": 132899,
+      "sha256": "0538bceb9fd563f82c3120bb67ccc457c655002faf10173721d86014d4ee8e32"
+    },
+    {
+      "path": "verification/exe_check/exe_status.json",
+      "bytes": 113338,
+      "sha256": "1f7a976da59f28bf85a446814de5800278ddf20ba17addc437d35f00d6c10194"
+    },
+    {
+      "path": "verification/exe_check/preview.png",
+      "bytes": 135515,
+      "sha256": "ba4be79933f2fe93209d1612d95d583e74dd51e07df0dd4a3589e1430bc18439"
+    },
+    {
+      "path": "verification/exe_check/ui_live.png",
+      "bytes": 498001,
+      "sha256": "4fa1a224cb5ddc3b8e0ba101d85527ab89c7c9e384428648671224173d26c913"
+    },
+    {
+      "path": "rk_video/network_preview.py",
+      "bytes": 10433,
+      "sha256": "850ad412d94fbd66eb2f6079c7f18fe954617156c3106940066b2cd54d6d10ce"
+    },
+    {
+      "path": "rk_video/show_jpeg_hdmi.py",
+      "bytes": 15608,
+      "sha256": "84e7168d756a0eb3944bc0236bd02ebcec379ccae65bb48c0aae0ce8f9154082"
+    },
+    {
+      "path": "rk_video/show_jpeg_hdmi_overlay.py",
+      "bytes": 20878,
+      "sha256": "63cf94c6b031934f965c71ed8d6638c009042540029986445d67f2b8be165073"
+    },
+    {
+      "path": "rk_video/capture_jpeg_tiles.py",
+      "bytes": 11322,
+      "sha256": "9bc80196a6b0da7bff70c50e69007ad76c9fb7b0d7a19889a785a100c78c66bc"
+    },
+    {
+      "path": "source/build_hdmi_preview.ps1",
+      "bytes": 562,
+      "sha256": "ecd1672d5a91212de8084a13a27be8613850d9389153845150941a19c59ff0b1"
+    },
+    {
+      "path": "rk_video/before_network_preview.py",
+      "bytes": 5636,
+      "sha256": "19ca27212cd27463f8f8b78eab0351bd53cc4ee2a45b11d2112b027f0e62f61a"
+    },
+    {
+      "path": "source/verification/rk_work.py",
+      "bytes": 2557,
+      "sha256": "96b6ff7d7e7e84a3b703b91996dde9a69128ca8518f888f33aa415ea32d17869"
+    },
+    {
+      "path": "source/verification/deploy_hdmi_sink_preview.py",
+      "bytes": 4366,
+      "sha256": "2e42f7797d3e0289e1f46736ccc4c1f40fb5baaaaad8ea9e02911831aaa7bb60"
+    },
+    {
+      "path": "source/verification/test_hdmi_preview_pipeline.py",
+      "bytes": 4324,
+      "sha256": "1689d10c11942c6e168982c8353135c5f554b669dee4362f052a297f80b5ecd2"
+    },
+    {
+      "path": "source/verification/capture_preview_analysis.py",
+      "bytes": 4068,
+      "sha256": "a8dbdb664443c1ffae1abb991e2f84020da563ca5be5058abf09d99c097d6ae7"
+    },
+    {
+      "path": "source/verification/analyze_preview_background.py",
+      "bytes": 1555,
+      "sha256": "47320c856e523c36e2c46144268124361b4d5e7f79565b5b9a867b14a6a967f7"
+    }
+  ]
+}
