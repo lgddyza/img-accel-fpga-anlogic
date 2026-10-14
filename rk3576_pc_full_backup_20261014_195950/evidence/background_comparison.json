@@ -1,0 +1,18 @@
+{
+  "method": "Sample x80:880,y90:510 at step8; exclude near black/white in either frame; trim 10 percent from each tail of signed pixel differences before averaging.",
+  "limitation": "Adjacent time windows, not identical replay; scene motion and user settings may affect results.",
+  "results": {
+    "before_current": {
+      "pairs": 132,
+      "trimmed_background_step_rms": 0.6158591997896972,
+      "maximum_trimmed_background_step": 0.9350961538461539,
+      "median_pixel_step_rms": 0.712443511849015
+    },
+    "after_final_hdmi": {
+      "pairs": 298,
+      "trimmed_background_step_rms": 0.02360989837655184,
+      "maximum_trimmed_background_step": 0.07122507122507123,
+      "median_pixel_step_rms": 0.0
+    }
+  }
+}

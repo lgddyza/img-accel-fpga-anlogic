@@ -1,0 +1,512 @@
+{
+  "before": {
+    "agent_version": 1,
+    "monotonic_s": 14023.201400041,
+    "hostname": "linaro-alip",
+    "runtime": "ai",
+    "viewer_pid": 25941,
+    "processes": [
+      {
+        "pid": 25900,
+        "ppid": 1,
+        "start_ticks": "1302619",
+        "name": "start_jpeg_hdmi_ai_fallback.sh",
+        "args": [
+          "sh",
+          "/root/jpeg_rk/start_jpeg_hdmi_ai_fallback.sh",
+          "188",
+          ""
+        ]
+      },
+      {
+        "pid": 25904,
+        "ppid": 25900,
+        "start_ticks": "1302819",
+        "name": "start_jpeg_hdmi_ai.sh",
+        "args": [
+          "sh",
+          "/root/jpeg_rk/start_jpeg_hdmi_ai.sh",
+          "188",
+          ""
+        ]
+      },
+      {
+        "pid": 25939,
+        "ppid": 25904,
+        "start_ticks": "1302846",
+        "name": "jpeg_qf_button.py",
+        "args": [
+          "python3",
+          "-u",
+          "/root/jpeg_rk/jpeg_qf_button.py",
+          ""
+        ]
+      },
+      {
+        "pid": 25941,
+        "ppid": 25904,
+        "start_ticks": "1302847",
+        "name": "show_jpeg_hdmi_overlay.py",
+        "args": [
+          "python3",
+          "/root/jpeg_rk/show_jpeg_hdmi_overlay.py",
+          "--connector",
+          "188",
+          "--decoder",
+          "software",
+          "--decode-workers",
+          "3",
+          "--fps",
+          "60",
+          "--sink",
+          "kms",
+          "--kms-sync-mode",
+          "auto",
+          "--output-format",
+          "RGBx",
+          "--skip-vsync",
+          "--temporal-method",
+          "normalize",
+          "--ai-model",
+          "/root/road_damage_yolov8n/road_damage_yolov8n_gray640_int8_rk3576.rknn",
+          "--ai-interval",
+          "2",
+          "--ai-confidence",
+          "0.5",
+          "--seconds",
+          "0",
+          ""
+        ]
+      }
+    ],
+    "interval": 2,
+    "confidence": 0.5,
+    "connector": 188,
+    "ai": {
+      "seq": 59502,
+      "updated_us": 14023178415,
+      "age_ms": 5.609166999816894,
+      "boxes": []
+    },
+    "fpga": {
+      "bar": "/sys/bus/pci/devices/0000:21:00.0/resource0",
+      "tag": "45485032",
+      "bitmap": 255,
+      "mode_requested": 4,
+      "mode_applied": 4,
+      "preproc_fault": 0,
+      "qf_requested": 80,
+      "qf_applied": 80,
+      "input_fps": 60,
+      "jpeg_faults": 0,
+      "jpeg_status": 15,
+      "tiles": [
+        {
+          "sent": 59622,
+          "bytes": 37507
+        },
+        {
+          "sent": 59622,
+          "bytes": 36819
+        },
+        {
+          "sent": 59622,
+          "bytes": 36635
+        }
+      ]
+    },
+    "stats": {
+      "log_path": "/root/road_damage_yolov8n/hdmi_ai_ui_fixed.log",
+      "log_age_s": 0.19403505325317383,
+      "hdmi_fps": 58.0,
+      "hdmi_dropped_rate": 0.0,
+      "reconstructed_avg_fps": 59.98,
+      "unpaired": 6.0,
+      "queue_overruns": 51.0,
+      "present_queue_overruns": 41.0,
+      "ai_avg_ms": 17.09,
+      "ai_avg_fps": 29.93,
+      "processing_queue_overruns": 10.0
+    },
+    "log": "HDMI JPEG sink FPS=60.0 dropped=0 average=59.9\nRK temporal affine frame 59340: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.44 ms\nHDMI stage FPS:60.0 display FPS:60.0 QF:80 YOLO FPS:31.8\nHDMI JPEG sink FPS=60.0 dropped=0 average=59.9\nRK temporal affine frame 59400: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.44 ms\nAI status OSD frames=59400 map=4.1 panel=82.9 shade=54.4 text=15.2 unmap=0.7 us\nAI temporal OSD frames=46800 boxes=139310 avg_draw_us=93.9\nHDMI stage FPS:59.5 display FPS:60.0 QF:80 YOLO FPS:31.0\nelapsed=990.8s received=[59429, 59432, 59432] reconstructed=59429 unpaired=6 distinct=59429 rate=59.98 fps ms/frame decode=5.6 weave=1.0 push=1.4\nHDMI queue overruns=10 level=0\nJPEG_CAPTURE_STATS [{'callbacks': 59429, 'invalid': 0, 'queue_drops': 0, 'metadata_drops': 0, 'sequence_gaps': 1, 'payload_bytes': 2896344507, 'telemetry_errors': 0}, {'callbacks': 59432, 'invalid': 0, 'queue_drops': 0, 'metadata_drops': 0, 'sequence_gaps': 1, 'payload_bytes': 2844687397, 'telemetry_errors': 0}, {'callbacks': 59432, 'invalid': 0, 'queue_drops': 0, 'metadata_drops': 0, 'sequence_gaps': 1, 'payload_bytes': 2843949969, 'telemetry_errors': 0}]\nHDMI present overruns=41 level=0\nAI submitted=29656 completed=29655 rate=29.93 fps mean_ms=17.09 latest_boxes=1\nHDMI JPEG sink FPS=60.0 dropped=0 average=59.9\nRK temporal affine frame 59460: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.44 ms\nHDMI stage FPS:60.6 display FPS:60.0 QF:80 YOLO FPS:33.0\nHDMI JPEG sink FPS=60.0 dropped=0 average=59.9\nRK temporal affine frame 59520: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.44 ms\nHDMI stage FPS:59.8 display FPS:60.0 QF:80 YOLO FPS:29.6\nHDMI JPEG sink FPS=58.0 dropped=0 average=59.9\nRK temporal affine frame 59580: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.44 ms\nHDMI stage FPS:59.5 display FPS:58.0 QF:80 YOLO FPS:32.9",
+    "cpu": {
+      "sample_s": 14023.197123973,
+      "ticks": {
+        "cpu": {
+          "total": 11150674,
+          "idle": 3835925
+        },
+        "cpu0": {
+          "total": 1389919,
+          "idle": 617514
+        },
+        "cpu1": {
+          "total": 1385786,
+          "idle": 630717
+        },
+        "cpu2": {
+          "total": 1387458,
+          "idle": 651432
+        },
+        "cpu3": {
+          "total": 1401003,
+          "idle": 242725
+        },
+        "cpu4": {
+          "total": 1402229,
+          "idle": 229561
+        },
+        "cpu5": {
+          "total": 1402018,
+          "idle": 228489
+        },
+        "cpu6": {
+          "total": 1389443,
+          "idle": 616991
+        },
+        "cpu7": {
+          "total": 1392800,
+          "idle": 618490
+        }
+      },
+      "boot_id": "6d8f0860-49ae-4dee-b3f5-8672ccb1025d"
+    },
+    "npu_load_percent": 19.5,
+    "npu_core_load_percent": [
+      23,
+      16
+    ],
+    "gpu_load_percent": 0,
+    "network_links": [
+      {
+        "name": "end0",
+        "speed_mbps": 1000
+      }
+    ],
+    "pcie_capture": [
+      {
+        "pid": 25941,
+        "tile": 0,
+        "sample_s": 14023.001388502,
+        "frames": 59608,
+        "payload_bytes": 2903447618
+      },
+      {
+        "pid": 25941,
+        "tile": 1,
+        "sample_s": 14022.967030351,
+        "frames": 59609,
+        "payload_bytes": 2851543546
+      },
+      {
+        "pid": 25941,
+        "tile": 2,
+        "sample_s": 14022.900133053,
+        "frames": 59605,
+        "payload_bytes": 2850647530
+      }
+    ],
+    "memory_total_mb": 1957.32421875,
+    "memory_used_mb": 746.89453125,
+    "load": 8.02099609375,
+    "temperatures": [
+      {
+        "name": "little-core-thermal",
+        "celsius": 62.846
+      },
+      {
+        "name": "soc-thermal",
+        "celsius": 58.23
+      },
+      {
+        "name": "gpu-thermal",
+        "celsius": 60.076
+      },
+      {
+        "name": "ddr-thermal",
+        "celsius": 57.307
+      },
+      {
+        "name": "bigcore-thermal",
+        "celsius": 61.923
+      },
+      {
+        "name": "npu-thermal",
+        "celsius": 57.307
+      }
+    ],
+    "npu_mhz": 850.0
+  },
+  "after": {
+    "agent_version": 1,
+    "monotonic_s": 14034.962359399,
+    "hostname": "linaro-alip",
+    "runtime": "ai",
+    "viewer_pid": 28549,
+    "processes": [
+      {
+        "pid": 28510,
+        "ppid": 1,
+        "start_ticks": "1402467",
+        "name": "start_jpeg_hdmi_ai_fallback.sh",
+        "args": [
+          "sh",
+          "/root/jpeg_rk/start_jpeg_hdmi_ai_fallback.sh",
+          "188",
+          ""
+        ]
+      },
+      {
+        "pid": 28513,
+        "ppid": 28510,
+        "start_ticks": "1402667",
+        "name": "start_jpeg_hdmi_ai.sh",
+        "args": [
+          "sh",
+          "/root/jpeg_rk/start_jpeg_hdmi_ai.sh",
+          "188",
+          ""
+        ]
+      },
+      {
+        "pid": 28547,
+        "ppid": 28513,
+        "start_ticks": "1402693",
+        "name": "jpeg_qf_button.py",
+        "args": [
+          "python3",
+          "-u",
+          "/root/jpeg_rk/jpeg_qf_button.py",
+          ""
+        ]
+      },
+      {
+        "pid": 28549,
+        "ppid": 28513,
+        "start_ticks": "1402693",
+        "name": "show_jpeg_hdmi_overlay.py",
+        "args": [
+          "python3",
+          "/root/jpeg_rk/show_jpeg_hdmi_overlay.py",
+          "--connector",
+          "188",
+          "--decoder",
+          "software",
+          "--decode-workers",
+          "3",
+          "--fps",
+          "60",
+          "--sink",
+          "kms",
+          "--kms-sync-mode",
+          "auto",
+          "--output-format",
+          "RGBx",
+          "--skip-vsync",
+          "--temporal-method",
+          "normalize",
+          "--ai-model",
+          "/root/road_damage_yolov8n/road_damage_yolov8n_gray640_int8_rk3576.rknn",
+          "--ai-interval",
+          "2",
+          "--ai-confidence",
+          "0.5",
+          "--seconds",
+          "0",
+          ""
+        ]
+      }
+    ],
+    "interval": 2,
+    "confidence": 0.5,
+    "connector": 188,
+    "ai": {
+      "seq": 434,
+      "updated_us": 14034910527,
+      "age_ms": 36.732194999694826,
+      "boxes": [
+        {
+          "label": "Oblique crack",
+          "class": 2,
+          "confidence": 0.7190534472465515,
+          "xyxy": [
+            965.0098266601562,
+            822.9622192382812,
+            1344.7349853515625,
+            1054.085205078125
+          ]
+        }
+      ]
+    },
+    "fpga": {
+      "bar": "/sys/bus/pci/devices/0000:21:00.0/resource0",
+      "tag": "45485032",
+      "bitmap": 255,
+      "mode_requested": 4,
+      "mode_applied": 4,
+      "preproc_fault": 0,
+      "qf_requested": 80,
+      "qf_applied": 80,
+      "input_fps": 60,
+      "jpeg_faults": 0,
+      "jpeg_status": 15,
+      "tiles": [
+        {
+          "sent": 436,
+          "bytes": 37392
+        },
+        {
+          "sent": 436,
+          "bytes": 36761
+        },
+        {
+          "sent": 436,
+          "bytes": 36534
+        }
+      ]
+    },
+    "stats": {
+      "log_path": "/root/road_damage_yolov8n/hdmi_ai_ui_fixed.log",
+      "log_age_s": 0.1829512119293213,
+      "hdmi_fps": 60.0,
+      "hdmi_dropped_rate": 0.0,
+      "reconstructed_avg_fps": 59.18,
+      "unpaired": 0.0,
+      "queue_overruns": 1.0,
+      "present_queue_overruns": 1.0,
+      "ai_avg_ms": 16.81,
+      "ai_avg_fps": 29.39,
+      "processing_queue_overruns": 0.0
+    },
+    "log": "RK temporal affine frame 180: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.63 ms\nHDMI stage FPS:59.9 display FPS:60.0 QF:80 YOLO FPS:33.8\nHDMI JPEG sink FPS=60.0 dropped=0 average=59.9\nRK temporal affine frame 240: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.64 ms\nHDMI stage FPS:60.1 display FPS:60.0 QF:80 YOLO FPS:32.9\nHDMI JPEG sink FPS=60.0 dropped=0 average=59.9\nelapsed=5.0s received=[296, 297, 296] reconstructed=296 unpaired=0 distinct=296 rate=59.18 fps ms/frame decode=4.9 weave=0.9 push=1.3\nHDMI queue overruns=0 level=0\nJPEG_CAPTURE_STATS [{'callbacks': 297, 'invalid': 0, 'queue_drops': 0, 'metadata_drops': 0, 'sequence_gaps': 1, 'payload_bytes': 11766922, 'telemetry_errors': 0}, {'callbacks': 297, 'invalid': 0, 'queue_drops': 0, 'metadata_drops': 0, 'sequence_gaps': 1, 'payload_bytes': 11487518, 'telemetry_errors': 0}, {'callbacks': 297, 'invalid': 0, 'queue_drops': 0, 'metadata_drops': 0, 'sequence_gaps': 1, 'payload_bytes': 11481869, 'telemetry_errors': 0}]\nHDMI present overruns=1 level=0\nAI submitted=148 completed=147 rate=29.39 fps mean_ms=16.81 latest_boxes=1\nRK temporal affine frame 300: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.67 ms\nAI status OSD frames=300 map=4.8 panel=89.2 shade=61.6 text=15.3 unmap=0.7 us\nHDMI stage FPS:59.9 display FPS:60.0 QF:80 YOLO FPS:31.1\nHDMI JPEG sink FPS=60.0 dropped=0 average=60.0\nAI temporal OSD frames=300 boxes=387 avg_draw_us=51.9\nRK temporal affine frame 360: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.58 ms\nHDMI stage FPS:60.1 display FPS:60.0 QF:80 YOLO FPS:36.4\nHDMI JPEG sink FPS=60.0 dropped=0 average=60.0\nRK temporal affine frame 420: input=41 ref=39 gain=62/64 offset=-1 output=39 avg 1.55 ms\nHDMI JPEG sink FPS=60.0 dropped=0 average=60.0\nHDMI stage FPS:60.0 display FPS:60.0 QF:80 YOLO FPS:33.4",
+    "cpu": {
+      "sample_s": 14034.957614715,
+      "ticks": {
+        "cpu": {
+          "total": 11160064,
+          "idle": 3839751
+        },
+        "cpu0": {
+          "total": 1391093,
+          "idle": 618192
+        },
+        "cpu1": {
+          "total": 1386943,
+          "idle": 631386
+        },
+        "cpu2": {
+          "total": 1388618,
+          "idle": 652111
+        },
+        "cpu3": {
+          "total": 1402178,
+          "idle": 243116
+        },
+        "cpu4": {
+          "total": 1403405,
+          "idle": 229561
+        },
+        "cpu5": {
+          "total": 1403196,
+          "idle": 228491
+        },
+        "cpu6": {
+          "total": 1390624,
+          "idle": 617676
+        },
+        "cpu7": {
+          "total": 1393988,
+          "idle": 619212
+        }
+      },
+      "boot_id": "6d8f0860-49ae-4dee-b3f5-8672ccb1025d"
+    },
+    "npu_load_percent": 19.5,
+    "npu_core_load_percent": [
+      23,
+      16
+    ],
+    "gpu_load_percent": 0,
+    "network_links": [
+      {
+        "name": "end0",
+        "speed_mbps": 1000
+      }
+    ],
+    "pcie_capture": [
+      {
+        "pid": 28549,
+        "tile": 0,
+        "sample_s": 14034.749734296,
+        "frames": 424,
+        "payload_bytes": 16795515
+      },
+      {
+        "pid": 28549,
+        "tile": 1,
+        "sample_s": 14034.767294879,
+        "frames": 425,
+        "payload_bytes": 16438258
+      },
+      {
+        "pid": 28549,
+        "tile": 2,
+        "sample_s": 14034.734127525,
+        "frames": 423,
+        "payload_bytes": 16354505
+      }
+    ],
+    "memory_total_mb": 1957.32421875,
+    "memory_used_mb": 740.03125,
+    "load": 7.57568359375,
+    "temperatures": [
+      {
+        "name": "little-core-thermal",
+        "celsius": 61.923
+      },
+      {
+        "name": "soc-thermal",
+        "celsius": 57.307
+      },
+      {
+        "name": "gpu-thermal",
+        "celsius": 59.153
+      },
+      {
+        "name": "ddr-thermal",
+        "celsius": 57.307
+      },
+      {
+        "name": "bigcore-thermal",
+        "celsius": 61.923
+      },
+      {
+        "name": "npu-thermal",
+        "celsius": 56.384
+      }
+    ],
+    "npu_mhz": 850.0
+  },
+  "preview": {
+    "pid": 28549,
+    "port": 8766,
+    "width": 960,
+    "height": 540,
+    "fps_limit": 15,
+    "source": "final_hdmi_sink",
+    "hdmi_frames": 420,
+    "selected_frames": 0,
+    "error": null,
+    "clients": 0,
+    "frames": 0,
+    "sample_s": 14034.739397282
+  },
+  "unchanged_sha256": {
+    "show_jpeg_hdmi.py": "84e7168d756a0eb3944bc0236bd02ebcec379ccae65bb48c0aae0ce8f9154082",
+    "show_jpeg_hdmi_overlay.py": "63cf94c6b031934f965c71ed8d6638c009042540029986445d67f2b8be165073",
+    "capture_jpeg_tiles.py": "9bc80196a6b0da7bff70c50e69007ad76c9fb7b0d7a19889a785a100c78c66bc",
+    "pc_host_agent_v1.py": "2378577a82941046d1ce9fbca96c70487542a4c9380903054b0b11f7e8f1af1d",
+    "rk_video_fast.py": "92c532103f3ab5068f0f794ea55b27df27246aedc444111e16c07b512c818e6f"
+  },
+  "module_sha256": "850ad412d94fbd66eb2f6079c7f18fe954617156c3106940066b2cd54d6d10ce"
+}
