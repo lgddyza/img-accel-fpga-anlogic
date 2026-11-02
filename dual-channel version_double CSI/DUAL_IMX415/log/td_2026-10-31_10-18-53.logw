@@ -1,0 +1,5 @@
+HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in uisrc/03_ip/sgdma/pcie_bridge/bridge_v1_ph1/al_pcie_if/sideband_if/pcie_sideband_msi.v(344)
+HDL-7201 CRITICAL-WARNING: overwrite current module 'fifo_cross_domain_addr_process_al_0322d65db018' in uisrc/03_ip/mipi_csi_2/sfifo.v(238)
+HDL-7307 CRITICAL-WARNING: previous definition of design element module 'fifo_cross_domain_addr_process_al_0322d65db018' is here. This is because multiple modules(values) with the same name are defined. Please consider rewriting code in uisrc/03_ip/ui_dbuf/sfifo/sfifo.v(240)
+HDL-7201 CRITICAL-WARNING: overwrite current module 'ram_infer_0322d65db018' in uisrc/03_ip/mipi_csi_2/sfifo.v(319)
+HDL-7307 CRITICAL-WARNING: previous definition of design element module 'ram_infer_0322d65db018' is here. This is because multiple modules(values) with the same name are defined. Please consider rewriting code in uisrc/03_ip/ui_dbuf/sfifo/sfifo.v(323)

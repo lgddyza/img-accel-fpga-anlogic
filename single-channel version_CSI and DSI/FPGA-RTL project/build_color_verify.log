@@ -1,0 +1,176 @@
+Generated reference from 27 preserved RTL files: E:\FPGA\workspace\IMX415_DSI_PCIE_JPEG_EHP2_DSI_FIX_20261016\build\dsi_color_diagnosis\legacy_reference.v
+E:\FPGA\workspace\IMX415_DSI_PCIE_JPEG_EHP2_DSI_FIX_20261016\build\dsi_color_diagnosis\legacy_reference.v:2476: warning: Port 13 (O_raw_tready) of legacy_ui_mipi_to_raw_converter expects 1 bits, got 32.
+E:\FPGA\workspace\IMX415_DSI_PCIE_JPEG_EHP2_DSI_FIX_20261016\build\dsi_color_diagnosis\legacy_reference.v:2476:        : Pruning (signed) 31 high bits of the expression.
+E:\FPGA\workspace\IMX415_DSI_PCIE_JPEG_EHP2_DSI_FIX_20261016\uisrc\03_ip\ui_isp\ui_demosaic\ui_raw_matrix_3x3_buffer.v:151: warning: Port 13 (O_raw_tready) of ui_mipi_to_raw_converter expects 1 bits, got 32.
+E:\FPGA\workspace\IMX415_DSI_PCIE_JPEG_EHP2_DSI_FIX_20261016\uisrc\03_ip\ui_isp\ui_demosaic\ui_raw_matrix_3x3_buffer.v:151:        : Pruning (signed) 31 high bits of the expression.
+interior mode=0 stage=0 rgb=c81e1e
+interior mode=0 stage=1 rgb=f26262
+interior mode=0 stage=2 rgb=f26262
+STRICT stage=0 mismatches=0
+mode=0 stage=0 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=731e1e
+STRICT stage=1 mismatches=0
+mode=0 stage=1 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=d86262
+STRICT stage=2 mismatches=0
+mode=0 stage=2 pixels=7168 non_gray=7168 unknown=0 rows=11 sample=d86262
+interior mode=1 stage=0 rgb=1ec81e
+interior mode=1 stage=1 rgb=62f262
+interior mode=1 stage=2 rgb=62f262
+STRICT stage=0 mismatches=0
+mode=1 stage=0 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=73c81e
+STRICT stage=1 mismatches=0
+mode=1 stage=1 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=95eb62
+STRICT stage=2 mismatches=0
+mode=1 stage=2 pixels=7168 non_gray=7168 unknown=0 rows=11 sample=95eb62
+interior mode=2 stage=0 rgb=1e1ec8
+interior mode=2 stage=1 rgb=6262f2
+interior mode=2 stage=2 rgb=6262f2
+STRICT stage=0 mismatches=0
+mode=2 stage=0 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=1e1ec8
+STRICT stage=1 mismatches=0
+mode=2 stage=1 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=6271f2
+STRICT stage=2 mismatches=0
+mode=2 stage=2 pixels=7168 non_gray=7168 unknown=0 rows=11 sample=6271f2
+interior mode=3 stage=0 rgb=646464
+interior mode=3 stage=1 rgb=aeaeae
+interior mode=3 stage=2 rgb=aeaeae
+STRICT stage=0 mismatches=0
+mode=3 stage=0 pixels=30720 non_gray=0 unknown=0 rows=20 sample=646464
+STRICT stage=1 mismatches=0
+mode=3 stage=1 pixels=30720 non_gray=0 unknown=0 rows=20 sample=aeaeae
+STRICT stage=2 mismatches=0
+mode=3 stage=2 pixels=7168 non_gray=0 unknown=0 rows=11 sample=aeaeae
+DSI_COLOR_DIAGNOSIS_PASS legacy_pixels_bit_exact=153600
+sim/tb_dsi_color_diagnosis.sv:282: $finish called at 637156000 (1ps)
+interior mode=0 stage=0 rgb=1e1e1e
+interior mode=0 stage=1 rgb=62ba62
+interior mode=0 stage=2 rgb=62ba62
+CSI frame=0 compactor_width=480 first_line_cycles=598 ram0=c81ec81e ram400=c81ec81e
+interior mode=0 stage=0 rgb=c81e1e
+interior mode=0 stage=1 rgb=f26262
+MATRIX mode=0 row=6 phase=1 prev=1ec81ec81ec8 cur=1e1e1e1e1e1e next=1ec81ec81ec8
+interior mode=0 stage=2 rgb=f26262
+CSI frame=1 compactor_width=598 first_line_cycles=598 ram0=c81ec81e ram400=c81ec81e
+STRICT stage=0 mismatches=0
+mode=0 stage=0 pixels=28800 non_gray=28800 unknown=0 rows=19 sample=731e1e
+STRICT stage=1 mismatches=0
+mode=0 stage=1 pixels=28800 non_gray=28800 unknown=0 rows=19 sample=d86262
+STRICT stage=2 mismatches=0
+mode=0 stage=2 pixels=6144 non_gray=6144 unknown=0 rows=10 sample=d86262
+interior mode=1 stage=0 rgb=c81ec8
+interior mode=1 stage=1 rgb=f262f2
+interior mode=1 stage=2 rgb=f262f2
+CSI frame=0 compactor_width=480 first_line_cycles=598 ram0=1ec81ec8 ram400=1ec81ec8
+interior mode=1 stage=0 rgb=1ec81e
+interior mode=1 stage=1 rgb=62f262
+MATRIX mode=1 row=6 phase=1 prev=c81ec81ec81e cur=1ec81ec81ec8 next=c81ec81ec81e
+interior mode=1 stage=2 rgb=62f262
+CSI frame=1 compactor_width=598 first_line_cycles=598 ram0=1ec81ec8 ram400=1ec81ec8
+STRICT stage=0 mismatches=0
+mode=1 stage=0 pixels=28800 non_gray=28800 unknown=0 rows=19 sample=739d1e
+STRICT stage=1 mismatches=0
+mode=1 stage=1 pixels=28800 non_gray=28800 unknown=0 rows=19 sample=95eb62
+STRICT stage=2 mismatches=0
+mode=1 stage=2 pixels=6144 non_gray=6144 unknown=0 rows=10 sample=95eb62
+interior mode=2 stage=0 rgb=1ec81e
+interior mode=2 stage=1 rgb=62ba62
+interior mode=2 stage=2 rgb=62ba62
+CSI frame=0 compactor_width=480 first_line_cycles=598 ram0=1e1e1e1e ram400=1e1e1e1e
+interior mode=2 stage=0 rgb=1e1ec8
+interior mode=2 stage=1 rgb=6262f2
+MATRIX mode=2 row=6 phase=1 prev=1e1e1e1e1e1e cur=c81ec81ec81e next=1e1e1e1e1e1e
+interior mode=2 stage=2 rgb=6262f2
+CSI frame=1 compactor_width=598 first_line_cycles=598 ram0=1e1e1e1e ram400=1e1e1e1e
+STRICT stage=0 mismatches=0
+mode=2 stage=0 pixels=28800 non_gray=28800 unknown=0 rows=19 sample=1e48c8
+STRICT stage=1 mismatches=0
+mode=2 stage=1 pixels=28800 non_gray=28800 unknown=0 rows=19 sample=6271f2
+STRICT stage=2 mismatches=0
+mode=2 stage=2 pixels=6144 non_gray=6144 unknown=0 rows=10 sample=6271f2
+interior mode=3 stage=0 rgb=646464
+interior mode=3 stage=1 rgb=aeaeae
+interior mode=3 stage=2 rgb=aeaeae
+CSI frame=0 compactor_width=480 first_line_cycles=598 ram0=64646464 ram400=64646464
+interior mode=3 stage=0 rgb=646464
+interior mode=3 stage=1 rgb=aeaeae
+MATRIX mode=3 row=6 phase=1 prev=646464646464 cur=646464646464 next=646464646464
+interior mode=3 stage=2 rgb=aeaeae
+CSI frame=1 compactor_width=598 first_line_cycles=598 ram0=64646464 ram400=64646464
+STRICT stage=0 mismatches=0
+mode=3 stage=0 pixels=28800 non_gray=0 unknown=0 rows=19 sample=646464
+STRICT stage=1 mismatches=0
+mode=3 stage=1 pixels=28800 non_gray=0 unknown=0 rows=19 sample=aeaeae
+STRICT stage=2 mismatches=0
+mode=3 stage=2 pixels=6144 non_gray=0 unknown=0 rows=10 sample=aeaeae
+DSI_COLOR_DIAGNOSIS_PASS legacy_pixels_bit_exact=299520
+sim/tb_dsi_color_diagnosis.sv:282: $finish called at 1486276000 (1ps)
+interior mode=0 stage=0 rgb=1e1e1e
+interior mode=0 stage=1 rgb=62ba62
+interior mode=0 stage=2 rgb=62ba62
+CSI frame=0 compactor_width=480 first_line_cycles=598 ram0=c81ec81e ram400=c81ec81e
+interior mode=0 stage=0 rgb=c81e1e
+interior mode=0 stage=1 rgb=f26262
+MATRIX mode=0 row=6 phase=1 prev=1e1e1e1e1e1e cur=1ec81ec81ec8 next=1e1e1e1e1e1e
+interior mode=0 stage=2 rgb=f26262
+CSI frame=1 compactor_width=598 first_line_cycles=598 ram0=c81ec81e ram400=c81ec81e
+STRICT stage=0 mismatches=0
+mode=0 stage=0 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=731e1e
+STRICT stage=1 mismatches=0
+mode=0 stage=1 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=d86262
+STRICT stage=2 mismatches=0
+mode=0 stage=2 pixels=7168 non_gray=7168 unknown=0 rows=11 sample=d86262
+interior mode=1 stage=0 rgb=c81ec8
+interior mode=1 stage=1 rgb=f262f2
+interior mode=1 stage=2 rgb=f262f2
+CSI frame=0 compactor_width=480 first_line_cycles=598 ram0=1ec81ec8 ram400=1ec81ec8
+interior mode=1 stage=0 rgb=1ec81e
+interior mode=1 stage=1 rgb=62f262
+MATRIX mode=1 row=6 phase=1 prev=1ec81ec81ec8 cur=c81ec81ec81e next=1ec81ec81ec8
+interior mode=1 stage=2 rgb=62f262
+CSI frame=1 compactor_width=598 first_line_cycles=598 ram0=1ec81ec8 ram400=1ec81ec8
+STRICT stage=0 mismatches=0
+mode=1 stage=0 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=739d1e
+STRICT stage=1 mismatches=0
+mode=1 stage=1 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=95eb62
+STRICT stage=2 mismatches=0
+mode=1 stage=2 pixels=7168 non_gray=7168 unknown=0 rows=11 sample=95eb62
+interior mode=2 stage=0 rgb=1ec81e
+interior mode=2 stage=1 rgb=62ba62
+interior mode=2 stage=2 rgb=62ba62
+CSI frame=0 compactor_width=480 first_line_cycles=598 ram0=1e1e1e1e ram400=1e1e1e1e
+interior mode=2 stage=0 rgb=1e1ec8
+interior mode=2 stage=1 rgb=6262f2
+MATRIX mode=2 row=6 phase=1 prev=c81ec81ec81e cur=1e1e1e1e1e1e next=c81ec81ec81e
+interior mode=2 stage=2 rgb=6262f2
+CSI frame=1 compactor_width=598 first_line_cycles=598 ram0=1e1e1e1e ram400=1e1e1e1e
+STRICT stage=0 mismatches=0
+mode=2 stage=0 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=1e48c8
+STRICT stage=1 mismatches=0
+mode=2 stage=1 pixels=30720 non_gray=30720 unknown=0 rows=20 sample=6271f2
+STRICT stage=2 mismatches=0
+mode=2 stage=2 pixels=7168 non_gray=7168 unknown=0 rows=11 sample=6271f2
+interior mode=3 stage=0 rgb=646464
+interior mode=3 stage=1 rgb=aeaeae
+interior mode=3 stage=2 rgb=aeaeae
+CSI frame=0 compactor_width=480 first_line_cycles=598 ram0=64646464 ram400=64646464
+interior mode=3 stage=0 rgb=646464
+interior mode=3 stage=1 rgb=aeaeae
+MATRIX mode=3 row=6 phase=1 prev=646464646464 cur=646464646464 next=646464646464
+interior mode=3 stage=2 rgb=aeaeae
+CSI frame=1 compactor_width=598 first_line_cycles=598 ram0=64646464 ram400=64646464
+STRICT stage=0 mismatches=0
+mode=3 stage=0 pixels=30720 non_gray=0 unknown=0 rows=20 sample=646464
+STRICT stage=1 mismatches=0
+mode=3 stage=1 pixels=30720 non_gray=0 unknown=0 rows=20 sample=aeaeae
+STRICT stage=2 mismatches=0
+mode=3 stage=2 pixels=7168 non_gray=0 unknown=0 rows=11 sample=aeaeae
+DSI_COLOR_DIAGNOSIS_PASS legacy_pixels_bit_exact=307200
+sim/tb_dsi_color_diagnosis.sv:282: $finish called at 6659796000 (1ps)
+uisrc/03_ip/dsi/hdl_source/fifo_w32_d512/fifo_w32_d512.v:211: warning: Port 3 (cea) of ram_infer_fifo_w32_d512 expects 1 bits, got 32.
+uisrc/03_ip/dsi/hdl_source/fifo_w32_d512/fifo_w32_d512.v:211:        : Pruning (signed) 31 high bits of the expression.
+uisrc/03_ip/dsi/hdl_source/fifo_w32_d512/fifo_w32_d512.v:211: warning: Port 4 (ocea) of ram_infer_fifo_w32_d512 expects 1 bits, got 32.
+uisrc/03_ip/dsi/hdl_source/fifo_w32_d512/fifo_w32_d512.v:211:        : Pruning (signed) 31 high bits of the expression.
+uisrc/03_ip/dsi/hdl_source/fifo_w32_d512/fifo_w32_d512.v:211: warning: Port 13 (web) of ram_infer_fifo_w32_d512 expects 1 bits, got 32.
+uisrc/03_ip/dsi/hdl_source/fifo_w32_d512/fifo_w32_d512.v:211:        : Pruning (signed) 31 high bits of the expression.
+DSI_COLOR_TRANSPORT_PASS: FIFO 1024 RGB pixels, pack 3072 bytes, packet 3072 bytes exact
+sim/tb_dsi_color_transport.sv:108: $finish called at 23366000 (1ps)
+DSI_COLOR_ALL_SIM_TESTS_PASS: E:\FPGA\workspace\IMX415_DSI_PCIE_JPEG_EHP2_DSI_FIX_20261016\build\dsi_color_diagnosis

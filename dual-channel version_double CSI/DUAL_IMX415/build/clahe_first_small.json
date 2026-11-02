@@ -1,0 +1,32 @@
+{
+  "width": 64,
+  "height": 24,
+  "settings": [
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      0
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "pixel_exact": true,
+  "features_before_enhancement": true
+}

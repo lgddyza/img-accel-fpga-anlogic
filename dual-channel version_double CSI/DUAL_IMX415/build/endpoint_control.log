@@ -1,0 +1,3 @@
+PASS diagnostics remain live with DDR/pipeline clock stopped and pipeline held reset
+PASS AXI-Lite AW/W stalls, WSTRB/QF bounds, PRF1 modes/strength, latest CDC and stream reset
+sim/tb_endpoint_control.sv:155: $finish called at 11344000 (1ps)

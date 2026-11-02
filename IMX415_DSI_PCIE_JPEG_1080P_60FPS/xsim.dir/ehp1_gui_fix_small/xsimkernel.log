@@ -1,7 +1,0 @@
-Running: xsim.dir/ehp1_gui_fix_small/xsimk.exe -runall -simmode gui -wdb ehp1_gui_fix_small.wdb -simrunnum 0 -socket 65454
-Design successfully loaded
-Design Loading Memory Usage: 9128 KB (Peak: 9128 KB)
-Design Loading CPU Usage: 77 ms
-Simulation completed
-Simulation Memory Usage: 10444 KB (Peak: 10444 KB)
-Simulation CPU Usage: 5843 ms

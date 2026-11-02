@@ -1,0 +1,4 @@
+Peaceinlife
+21093
+55740
+E:\FPGA\workspace\DUAL_IMX415_SOBEL_20261031\.lock.f

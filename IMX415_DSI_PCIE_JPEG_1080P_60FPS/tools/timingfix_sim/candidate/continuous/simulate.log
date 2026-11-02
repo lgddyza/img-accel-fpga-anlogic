@@ -1,2 +1,0 @@
-JPEG_TRIPLE_CONTINUOUS_PASS sent=3/3/3
-E:\FPGA\workspace\IMX415_DSI_PCIE_JPEG_1080P_60FPS\sim\tb_jpeg_triple_continuous.sv:70: $finish called at 126672000 (1ps)

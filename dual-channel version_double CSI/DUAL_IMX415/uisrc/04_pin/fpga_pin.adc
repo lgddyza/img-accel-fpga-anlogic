@@ -1,0 +1,22 @@
+# V2 FMC mapping: official HS-only CSI receiver. No LP input pins.
+# No old DSI outputs are present. Companion HS N pin is implicit in LVDS primitive.
+set_pin_assignment { I_sysclk_25m } { LOCATION = T16; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment { I_ddr_clk } { LOCATION = T13; IOSTANDARD = LVDS18; PULLTYPE = NONE; }
+set_pin_assignment { pcie_mperst } { LOCATION = U14; IOSTANDARD = LVCMOS18; PULLTYPE = PULLUP; }
+set_pin_assignment { O_cam_refclk } { LOCATION = K16; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { I_cam_a_clk_hs } { LOCATION = C14; IOSTANDARD = LVDS18; PULLTYPE = NONE; }
+set_pin_assignment { I_cam_a_data_hs[0] } { LOCATION = A13; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment { I_cam_a_data_hs[1] } { LOCATION = G14; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment { I_cam_a_data_hs[2] } { LOCATION = F18; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment { I_cam_a_data_hs[3] } { LOCATION = F15; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment { O_cam_a_scl } { LOCATION = J13; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment { IO_cam_a_sda } { LOCATION = K13; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment { O_cam_a_pwdnb } { LOCATION = K17; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; }
+set_pin_assignment { I_cam_b_clk_hs } { LOCATION = E13; IOSTANDARD = LVDS18; PULLTYPE = NONE; }
+set_pin_assignment { I_cam_b_data_hs[0] } { LOCATION = C17; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment { I_cam_b_data_hs[1] } { LOCATION = H14; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment { I_cam_b_data_hs[2] } { LOCATION = J17; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment { I_cam_b_data_hs[3] } { LOCATION = D18; IOSTANDARD = LVDS18; PULLTYPE = NONE; INDEL = 20; }
+set_pin_assignment { O_cam_b_scl } { LOCATION = G17; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment { IO_cam_b_sda } { LOCATION = G16; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = PULLUP; }
+set_pin_assignment { O_cam_b_pwdnb } { LOCATION = K15; IOSTANDARD = LVCMOS18; DRIVESTRENGTH = 8; PULLTYPE = NONE; }

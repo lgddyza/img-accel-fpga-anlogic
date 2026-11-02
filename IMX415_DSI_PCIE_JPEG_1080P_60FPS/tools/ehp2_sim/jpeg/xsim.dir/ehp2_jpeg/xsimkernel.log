@@ -1,7 +1,0 @@
-Running: xsim.dir/ehp2_jpeg/xsimk.exe -runall -simmode gui -wdb ehp2_jpeg.wdb -simrunnum 0 -socket 56622
-Design successfully loaded
-Design Loading Memory Usage: 9904 KB (Peak: 9904 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 12344 KB (Peak: 12344 KB)
-Simulation CPU Usage: 734671 ms

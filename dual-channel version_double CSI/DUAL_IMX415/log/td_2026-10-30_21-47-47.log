@@ -1,0 +1,5 @@
+RUN-1002 : start command "launch_runs syn_1 -step opt_gate"
+PRJ-1403 : syn_1 is launched.
+PRJ-1404 : Run log file is E:/FPGA/workspace/DUAL_IMX415_DUAL_QF_20261030/dual_imx415_gray_demo_Runs/syn_1/run.log.
+PRJ-1411 : launch_runs syn_1 -step opt_gate.
+PRJ-1412 : reset_run phy_1.

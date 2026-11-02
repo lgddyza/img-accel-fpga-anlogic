@@ -1,1 +1,0 @@
--nolog "tb_gray_preprocess4_1080p" -s "preproc_clahe_1080p_tb" 

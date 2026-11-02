@@ -1,7 +1,0 @@
-Running: xsim.dir/preproc_clahe_tb/xsimk.exe -runall -simmode gui -wdb preproc_clahe_tb.wdb -simrunnum 0 -socket 58153
-Design successfully loaded
-Design Loading Memory Usage: 8480 KB (Peak: 8480 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 9100 KB (Peak: 9100 KB)
-Simulation CPU Usage: 265 ms

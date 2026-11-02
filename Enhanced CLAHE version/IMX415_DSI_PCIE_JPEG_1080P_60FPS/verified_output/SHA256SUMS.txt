@@ -1,3 +1,0 @@
-639a4c122191e6ff6127bc430a23c91a0f8a4cc4781602a0d64135282d27cd08  fpga_prj_jpeg.bit
-1b7fc53a7109b189a93f73e88b7c46ccf157bebc1ed87596274d6baa34e6c950  fpga_prj_jpeg_compress.bit
-8b2ac26abc309f7be5d29610d41e78e94e8e298bf1175bb861c294d7cf97737f  ../deploy/jpeg_rk_bundle.zip

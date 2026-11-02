@@ -1,2 +1,0 @@
-HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in uisrc/03_ip/sgdma/pcie_bridge/bridge_v1_ph1/al_pcie_if/sideband_if/pcie_sideband_msi.v(344)
-HDL-5007 WARNING: concatenation with an unsized literal will be treated as 32 bits in uisrc/03_ip/sgdma/pcie_bridge/bridge_v1_ph1/al_pcie_if/sideband_if/pcie_sideband_msi.v(344)

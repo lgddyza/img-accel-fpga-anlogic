@@ -1,0 +1,22 @@
+Location         : E:\FPGA\workspace\DUAL_IMX415_SOBEL_20261031\dual_imx415_gray_demo_Runs\phy_1
+Running with     : Tang Dynasty Release_2026.1_SP2
+                   Copyright (c) 2012-2026 Anlogic Inc.
+Top Model        : dual_imx415_top
+Device           : PH1A90SEG324
+Speed            : 2
+
+Timing Mode      : manhattan
+Setup            : WNS  1203ps  TNS        0ps  NUM_FEPS     0
+Hold             : WNS 2147483647ps  TNS        0ps  NUM_FEPS     0
+
+Flow Statistics  :
+----------------------------------------------------------------------------------------------------
+     command     |  #calls  |   wall time   |  cpu time(s)  |  used memory(mb)  |  peak memory(mb)  
+----------------------------------------------------------------------------------------------------
+      place      |    1     |  15m38s(99%)  |   1982(99%)   |       3151        |       3434        
+  import_device  |    1     |    5s(0%)     |     3(0%)     |       1012        |       1063        
+    import_db    |    4     |    4s(0%)     |     2(0%)     |       2846        |       2847        
+      pack       |    1     |    0s(0%)     |     0(0%)     |       2787        |       2847        
+----------------------------------------------------------------------------------------------------
+      total      |    7     |    15m47s     |     1987      |       3151        |       3434        
+----------------------------------------------------------------------------------------------------

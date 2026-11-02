@@ -1,0 +1,23 @@
+interior mode=0 stage=0 rgb=c81e1e
+interior mode=0 stage=1 rgb=f26262
+interior mode=0 stage=2 rgb=f26262
+CSI frame=0 compactor_width=480 first_line_cycles=598 ram0=c81ec81e ram400=c81ec81e
+PIXEL_MISMATCH stage=0 row=4 word=8 lane=0 got=1ec81e expected=c81e1e
+PIXEL_MISMATCH stage=0 row=4 word=8 lane=1 got=1e731e expected=c81e1e
+PIXEL_MISMATCH stage=0 row=4 word=8 lane=2 got=1ec81e expected=c81e1e
+PIXEL_MISMATCH stage=0 row=4 word=8 lane=3 got=1e731e expected=c81e1e
+PIXEL_MISMATCH stage=0 row=4 word=9 lane=0 got=1ec81e expected=c81e1e
+PIXEL_MISMATCH stage=0 row=4 word=9 lane=1 got=1e731e expected=c81e1e
+PIXEL_MISMATCH stage=0 row=4 word=9 lane=2 got=1ec81e expected=c81e1e
+PIXEL_MISMATCH stage=0 row=4 word=9 lane=3 got=1e731e expected=c81e1e
+PIXEL_MISMATCH stage=1 row=4 word=8 lane=0 got=62f262 expected=f26262
+PIXEL_MISMATCH stage=1 row=4 word=8 lane=1 got=62ba62 expected=f26262
+PIXEL_MISMATCH stage=1 row=4 word=8 lane=2 got=62f262 expected=f26262
+PIXEL_MISMATCH stage=1 row=4 word=8 lane=3 got=62ba62 expected=f26262
+PIXEL_MISMATCH stage=1 row=4 word=9 lane=0 got=62f262 expected=f26262
+PIXEL_MISMATCH stage=1 row=4 word=9 lane=1 got=62ba62 expected=f26262
+PIXEL_MISMATCH stage=1 row=4 word=9 lane=2 got=62f262 expected=f26262
+PIXEL_MISMATCH stage=1 row=4 word=9 lane=3 got=62ba62 expected=f26262
+interior mode=0 stage=0 rgb=1e731e
+FATAL: sim/tb_dsi_color_diagnosis.sv:138: Interior stage 0: got 1e731e expected c81e1e
+       Time: 1518010000  Scope: tb_dsi_color_diagnosis

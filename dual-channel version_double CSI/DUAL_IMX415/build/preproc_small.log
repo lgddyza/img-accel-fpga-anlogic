@@ -1,0 +1,15 @@
+PASS exact pixels, original OBS1 features, SOF mode lock case=0
+PASS exact pixels, original OBS1 features, SOF mode lock case=1
+PASS exact pixels, original OBS1 features, SOF mode lock case=2
+PASS exact pixels, original OBS1 features, SOF mode lock case=3
+PASS exact pixels, original OBS1 features, SOF mode lock case=4
+PASS exact pixels, original OBS1 features, SOF mode lock case=5
+PASS exact pixels, original OBS1 features, SOF mode lock case=6
+PASS exact pixels, original OBS1 features, SOF mode lock case=7
+PASS exact pixels, original OBS1 features, SOF mode lock case=8
+PASS exact pixels, original OBS1 features, SOF mode lock case=9
+PASS exact pixels, original OBS1 features, SOF mode lock case=10
+PASS exact pixels, original OBS1 features, SOF mode lock case=11
+PASS exact pixels, original OBS1 features, SOF mode lock case=12
+PASS PRF1 64x24 cases=13 groups=4992
+sim/tb_preproc_lite.sv:85: $finish called at 63810000 (1ps)
